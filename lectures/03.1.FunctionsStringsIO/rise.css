@@ -1,0 +1,7 @@
+div#notebook .alert {
+    line-height: 30px;
+}
+
+div#notebook .rendered_html p {
+    line-height: 30px;
+}

@@ -1,0 +1,72 @@
+# Testing and Grading all tasks 
+grade:
+  image: eu.gcr.io/shad-ts/grader/py-testenv
+  tags:
+    - docker-tester-python
+  except:
+    variables:
+      - $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME =~ /contributing/ || $CI_COMMIT_BRANCH =~ /contributing/
+      - $CI_PROJECT_NAME =~ /^public-(fall|spring)-20\d\d/
+  script:
+    - cd /opt/shad/tests
+    - chmod -R 777 /opt/shad/tests
+    - python3 -m checker grade
+  timeout: 10 minutes
+
+#grade-mr:
+#  image: eu.gcr.io/shad-ts/grader/py-testenv
+#  tags:
+#    - docker-tester-python
+#  except:
+#    variables:
+#      - $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME =~ /contributing/ || $CI_COMMIT_BRANCH =~ /contributing/
+#      - $CI_PROJECT_NAME =~ /^public-(fall|spring)-20\d\d/
+#  only:
+#    variables:
+#      - $CI_MERGE_REQUEST_TARGET_BRANCH_NAME =~ $CI_DEFAULT_BRANCH
+#  script:
+#    - cd /opt/shad/tests
+#    - chmod -R 777 /opt/shad/tests
+#    - python3 -m checker grade_mr
+#  timeout: 10 minutes
+
+# Inspect
+#inspect:
+#  image: eu.gcr.io/shad-ts/grader/py-testenv
+#  when: manual
+#  tags:
+#    - docker-tester-python
+#  except:
+#    variables:
+#      - $CI_PROJECT_NAME =~ /^public-(fall|spring)-20\d\d/
+#  script:
+#    - export CI_COMMIT_TIMESTAMP=$(git show -s --format=%cI $CI_COMMIT_SHA)  # TODO: remove after gitlab 13.4 upgrade
+#    - cd /opt/shad/tests
+#    - chmod -R 777 /opt/shad/tests
+#    - python3 -m checker grade --inspect
+#    - zip --password $REPORT_PASSWORD report.zip -- report.txt
+#    - cp report.zip $CI_PROJECT_DIR/report.zip
+#  timeout: 15 minutes
+#  artifacts:
+#    # when: on_failure
+#    paths: [report.zip]
+#    expire_in: 15 mins
+
+    
+# Checking contribution to the main repo
+check:
+  image: eu.gcr.io/shad-ts/grader/py-testenv
+  tags:
+    - docker-tester-python
+  only:
+    variables:
+      - $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME =~ /contributing/ || $CI_COMMIT_BRANCH =~ /contributing/
+  script:
+    - cp -R /opt/shad/tests tests/
+    - cd tests/
+    - env PYTHONPATH=. python3 -m checker check --contributing
+    - echo "CI_MERGE_REQUEST_PROJECT_ID $CI_MERGE_REQUEST_PROJECT_ID"
+    - echo "CI_MERGE_REQUEST_SOURCE_PROJECT_ID $CI_MERGE_REQUEST_SOURCE_PROJECT_ID"
+    - echo "CI_MERGE_REQUEST_SOURCE_PROJECT_PATH $CI_MERGE_REQUEST_SOURCE_PROJECT_PATH"
+    - echo "CI_MERGE_REQUEST_TARGET_BRANCH_NAME $CI_MERGE_REQUEST_TARGET_BRANCH_NAME"
+  timeout: 30 minutes
