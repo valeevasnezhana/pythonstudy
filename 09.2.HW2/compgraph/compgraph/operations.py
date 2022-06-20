@@ -5,6 +5,8 @@ import itertools
 from operator import itemgetter
 from string import punctuation
 from copy import deepcopy
+import math
+from dateutil import parser as dateutil_parser
 
 
 TRow = dict[str, tp.Any]
@@ -284,7 +286,166 @@ class Project(Mapper):
         yield {key: row[key] for key in self.columns}
 
 
+
+class Idf(Mapper):
+    """Count idf metrics based on number of docs and \
+            number of docs containing the word"""
+
+    def __init__(self, doc_count: str, num_word_entries: str, text_column: str, result_column: str) -> None:
+        """
+        :param doc_count: name of doc_count column
+        :param num_word_entries: name of word entries number column
+        :param text_column: name of column with word
+        :param result_colum: name of column for idf
+        """
+        self.doc_count = doc_count
+        self.num_word_entries = num_word_entries
+        self.text_column = text_column
+        self.result_column = result_column
+
+    def __call__(self, row: TRow) -> TRowsGenerator:
+        total_doc = row[self.doc_count]
+        entries_count = row[self.num_word_entries]
+        word = row[self.text_column]
+
+        result = dict()
+        result[self.text_column] = word
+        result[self.result_column] = math.log(total_doc / entries_count)
+        yield result
+
+
+class Pmi(Mapper):
+    """Count pmi metrics based on frequency of word in docs and total"""
+
+    def __init__(self, doc_freq: str, total_freq: str, result_column: str) -> None:
+        """
+        :param doc_freq: name of doc frequency column
+        :param total_freq: name of total frequency column
+        :param result_colum: name of column for pmi
+        """
+        self.doc_freq = doc_freq
+        self.total_freq = total_freq
+        self.result_column = result_column
+
+    def __call__(self, row: TRow) -> TRowsGenerator:
+        doc_freq = row[self.doc_freq]
+        total_freq = row[self.total_freq]
+        row[self.result_column] = math.log(doc_freq / total_freq)
+        yield row
+
+
+
+class ProcessLength(Mapper):
+    """Get edge length"""
+
+    def __init__(self, start_coord_column: str, end_coord_column: str, length_column: str) -> None:
+        """
+        :param start_coord_column: name of start column
+        :param end_coord_column: name of end column
+        :param length_column: name of column for length
+        """
+        self.start = start_coord_column
+        self.end = end_coord_column
+        self.length = length_column
+
+    def __call__(self, row: TRow) -> TRowsGenerator:
+        a1, b1 = row[self.start]
+        a2, b2 = row[self.end]
+        a1 = math.radians(a1)
+        a2 = math.radians(a2)
+        b1 = math.radians(b1)
+        b2 = math.radians(b2)
+        row[self.length] = 6371 * 2 * math.asin(math.sqrt(math.sin(b2 / 2 - b1 / 2) * math.sin(b2 / 2 - b1 / 2) +
+                                                          math.cos(b1) * math.cos(b2) * math.sin(a2 / 2 - a1 / 2) *
+                                                          math.sin(a2 / 2 - a1 / 2)))
+        yield row
+
+
+class ProcessTime(Mapper):
+    """Get edge length"""
+
+    def __init__(self, enter_time_column: str, leave_time_column: str, time_column: str, weekday_column: str,
+                 hour_column: str) -> None:
+        """
+        :param enter_time_column: name of enter time column
+        :param leave_time_column: name of leave time column
+        :param time_column: name of column for time
+        :param weekday_column: name of column for week day
+        :param hour_column: name of column for hour
+        """
+        self.enter = enter_time_column
+        self.leave = leave_time_column
+        self.time = time_column
+        self.day = weekday_column
+        self.hour = hour_column
+
+    def __call__(self, row: TRow) -> TRowsGenerator:
+        date1 = dateutil_parser.parse(row[self.enter])
+        date2 = dateutil_parser.parse(row[self.leave])
+
+        row[self.day] = date1.strftime('%a')
+        row[self.hour] = date1.hour
+        row[self.time] = (date2 - date1).total_seconds()
+        yield row
+
+
+
+class ProcessSpeed(Mapper):
+    """Get speed based on length and time"""
+
+    def __init__(self, length_column: str, time_column: str, speed_column: str) -> None:
+        """
+        :param length_column: column for total length
+        :param time_column: column for total time
+        :param speed_column: column for redult speed
+        """
+        self.length = length_column
+        self.time = time_column
+        self.speed = speed_column
+
+    def __call__(self, row: TRow) -> TRowsGenerator:
+        row[self.speed] = row[self.length] / row[self.time] * 3600
+        yield row
+
+
+
+
+
+
+
 # Reducers
+
+
+
+class MultipleSum(Reducer):
+    """Sum values in columns passed and yield single row as a result"""
+
+    def __init__(self, columns: tp.Iterable[str]) -> None:
+        """
+        :param column: name of columns to sum
+        """
+        self.columns = columns
+
+    def __call__(self, group_key: tp.Tuple[str, ...], rows: TRowsIterable) -> TRowsGenerator:
+        result: TRow = {}
+        row_sample = None
+        s: TRow = {}
+
+        for col in self.columns:
+            s[col] = 0
+
+        for row in rows:
+            if row_sample is None:
+                row_sample = row
+            for col in self.columns:
+                s[col] += row[col]
+
+        assert row_sample is not None
+        for key in group_key:
+            result[key] = row_sample[key]
+        for col in self.columns:
+            result[col] = s[col]
+        yield result
 
 
 class TopN(Reducer):
@@ -370,6 +531,34 @@ class Count(Reducer):
 
 
 
+class SafeCount(Reducer):
+    """Count rows passed and yield multiple row as a result"""
+
+    def __init__(self, column: str) -> None:
+        """
+        :param column: name of column to count
+        """
+        self.column = column
+
+    def __call__(self, group_key: tuple[str, ...], rows: TRowsIterable) -> TRowsGenerator:
+        start: bool = True
+        new_row: TRow = {}
+        count = 0
+        for row in rows:
+            if start:
+                for key in group_key:
+                    new_row[key] = row[key]
+                count = 1
+                start = False
+            else:
+                count += 1
+        new_row[self.column] = count
+        for i in range(count):
+            yield deepcopy(new_row)
+
+
+
+
 class Sum(Reducer):
     """
     Sum values aggregated by key
@@ -397,6 +586,7 @@ class Sum(Reducer):
             else:
                 new_row[self.column] += row[self.column]
         yield new_row
+
 
 
 
