@@ -1,0 +1,96 @@
+{
+  "build": "h2bbff1b_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012,<15.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\valee\\anaconda3\\pkgs\\libiconv-1.16-h2bbff1b_2",
+  "features": "",
+  "files": [
+    "Library/bin/charset.dll",
+    "Library/bin/iconv.dll",
+    "Library/include/iconv.h",
+    "Library/include/libcharset.h",
+    "Library/include/localcharset.h",
+    "Library/lib/charset.lib",
+    "Library/lib/iconv.lib",
+    ".nonadmin"
+  ],
+  "fn": "libiconv-1.16-h2bbff1b_2.conda",
+  "legacy_bz2_md5": "b812bc5d9c76242e2bb2ac87afe7d39b",
+  "legacy_bz2_size": 730280,
+  "license": "GPL-3.0-or-later",
+  "license_family": "GPL3",
+  "link": {
+    "source": "C:\\Users\\valee\\anaconda3\\pkgs\\libiconv-1.16-h2bbff1b_2",
+    "type": 1
+  },
+  "md5": "c02693cc6777cb959e3ecee275d8f0ec",
+  "name": "libiconv",
+  "package_tarball_full_path": "C:\\Users\\valee\\anaconda3\\pkgs\\libiconv-1.16-h2bbff1b_2.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Library/bin/charset.dll",
+        "path_type": "hardlink",
+        "sha256": "5288917f4acf064ffedb9b0019348b9eadf739ca2c4387504175c3675b84b241",
+        "sha256_in_prefix": "5288917f4acf064ffedb9b0019348b9eadf739ca2c4387504175c3675b84b241",
+        "size_in_bytes": 10752
+      },
+      {
+        "_path": "Library/bin/iconv.dll",
+        "path_type": "hardlink",
+        "sha256": "20313dcb23e600b5cc211cd2b4f3be8a3ad328ee1ee04bc127790dcbdd666c34",
+        "sha256_in_prefix": "20313dcb23e600b5cc211cd2b4f3be8a3ad328ee1ee04bc127790dcbdd666c34",
+        "size_in_bytes": 937984
+      },
+      {
+        "_path": "Library/include/iconv.h",
+        "path_type": "hardlink",
+        "sha256": "6682d0dd7e5bc38b092a261ea78b68d32ba91a462563c13c4f25221b061e3629",
+        "sha256_in_prefix": "6682d0dd7e5bc38b092a261ea78b68d32ba91a462563c13c4f25221b061e3629",
+        "size_in_bytes": 9936
+      },
+      {
+        "_path": "Library/include/libcharset.h",
+        "path_type": "hardlink",
+        "sha256": "8a923fb075e9336cbc629de6db07344fbec14da9ba8670c581077b2b070efdfa",
+        "sha256_in_prefix": "8a923fb075e9336cbc629de6db07344fbec14da9ba8670c581077b2b070efdfa",
+        "size_in_bytes": 1558
+      },
+      {
+        "_path": "Library/include/localcharset.h",
+        "path_type": "hardlink",
+        "sha256": "9bf273f0a70225e09bee417eb6ffba73d1ad6701ccfc9a9393469d1c2b2fadb8",
+        "sha256_in_prefix": "9bf273f0a70225e09bee417eb6ffba73d1ad6701ccfc9a9393469d1c2b2fadb8",
+        "size_in_bytes": 6035
+      },
+      {
+        "_path": "Library/lib/charset.lib",
+        "path_type": "hardlink",
+        "sha256": "0078b7f5a0b93c565a943f56e8d9a3455cd5cfed53bd37856e790892fb20f71e",
+        "sha256_in_prefix": "0078b7f5a0b93c565a943f56e8d9a3455cd5cfed53bd37856e790892fb20f71e",
+        "size_in_bytes": 2524
+      },
+      {
+        "_path": "Library/lib/iconv.lib",
+        "path_type": "hardlink",
+        "sha256": "b228128b0948be1b1e350c52a7eb204bc5be5707dcbbb3831baab2fddddc4d1c",
+        "sha256_in_prefix": "b228128b0948be1b1e350c52a7eb204bc5be5707dcbbb3831baab2fddddc4d1c",
+        "size_in_bytes": 3860
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "0da856533545004bec1f05cea102de1c1d4243f9ec13036b379d8cb7160a40a0",
+  "size": 666760,
+  "subdir": "win-64",
+  "timestamp": 1650983734373,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/libiconv-1.16-h2bbff1b_2.conda",
+  "version": "1.16"
+}

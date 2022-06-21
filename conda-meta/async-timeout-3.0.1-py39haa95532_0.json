@@ -1,0 +1,94 @@
+{
+  "build": "py39haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.9,<3.10.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\valee\\anaconda3\\pkgs\\async-timeout-3.0.1-py39haa95532_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/async_timeout-3.0.1-py3.9.egg-info/PKG-INFO",
+    "Lib/site-packages/async_timeout-3.0.1-py3.9.egg-info/SOURCES.txt",
+    "Lib/site-packages/async_timeout-3.0.1-py3.9.egg-info/dependency_links.txt",
+    "Lib/site-packages/async_timeout-3.0.1-py3.9.egg-info/top_level.txt",
+    "Lib/site-packages/async_timeout/__init__.py",
+    "Lib/site-packages/async_timeout/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/async_timeout/py.typed",
+    ".nonadmin"
+  ],
+  "fn": "async-timeout-3.0.1-py39haa95532_0.conda",
+  "legacy_bz2_md5": "8aaa88a6ce7b34762dfeeb7672cc0b72",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "C:\\Users\\valee\\anaconda3\\pkgs\\async-timeout-3.0.1-py39haa95532_0",
+    "type": 1
+  },
+  "md5": "b381f69e2f5203c5315c92b967d9dc64",
+  "name": "async-timeout",
+  "package_tarball_full_path": "C:\\Users\\valee\\anaconda3\\pkgs\\async-timeout-3.0.1-py39haa95532_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/async_timeout-3.0.1-py3.9.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "324fa787d8a0459206ad4b3097d4249210820f1c2677212f98bd8c3c4f9dacc5",
+        "sha256_in_prefix": "324fa787d8a0459206ad4b3097d4249210820f1c2677212f98bd8c3c4f9dacc5",
+        "size_in_bytes": 5339
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout-3.0.1-py3.9.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "e188e9ef50261f3b79839e6cad886741e6f5c0be5890b9c309d10c8d272f881e",
+        "sha256_in_prefix": "e188e9ef50261f3b79839e6cad886741e6f5c0be5890b9c309d10c8d272f881e",
+        "size_in_bytes": 317
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout-3.0.1-py3.9.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout-3.0.1-py3.9.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "f683387bb4f0abc883ffbfd0dcccf413a18f201eaf26f445a3e501c1442d0435",
+        "sha256_in_prefix": "f683387bb4f0abc883ffbfd0dcccf413a18f201eaf26f445a3e501c1442d0435",
+        "size_in_bytes": 14
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "986bd63a846a2ed49c114de49b3aad4d21fb110b07beef338601f13935c29fb7",
+        "sha256_in_prefix": "986bd63a846a2ed49c114de49b3aad4d21fb110b07beef338601f13935c29fb7",
+        "size_in_bytes": 3654
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c2c3e48739e8983ce0e7c533385c2ae2226839ce75a84ebc8751593eb0721930",
+        "sha256_in_prefix": "c2c3e48739e8983ce0e7c533385c2ae2226839ce75a84ebc8751593eb0721930",
+        "size_in_bytes": 3440
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout/py.typed",
+        "path_type": "hardlink",
+        "sha256": "f4b24fed0274a31618ac1b665ee162af331b4b70fdff74f3f9ddedc94b4da745",
+        "sha256_in_prefix": "f4b24fed0274a31618ac1b665ee162af331b4b70fdff74f3f9ddedc94b4da745",
+        "size_in_bytes": 11
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "daf922929ba791a1d8feb8ecd135cee2127db4b87710726908a98586d9f2a28e",
+  "size": 14079,
+  "subdir": "win-64",
+  "timestamp": 1611657343260,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/async-timeout-3.0.1-py39haa95532_0.conda",
+  "version": "3.0.1"
+}

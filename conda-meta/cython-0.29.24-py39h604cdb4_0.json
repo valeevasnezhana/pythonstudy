@@ -1,0 +1,3537 @@
+{
+  "build": "py39h604cdb4_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.9,<3.10.0a0",
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012,<15.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\valee\\anaconda3\\pkgs\\cython-0.29.24-py39h604cdb4_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/Cython-0.29.24.dist-info/COPYING.txt",
+    "Lib/site-packages/Cython-0.29.24.dist-info/INSTALLER",
+    "Lib/site-packages/Cython-0.29.24.dist-info/LICENSE.txt",
+    "Lib/site-packages/Cython-0.29.24.dist-info/METADATA",
+    "Lib/site-packages/Cython-0.29.24.dist-info/RECORD",
+    "Lib/site-packages/Cython-0.29.24.dist-info/REQUESTED",
+    "Lib/site-packages/Cython-0.29.24.dist-info/WHEEL",
+    "Lib/site-packages/Cython-0.29.24.dist-info/direct_url.json",
+    "Lib/site-packages/Cython-0.29.24.dist-info/entry_points.txt",
+    "Lib/site-packages/Cython-0.29.24.dist-info/top_level.txt",
+    "Lib/site-packages/Cython/Build/BuildExecutable.py",
+    "Lib/site-packages/Cython/Build/Cythonize.py",
+    "Lib/site-packages/Cython/Build/Dependencies.py",
+    "Lib/site-packages/Cython/Build/Distutils.py",
+    "Lib/site-packages/Cython/Build/Inline.py",
+    "Lib/site-packages/Cython/Build/IpythonMagic.py",
+    "Lib/site-packages/Cython/Build/Tests/TestCyCache.py",
+    "Lib/site-packages/Cython/Build/Tests/TestInline.py",
+    "Lib/site-packages/Cython/Build/Tests/TestIpythonMagic.py",
+    "Lib/site-packages/Cython/Build/Tests/TestStripLiterals.py",
+    "Lib/site-packages/Cython/Build/Tests/__init__.py",
+    "Lib/site-packages/Cython/Build/Tests/__pycache__/TestCyCache.cpython-39.pyc",
+    "Lib/site-packages/Cython/Build/Tests/__pycache__/TestInline.cpython-39.pyc",
+    "Lib/site-packages/Cython/Build/Tests/__pycache__/TestIpythonMagic.cpython-39.pyc",
+    "Lib/site-packages/Cython/Build/Tests/__pycache__/TestStripLiterals.cpython-39.pyc",
+    "Lib/site-packages/Cython/Build/Tests/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/Build/__init__.py",
+    "Lib/site-packages/Cython/Build/__pycache__/BuildExecutable.cpython-39.pyc",
+    "Lib/site-packages/Cython/Build/__pycache__/Cythonize.cpython-39.pyc",
+    "Lib/site-packages/Cython/Build/__pycache__/Dependencies.cpython-39.pyc",
+    "Lib/site-packages/Cython/Build/__pycache__/Distutils.cpython-39.pyc",
+    "Lib/site-packages/Cython/Build/__pycache__/Inline.cpython-39.pyc",
+    "Lib/site-packages/Cython/Build/__pycache__/IpythonMagic.cpython-39.pyc",
+    "Lib/site-packages/Cython/Build/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/CodeWriter.py",
+    "Lib/site-packages/Cython/Compiler/AnalysedTreeTransforms.py",
+    "Lib/site-packages/Cython/Compiler/Annotate.py",
+    "Lib/site-packages/Cython/Compiler/AutoDocTransforms.py",
+    "Lib/site-packages/Cython/Compiler/Buffer.py",
+    "Lib/site-packages/Cython/Compiler/Builtin.py",
+    "Lib/site-packages/Cython/Compiler/CmdLine.py",
+    "Lib/site-packages/Cython/Compiler/Code.pxd",
+    "Lib/site-packages/Cython/Compiler/Code.py",
+    "Lib/site-packages/Cython/Compiler/CodeGeneration.py",
+    "Lib/site-packages/Cython/Compiler/CythonScope.py",
+    "Lib/site-packages/Cython/Compiler/DebugFlags.py",
+    "Lib/site-packages/Cython/Compiler/Errors.py",
+    "Lib/site-packages/Cython/Compiler/ExprNodes.py",
+    "Lib/site-packages/Cython/Compiler/FlowControl.cp39-win_amd64.pyd",
+    "Lib/site-packages/Cython/Compiler/FlowControl.pxd",
+    "Lib/site-packages/Cython/Compiler/FlowControl.py",
+    "Lib/site-packages/Cython/Compiler/FusedNode.cp39-win_amd64.pyd",
+    "Lib/site-packages/Cython/Compiler/FusedNode.py",
+    "Lib/site-packages/Cython/Compiler/Future.py",
+    "Lib/site-packages/Cython/Compiler/Interpreter.py",
+    "Lib/site-packages/Cython/Compiler/Lexicon.py",
+    "Lib/site-packages/Cython/Compiler/Main.py",
+    "Lib/site-packages/Cython/Compiler/MemoryView.py",
+    "Lib/site-packages/Cython/Compiler/ModuleNode.py",
+    "Lib/site-packages/Cython/Compiler/Naming.py",
+    "Lib/site-packages/Cython/Compiler/Nodes.py",
+    "Lib/site-packages/Cython/Compiler/Optimize.py",
+    "Lib/site-packages/Cython/Compiler/Options.py",
+    "Lib/site-packages/Cython/Compiler/ParseTreeTransforms.pxd",
+    "Lib/site-packages/Cython/Compiler/ParseTreeTransforms.py",
+    "Lib/site-packages/Cython/Compiler/Parsing.pxd",
+    "Lib/site-packages/Cython/Compiler/Parsing.py",
+    "Lib/site-packages/Cython/Compiler/Pipeline.py",
+    "Lib/site-packages/Cython/Compiler/PyrexTypes.py",
+    "Lib/site-packages/Cython/Compiler/Pythran.py",
+    "Lib/site-packages/Cython/Compiler/Scanning.cp39-win_amd64.pyd",
+    "Lib/site-packages/Cython/Compiler/Scanning.pxd",
+    "Lib/site-packages/Cython/Compiler/Scanning.py",
+    "Lib/site-packages/Cython/Compiler/StringEncoding.py",
+    "Lib/site-packages/Cython/Compiler/Symtab.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestBuffer.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestCmdLine.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestFlowControl.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestGrammar.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestMemView.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestParseTreeTransforms.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestSignatureMatching.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestStringEncoding.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestTreeFragment.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestTreePath.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestTypes.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestUtilityLoad.py",
+    "Lib/site-packages/Cython/Compiler/Tests/TestVisitor.py",
+    "Lib/site-packages/Cython/Compiler/Tests/__init__.py",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestBuffer.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestCmdLine.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestFlowControl.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestGrammar.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestMemView.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestParseTreeTransforms.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestSignatureMatching.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestStringEncoding.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestTreeFragment.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestTreePath.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestTypes.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestUtilityLoad.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestVisitor.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/Tests/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/TreeFragment.py",
+    "Lib/site-packages/Cython/Compiler/TreePath.py",
+    "Lib/site-packages/Cython/Compiler/TypeInference.py",
+    "Lib/site-packages/Cython/Compiler/TypeSlots.py",
+    "Lib/site-packages/Cython/Compiler/UtilNodes.py",
+    "Lib/site-packages/Cython/Compiler/UtilityCode.py",
+    "Lib/site-packages/Cython/Compiler/Version.py",
+    "Lib/site-packages/Cython/Compiler/Visitor.cp39-win_amd64.pyd",
+    "Lib/site-packages/Cython/Compiler/Visitor.pxd",
+    "Lib/site-packages/Cython/Compiler/Visitor.py",
+    "Lib/site-packages/Cython/Compiler/__init__.py",
+    "Lib/site-packages/Cython/Compiler/__pycache__/AnalysedTreeTransforms.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Annotate.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/AutoDocTransforms.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Buffer.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Builtin.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/CmdLine.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Code.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/CodeGeneration.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/CythonScope.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/DebugFlags.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Errors.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/ExprNodes.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/FlowControl.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/FusedNode.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Future.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Interpreter.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Lexicon.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Main.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/MemoryView.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/ModuleNode.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Naming.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Nodes.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Optimize.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Options.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/ParseTreeTransforms.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Parsing.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Pipeline.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/PyrexTypes.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Pythran.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Scanning.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/StringEncoding.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Symtab.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/TreeFragment.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/TreePath.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/TypeInference.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/TypeSlots.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/UtilNodes.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/UtilityCode.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Version.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/Visitor.cpython-39.pyc",
+    "Lib/site-packages/Cython/Compiler/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/Coverage.py",
+    "Lib/site-packages/Cython/Debugger/Cygdb.py",
+    "Lib/site-packages/Cython/Debugger/DebugWriter.py",
+    "Lib/site-packages/Cython/Debugger/Tests/TestLibCython.py",
+    "Lib/site-packages/Cython/Debugger/Tests/__init__.py",
+    "Lib/site-packages/Cython/Debugger/Tests/__pycache__/TestLibCython.cpython-39.pyc",
+    "Lib/site-packages/Cython/Debugger/Tests/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/Debugger/Tests/__pycache__/test_libcython_in_gdb.cpython-39.pyc",
+    "Lib/site-packages/Cython/Debugger/Tests/__pycache__/test_libpython_in_gdb.cpython-39.pyc",
+    "Lib/site-packages/Cython/Debugger/Tests/cfuncs.c",
+    "Lib/site-packages/Cython/Debugger/Tests/codefile",
+    "Lib/site-packages/Cython/Debugger/Tests/test_libcython_in_gdb.py",
+    "Lib/site-packages/Cython/Debugger/Tests/test_libpython_in_gdb.py",
+    "Lib/site-packages/Cython/Debugger/__init__.py",
+    "Lib/site-packages/Cython/Debugger/__pycache__/Cygdb.cpython-39.pyc",
+    "Lib/site-packages/Cython/Debugger/__pycache__/DebugWriter.cpython-39.pyc",
+    "Lib/site-packages/Cython/Debugger/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/Debugger/__pycache__/libcython.cpython-39.pyc",
+    "Lib/site-packages/Cython/Debugger/__pycache__/libpython.cpython-39.pyc",
+    "Lib/site-packages/Cython/Debugger/libcython.py",
+    "Lib/site-packages/Cython/Debugger/libpython.py",
+    "Lib/site-packages/Cython/Debugging.py",
+    "Lib/site-packages/Cython/Distutils/__init__.py",
+    "Lib/site-packages/Cython/Distutils/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/Distutils/__pycache__/build_ext.cpython-39.pyc",
+    "Lib/site-packages/Cython/Distutils/__pycache__/extension.cpython-39.pyc",
+    "Lib/site-packages/Cython/Distutils/__pycache__/old_build_ext.cpython-39.pyc",
+    "Lib/site-packages/Cython/Distutils/build_ext.py",
+    "Lib/site-packages/Cython/Distutils/extension.py",
+    "Lib/site-packages/Cython/Distutils/old_build_ext.py",
+    "Lib/site-packages/Cython/Includes/Deprecated/python.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_bool.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_buffer.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_bytes.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_cobject.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_complex.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_dict.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_exc.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_float.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_function.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_getargs.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_instance.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_int.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_iterator.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_list.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_long.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_mapping.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_mem.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_method.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_module.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_number.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_object.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_oldbuffer.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_pycapsule.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_ref.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_sequence.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_set.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_string.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_tuple.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_type.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_unicode.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_version.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/python_weakref.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/stdio.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/stdlib.pxd",
+    "Lib/site-packages/Cython/Includes/Deprecated/stl.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/__init__.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/array.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/bool.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/buffer.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/bytearray.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/bytes.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/cellobject.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/ceval.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/cobject.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/codecs.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/complex.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/conversion.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/datetime.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/dict.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/exc.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/float.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/function.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/genobject.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/getargs.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/instance.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/int.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/iterator.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/iterobject.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/list.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/long.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/longintrepr.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/mapping.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/mem.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/memoryview.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/method.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/module.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/number.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/object.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/oldbuffer.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/pycapsule.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/pylifecycle.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/pystate.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/pythread.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/ref.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/sequence.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/set.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/slice.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/string.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/tuple.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/type.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/unicode.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/version.pxd",
+    "Lib/site-packages/Cython/Includes/cpython/weakref.pxd",
+    "Lib/site-packages/Cython/Includes/libc/__init__.pxd",
+    "Lib/site-packages/Cython/Includes/libc/errno.pxd",
+    "Lib/site-packages/Cython/Includes/libc/float.pxd",
+    "Lib/site-packages/Cython/Includes/libc/limits.pxd",
+    "Lib/site-packages/Cython/Includes/libc/locale.pxd",
+    "Lib/site-packages/Cython/Includes/libc/math.pxd",
+    "Lib/site-packages/Cython/Includes/libc/setjmp.pxd",
+    "Lib/site-packages/Cython/Includes/libc/signal.pxd",
+    "Lib/site-packages/Cython/Includes/libc/stddef.pxd",
+    "Lib/site-packages/Cython/Includes/libc/stdint.pxd",
+    "Lib/site-packages/Cython/Includes/libc/stdio.pxd",
+    "Lib/site-packages/Cython/Includes/libc/stdlib.pxd",
+    "Lib/site-packages/Cython/Includes/libc/string.pxd",
+    "Lib/site-packages/Cython/Includes/libc/time.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/__init__.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/algorithm.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/cast.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/complex.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/deque.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/forward_list.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/functional.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/iterator.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/limits.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/list.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/map.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/memory.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/pair.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/queue.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/set.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/stack.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/string.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/typeindex.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/typeinfo.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/unordered_map.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/unordered_set.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/utility.pxd",
+    "Lib/site-packages/Cython/Includes/libcpp/vector.pxd",
+    "Lib/site-packages/Cython/Includes/numpy/__init__.pxd",
+    "Lib/site-packages/Cython/Includes/numpy/math.pxd",
+    "Lib/site-packages/Cython/Includes/openmp.pxd",
+    "Lib/site-packages/Cython/Includes/posix/__init__.pxd",
+    "Lib/site-packages/Cython/Includes/posix/dlfcn.pxd",
+    "Lib/site-packages/Cython/Includes/posix/fcntl.pxd",
+    "Lib/site-packages/Cython/Includes/posix/ioctl.pxd",
+    "Lib/site-packages/Cython/Includes/posix/mman.pxd",
+    "Lib/site-packages/Cython/Includes/posix/resource.pxd",
+    "Lib/site-packages/Cython/Includes/posix/select.pxd",
+    "Lib/site-packages/Cython/Includes/posix/signal.pxd",
+    "Lib/site-packages/Cython/Includes/posix/stat.pxd",
+    "Lib/site-packages/Cython/Includes/posix/stdio.pxd",
+    "Lib/site-packages/Cython/Includes/posix/stdlib.pxd",
+    "Lib/site-packages/Cython/Includes/posix/strings.pxd",
+    "Lib/site-packages/Cython/Includes/posix/time.pxd",
+    "Lib/site-packages/Cython/Includes/posix/types.pxd",
+    "Lib/site-packages/Cython/Includes/posix/unistd.pxd",
+    "Lib/site-packages/Cython/Includes/posix/wait.pxd",
+    "Lib/site-packages/Cython/Plex/Actions.cp39-win_amd64.pyd",
+    "Lib/site-packages/Cython/Plex/Actions.pxd",
+    "Lib/site-packages/Cython/Plex/Actions.py",
+    "Lib/site-packages/Cython/Plex/DFA.py",
+    "Lib/site-packages/Cython/Plex/Errors.py",
+    "Lib/site-packages/Cython/Plex/Lexicons.py",
+    "Lib/site-packages/Cython/Plex/Machines.py",
+    "Lib/site-packages/Cython/Plex/Regexps.py",
+    "Lib/site-packages/Cython/Plex/Scanners.cp39-win_amd64.pyd",
+    "Lib/site-packages/Cython/Plex/Scanners.pxd",
+    "Lib/site-packages/Cython/Plex/Scanners.py",
+    "Lib/site-packages/Cython/Plex/Timing.py",
+    "Lib/site-packages/Cython/Plex/Traditional.py",
+    "Lib/site-packages/Cython/Plex/Transitions.py",
+    "Lib/site-packages/Cython/Plex/__init__.py",
+    "Lib/site-packages/Cython/Plex/__pycache__/Actions.cpython-39.pyc",
+    "Lib/site-packages/Cython/Plex/__pycache__/DFA.cpython-39.pyc",
+    "Lib/site-packages/Cython/Plex/__pycache__/Errors.cpython-39.pyc",
+    "Lib/site-packages/Cython/Plex/__pycache__/Lexicons.cpython-39.pyc",
+    "Lib/site-packages/Cython/Plex/__pycache__/Machines.cpython-39.pyc",
+    "Lib/site-packages/Cython/Plex/__pycache__/Regexps.cpython-39.pyc",
+    "Lib/site-packages/Cython/Plex/__pycache__/Scanners.cpython-39.pyc",
+    "Lib/site-packages/Cython/Plex/__pycache__/Timing.cpython-39.pyc",
+    "Lib/site-packages/Cython/Plex/__pycache__/Traditional.cpython-39.pyc",
+    "Lib/site-packages/Cython/Plex/__pycache__/Transitions.cpython-39.pyc",
+    "Lib/site-packages/Cython/Plex/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/Runtime/__init__.py",
+    "Lib/site-packages/Cython/Runtime/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/Runtime/refnanny.cp39-win_amd64.pyd",
+    "Lib/site-packages/Cython/Runtime/refnanny.pyx",
+    "Lib/site-packages/Cython/Shadow.py",
+    "Lib/site-packages/Cython/StringIOTree.py",
+    "Lib/site-packages/Cython/Tempita/__init__.py",
+    "Lib/site-packages/Cython/Tempita/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/Tempita/__pycache__/_looper.cpython-39.pyc",
+    "Lib/site-packages/Cython/Tempita/__pycache__/_tempita.cpython-39.pyc",
+    "Lib/site-packages/Cython/Tempita/__pycache__/compat3.cpython-39.pyc",
+    "Lib/site-packages/Cython/Tempita/_looper.py",
+    "Lib/site-packages/Cython/Tempita/_tempita.cp39-win_amd64.pyd",
+    "Lib/site-packages/Cython/Tempita/_tempita.py",
+    "Lib/site-packages/Cython/Tempita/compat3.py",
+    "Lib/site-packages/Cython/TestUtils.py",
+    "Lib/site-packages/Cython/Tests/TestCodeWriter.py",
+    "Lib/site-packages/Cython/Tests/TestCythonUtils.py",
+    "Lib/site-packages/Cython/Tests/TestJediTyper.py",
+    "Lib/site-packages/Cython/Tests/TestStringIOTree.py",
+    "Lib/site-packages/Cython/Tests/__init__.py",
+    "Lib/site-packages/Cython/Tests/__pycache__/TestCodeWriter.cpython-39.pyc",
+    "Lib/site-packages/Cython/Tests/__pycache__/TestCythonUtils.cpython-39.pyc",
+    "Lib/site-packages/Cython/Tests/__pycache__/TestJediTyper.cpython-39.pyc",
+    "Lib/site-packages/Cython/Tests/__pycache__/TestStringIOTree.cpython-39.pyc",
+    "Lib/site-packages/Cython/Tests/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/Tests/__pycache__/xmlrunner.cpython-39.pyc",
+    "Lib/site-packages/Cython/Tests/xmlrunner.py",
+    "Lib/site-packages/Cython/Utility/AsyncGen.c",
+    "Lib/site-packages/Cython/Utility/Buffer.c",
+    "Lib/site-packages/Cython/Utility/Builtins.c",
+    "Lib/site-packages/Cython/Utility/CConvert.pyx",
+    "Lib/site-packages/Cython/Utility/CMath.c",
+    "Lib/site-packages/Cython/Utility/Capsule.c",
+    "Lib/site-packages/Cython/Utility/CommonStructures.c",
+    "Lib/site-packages/Cython/Utility/Complex.c",
+    "Lib/site-packages/Cython/Utility/Coroutine.c",
+    "Lib/site-packages/Cython/Utility/CpdefEnums.pyx",
+    "Lib/site-packages/Cython/Utility/CppConvert.pyx",
+    "Lib/site-packages/Cython/Utility/CppSupport.cpp",
+    "Lib/site-packages/Cython/Utility/CythonFunction.c",
+    "Lib/site-packages/Cython/Utility/Embed.c",
+    "Lib/site-packages/Cython/Utility/Exceptions.c",
+    "Lib/site-packages/Cython/Utility/ExtensionTypes.c",
+    "Lib/site-packages/Cython/Utility/FunctionArguments.c",
+    "Lib/site-packages/Cython/Utility/ImportExport.c",
+    "Lib/site-packages/Cython/Utility/MemoryView.pyx",
+    "Lib/site-packages/Cython/Utility/MemoryView_C.c",
+    "Lib/site-packages/Cython/Utility/ModuleSetupCode.c",
+    "Lib/site-packages/Cython/Utility/ObjectHandling.c",
+    "Lib/site-packages/Cython/Utility/Optimize.c",
+    "Lib/site-packages/Cython/Utility/Overflow.c",
+    "Lib/site-packages/Cython/Utility/Printing.c",
+    "Lib/site-packages/Cython/Utility/Profile.c",
+    "Lib/site-packages/Cython/Utility/StringTools.c",
+    "Lib/site-packages/Cython/Utility/TestCyUtilityLoader.pyx",
+    "Lib/site-packages/Cython/Utility/TestCythonScope.pyx",
+    "Lib/site-packages/Cython/Utility/TestUtilityLoader.c",
+    "Lib/site-packages/Cython/Utility/TypeConversion.c",
+    "Lib/site-packages/Cython/Utility/__init__.py",
+    "Lib/site-packages/Cython/Utility/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/Cython/Utility/arrayarray.h",
+    "Lib/site-packages/Cython/Utils.py",
+    "Lib/site-packages/Cython/__init__.py",
+    "Lib/site-packages/Cython/__pycache__/CodeWriter.cpython-39.pyc",
+    "Lib/site-packages/Cython/__pycache__/Coverage.cpython-39.pyc",
+    "Lib/site-packages/Cython/__pycache__/Debugging.cpython-39.pyc",
+    "Lib/site-packages/Cython/__pycache__/Shadow.cpython-39.pyc",
+    "Lib/site-packages/Cython/__pycache__/StringIOTree.cpython-39.pyc",
+    "Lib/site-packages/Cython/__pycache__/TestUtils.cpython-39.pyc",
+    "Lib/site-packages/Cython/__pycache__/Utils.cpython-39.pyc",
+    "Lib/site-packages/Cython/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/__pycache__/cython.cpython-39.pyc",
+    "Lib/site-packages/cython.py",
+    "Lib/site-packages/pyximport/__init__.py",
+    "Lib/site-packages/pyximport/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/pyximport/__pycache__/pyxbuild.cpython-39.pyc",
+    "Lib/site-packages/pyximport/__pycache__/pyximport.cpython-39.pyc",
+    "Lib/site-packages/pyximport/pyxbuild.py",
+    "Lib/site-packages/pyximport/pyximport.py",
+    "Scripts/cygdb-script.py",
+    "Scripts/cygdb.exe",
+    "Scripts/cython-script.py",
+    "Scripts/cython.exe",
+    "Scripts/cythonize-script.py",
+    "Scripts/cythonize.exe",
+    ".nonadmin"
+  ],
+  "fn": "cython-0.29.24-py39h604cdb4_0.conda",
+  "legacy_bz2_md5": "ebe62b69a5a1c01c1f091eff6cdf0219",
+  "legacy_bz2_size": 2036864,
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "C:\\Users\\valee\\anaconda3\\pkgs\\cython-0.29.24-py39h604cdb4_0",
+    "type": 1
+  },
+  "md5": "777b48c55cbc925d227026ca9670979a",
+  "name": "cython",
+  "package_tarball_full_path": "C:\\Users\\valee\\anaconda3\\pkgs\\cython-0.29.24-py39h604cdb4_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/Cython-0.29.24.dist-info/COPYING.txt",
+        "path_type": "hardlink",
+        "sha256": "e1eb1c49a8508e8173dac30157e4a6439a44ad8846194746c424fbc3fc2b95d7",
+        "sha256_in_prefix": "e1eb1c49a8508e8173dac30157e4a6439a44ad8846194746c424fbc3fc2b95d7",
+        "size_in_bytes": 756
+      },
+      {
+        "_path": "Lib/site-packages/Cython-0.29.24.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/Cython-0.29.24.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+        "sha256_in_prefix": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+        "size_in_bytes": 10173
+      },
+      {
+        "_path": "Lib/site-packages/Cython-0.29.24.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "c00230b5e60a13497089b0d32d53cb916b9462534b26dcd9df5576414d210dab",
+        "sha256_in_prefix": "c00230b5e60a13497089b0d32d53cb916b9462534b26dcd9df5576414d210dab",
+        "size_in_bytes": 2736
+      },
+      {
+        "_path": "Lib/site-packages/Cython-0.29.24.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "5337ff52933299a1208f108969dff948c3c8f3b771799d6f8f526a527b51550f",
+        "sha256_in_prefix": "5337ff52933299a1208f108969dff948c3c8f3b771799d6f8f526a527b51550f",
+        "size_in_bytes": 35123
+      },
+      {
+        "_path": "Lib/site-packages/Cython-0.29.24.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/Cython-0.29.24.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "31167fa7b454e28969d572f85361182e4b988a4ae269546a5c1a0a54b1ff3921",
+        "sha256_in_prefix": "31167fa7b454e28969d572f85361182e4b988a4ae269546a5c1a0a54b1ff3921",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "Lib/site-packages/Cython-0.29.24.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "02b4901cbd0a5b98e7ad360c0a7c67964d80906ebcc231ad0bc6e33e513cd3c7",
+        "sha256_in_prefix": "02b4901cbd0a5b98e7ad360c0a7c67964d80906ebcc231ad0bc6e33e513cd3c7",
+        "size_in_bytes": 66
+      },
+      {
+        "_path": "Lib/site-packages/Cython-0.29.24.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "d813a6d703c49d6f9caaf7fa1f4e38f8317ae1eb1a03aa9eaa46c3952bf3d5ab",
+        "sha256_in_prefix": "d813a6d703c49d6f9caaf7fa1f4e38f8317ae1eb1a03aa9eaa46c3952bf3d5ab",
+        "size_in_bytes": 140
+      },
+      {
+        "_path": "Lib/site-packages/Cython-0.29.24.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "8cb57cb5957df2209b21f8894780d5cd35f946ed58fe960c679f7090c09ee926",
+        "sha256_in_prefix": "8cb57cb5957df2209b21f8894780d5cd35f946ed58fe960c679f7090c09ee926",
+        "size_in_bytes": 24
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/BuildExecutable.py",
+        "path_type": "hardlink",
+        "sha256": "f708dc3a7710a5b093fcfbb62e38f98ee7c52d263a4ffa07385b74b976137519",
+        "sha256_in_prefix": "f708dc3a7710a5b093fcfbb62e38f98ee7c52d263a4ffa07385b74b976137519",
+        "size_in_bytes": 4318
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Cythonize.py",
+        "path_type": "hardlink",
+        "sha256": "c9b1f908d22edd7eb6fbdfd3380db6294a89e4076c5651e80d02b4630720e605",
+        "sha256_in_prefix": "c9b1f908d22edd7eb6fbdfd3380db6294a89e4076c5651e80d02b4630720e605",
+        "size_in_bytes": 8215
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Dependencies.py",
+        "path_type": "hardlink",
+        "sha256": "71a7a3110a8ac96d1973f3e7c27da12bdf1c2387937b08f497404998b3c69a66",
+        "sha256_in_prefix": "71a7a3110a8ac96d1973f3e7c27da12bdf1c2387937b08f497404998b3c69a66",
+        "size_in_bytes": 49266
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Distutils.py",
+        "path_type": "hardlink",
+        "sha256": "88ee6d3d7f3829cf9958ca1c7ee41b97f3eac82f471862114be362288eb4f991",
+        "sha256_in_prefix": "88ee6d3d7f3829cf9958ca1c7ee41b97f3eac82f471862114be362288eb4f991",
+        "size_in_bytes": 49
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Inline.py",
+        "path_type": "hardlink",
+        "sha256": "4c7863533aae731f8ef04e79fc5b1d1145fbee0e361eaa5a403e55b91fb7ed34",
+        "sha256_in_prefix": "4c7863533aae731f8ef04e79fc5b1d1145fbee0e361eaa5a403e55b91fb7ed34",
+        "size_in_bytes": 13515
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/IpythonMagic.py",
+        "path_type": "hardlink",
+        "sha256": "8fe13e2496068f4ddc7960e9e52466c8af96c72ae846434e11038303dac27c57",
+        "sha256_in_prefix": "8fe13e2496068f4ddc7960e9e52466c8af96c72ae846434e11038303dac27c57",
+        "size_in_bytes": 21126
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Tests/TestCyCache.py",
+        "path_type": "hardlink",
+        "sha256": "a253afa61bf8ab508bb0dccc0218265e72fbef38461902ae29b62cfe248516f0",
+        "sha256_in_prefix": "a253afa61bf8ab508bb0dccc0218265e72fbef38461902ae29b62cfe248516f0",
+        "size_in_bytes": 4151
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Tests/TestInline.py",
+        "path_type": "hardlink",
+        "sha256": "c1a0e11331214512e79898e72b82bd088f176bcffb8341b87a1ca064857e5608",
+        "sha256_in_prefix": "c1a0e11331214512e79898e72b82bd088f176bcffb8341b87a1ca064857e5608",
+        "size_in_bytes": 2863
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Tests/TestIpythonMagic.py",
+        "path_type": "hardlink",
+        "sha256": "4910ee855f9bb5ed77e25423824ea5323ffcd3b0302a7a6392fdb76766355070",
+        "sha256_in_prefix": "4910ee855f9bb5ed77e25423824ea5323ffcd3b0302a7a6392fdb76766355070",
+        "size_in_bytes": 6227
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Tests/TestStripLiterals.py",
+        "path_type": "hardlink",
+        "sha256": "f90794776d8e9e82f9d2b5b6120a5f200d3553344cbad70103936b8641e213b3",
+        "sha256_in_prefix": "f90794776d8e9e82f9d2b5b6120a5f200d3553344cbad70103936b8641e213b3",
+        "size_in_bytes": 1550
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "sha256_in_prefix": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Tests/__pycache__/TestCyCache.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "077b6e74fcae6c275012524890d01d8b5ac8fb4ff6c9ead34c5a87ec0226852a",
+        "sha256_in_prefix": "077b6e74fcae6c275012524890d01d8b5ac8fb4ff6c9ead34c5a87ec0226852a",
+        "size_in_bytes": 3827
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Tests/__pycache__/TestInline.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ab433e433cbe5c1e289cc8a62e382a56032535e77d4c8649462348f69dbca832",
+        "sha256_in_prefix": "ab433e433cbe5c1e289cc8a62e382a56032535e77d4c8649462348f69dbca832",
+        "size_in_bytes": 4048
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Tests/__pycache__/TestIpythonMagic.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "cd560384eb8b4f67249a3c630628b050a67f58dedfcc81f97953e572ca3ed140",
+        "sha256_in_prefix": "cd560384eb8b4f67249a3c630628b050a67f58dedfcc81f97953e572ca3ed140",
+        "size_in_bytes": 6726
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Tests/__pycache__/TestStripLiterals.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9f9ae01f8b0cc3ad4592f1c2771efb697f61ae20eb9b4d67e0d6e72a047a2be5",
+        "sha256_in_prefix": "9f9ae01f8b0cc3ad4592f1c2771efb697f61ae20eb9b4d67e0d6e72a047a2be5",
+        "size_in_bytes": 3075
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/Tests/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "cb335d95f8c8539b595b3ae15debf77966618fb542224a8431021ad20238bb44",
+        "sha256_in_prefix": "cb335d95f8c8539b595b3ae15debf77966618fb542224a8431021ad20238bb44",
+        "size_in_bytes": 139
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "cc1856ea14fd3309356726dfb8f8bad6209ae80e2cac87751c9cfd3a211dd3ba",
+        "sha256_in_prefix": "cc1856ea14fd3309356726dfb8f8bad6209ae80e2cac87751c9cfd3a211dd3ba",
+        "size_in_bytes": 69
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/__pycache__/BuildExecutable.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "28ee5c0be14f00dbb02adf138fe2b4323ca7b1cb4d62adb7e27ba3be40dbd506",
+        "sha256_in_prefix": "28ee5c0be14f00dbb02adf138fe2b4323ca7b1cb4d62adb7e27ba3be40dbd506",
+        "size_in_bytes": 4401
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/__pycache__/Cythonize.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b5db54c9fa113c22004ba035fc05f7384024baa2ec7d0ca62a1d9f89270dfc40",
+        "sha256_in_prefix": "b5db54c9fa113c22004ba035fc05f7384024baa2ec7d0ca62a1d9f89270dfc40",
+        "size_in_bytes": 6533
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/__pycache__/Dependencies.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "031c85b2bf524c1ec491827a5543a707856841cccabf48918683e58bbad952eb",
+        "sha256_in_prefix": "031c85b2bf524c1ec491827a5543a707856841cccabf48918683e58bbad952eb",
+        "size_in_bytes": 35010
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/__pycache__/Distutils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a0524423e9acecfd13a25a8a44d9b18db25aa428351dd42b334740a0807cc278",
+        "sha256_in_prefix": "a0524423e9acecfd13a25a8a44d9b18db25aa428351dd42b334740a0807cc278",
+        "size_in_bytes": 194
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/__pycache__/Inline.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ba20b06e716fdc61cde6ef8e792db5f1ef2a24ae667c957ac27ebc0775ee84e8",
+        "sha256_in_prefix": "ba20b06e716fdc61cde6ef8e792db5f1ef2a24ae667c957ac27ebc0775ee84e8",
+        "size_in_bytes": 10741
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/__pycache__/IpythonMagic.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2dffde42ed1f6a5186297643ba30ad98ac98b36263048ec4da63235c2f3db5a9",
+        "sha256_in_prefix": "2dffde42ed1f6a5186297643ba30ad98ac98b36263048ec4da63235c2f3db5a9",
+        "size_in_bytes": 16773
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Build/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9db0b4965d18e7f10b465326815ff3ac8c1662a25677c9aa6ca78c5087cf8fe0",
+        "sha256_in_prefix": "9db0b4965d18e7f10b465326815ff3ac8c1662a25677c9aa6ca78c5087cf8fe0",
+        "size_in_bytes": 222
+      },
+      {
+        "_path": "Lib/site-packages/Cython/CodeWriter.py",
+        "path_type": "hardlink",
+        "sha256": "49ad612e651c20c9c21933404aacb37c6aa4ef48babfe62c943e688259426a26",
+        "sha256_in_prefix": "49ad612e651c20c9c21933404aacb37c6aa4ef48babfe62c943e688259426a26",
+        "size_in_bytes": 23901
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/AnalysedTreeTransforms.py",
+        "path_type": "hardlink",
+        "sha256": "4f6af548b15e1bb6b80fdb6df77866f18447fda18bc262bcd8f3696f546c6e71",
+        "sha256_in_prefix": "4f6af548b15e1bb6b80fdb6df77866f18447fda18bc262bcd8f3696f546c6e71",
+        "size_in_bytes": 3826
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Annotate.py",
+        "path_type": "hardlink",
+        "sha256": "6e4560747dc8b6e21b692a62f50a396ca8888ce5f7f89e6c64e45f73293f7996",
+        "sha256_in_prefix": "6e4560747dc8b6e21b692a62f50a396ca8888ce5f7f89e6c64e45f73293f7996",
+        "size_in_bytes": 12950
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/AutoDocTransforms.py",
+        "path_type": "hardlink",
+        "sha256": "95eee4fb184658392fa515d1a6966caa127391abfa8b8d469803a60deb715669",
+        "sha256_in_prefix": "95eee4fb184658392fa515d1a6966caa127391abfa8b8d469803a60deb715669",
+        "size_in_bytes": 7517
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Buffer.py",
+        "path_type": "hardlink",
+        "sha256": "ebe6085222d6b60a42d8b461b3bd75eae9b336211bcc0e9ccf59673e44849f7d",
+        "sha256_in_prefix": "ebe6085222d6b60a42d8b461b3bd75eae9b336211bcc0e9ccf59673e44849f7d",
+        "size_in_bytes": 29035
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Builtin.py",
+        "path_type": "hardlink",
+        "sha256": "cae30de4a96bc95c0c474db057031c7604175db232d78c9068bf9dc356954de1",
+        "sha256_in_prefix": "cae30de4a96bc95c0c474db057031c7604175db232d78c9068bf9dc356954de1",
+        "size_in_bytes": 22989
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/CmdLine.py",
+        "path_type": "hardlink",
+        "sha256": "711c17f9051f042566197c5528a01e1760872a22d5b631f841118c19a0519a42",
+        "sha256_in_prefix": "711c17f9051f042566197c5528a01e1760872a22d5b631f841118c19a0519a42",
+        "size_in_bytes": 9939
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Code.pxd",
+        "path_type": "hardlink",
+        "sha256": "faa3945bb9a790218aff4a8c211ed4b97a3ad6dc4cc68d68a2c656d6f63f326e",
+        "sha256_in_prefix": "faa3945bb9a790218aff4a8c211ed4b97a3ad6dc4cc68d68a2c656d6f63f326e",
+        "size_in_bytes": 3321
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Code.py",
+        "path_type": "hardlink",
+        "sha256": "553b37b917fd7c73f96f922c5443e148c52f7ec3a4297ebca9c07c99819ddbd5",
+        "sha256_in_prefix": "553b37b917fd7c73f96f922c5443e148c52f7ec3a4297ebca9c07c99819ddbd5",
+        "size_in_bytes": 97081
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/CodeGeneration.py",
+        "path_type": "hardlink",
+        "sha256": "8e4731dae5f4ee7724d14652832b084e146e2623db76449e5d1e19daecdb414f",
+        "sha256_in_prefix": "8e4731dae5f4ee7724d14652832b084e146e2623db76449e5d1e19daecdb414f",
+        "size_in_bytes": 1108
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/CythonScope.py",
+        "path_type": "hardlink",
+        "sha256": "98dc26139d3db9e3e64774b67638370eaeb3399de180af94f0d0de6b0cacf563",
+        "sha256_in_prefix": "98dc26139d3db9e3e64774b67638370eaeb3399de180af94f0d0de6b0cacf563",
+        "size_in_bytes": 6027
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/DebugFlags.py",
+        "path_type": "hardlink",
+        "sha256": "e5983d113a74a8f14499ae9032dac6530bbd167e8d4d83013163c8fc6c455b40",
+        "sha256_in_prefix": "e5983d113a74a8f14499ae9032dac6530bbd167e8d4d83013163c8fc6c455b40",
+        "size_in_bytes": 623
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Errors.py",
+        "path_type": "hardlink",
+        "sha256": "1804f3f71ea89e5b34f5c33a4de0f0de474181d0b15222890482f0ba4045e962",
+        "sha256_in_prefix": "1804f3f71ea89e5b34f5c33a4de0f0de474181d0b15222890482f0ba4045e962",
+        "size_in_bytes": 7554
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/ExprNodes.py",
+        "path_type": "hardlink",
+        "sha256": "d407f4c448f9b811df0b0aaaa232cbd4cc8573153819e6d7ba41ac8e577ed1cb",
+        "sha256_in_prefix": "d407f4c448f9b811df0b0aaaa232cbd4cc8573153819e6d7ba41ac8e577ed1cb",
+        "size_in_bytes": 549030
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/FlowControl.cp39-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "bec1bda15a4952596ce97c976b9f9fec5578521c73ebd9431e18d3687d22f547",
+        "sha256_in_prefix": "bec1bda15a4952596ce97c976b9f9fec5578521c73ebd9431e18d3687d22f547",
+        "size_in_bytes": 449536
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/FlowControl.pxd",
+        "path_type": "hardlink",
+        "sha256": "5bc6ea18224bcef0219cbdddd4e17cefdf190c9834408d1e03f79b9c0e1d9284",
+        "sha256_in_prefix": "5bc6ea18224bcef0219cbdddd4e17cefdf190c9834408d1e03f79b9c0e1d9284",
+        "size_in_bytes": 2918
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/FlowControl.py",
+        "path_type": "hardlink",
+        "sha256": "f88df761df6ca7544210d8c592bb9f04cf17ae3df2e5223b299d38573e438e2c",
+        "sha256_in_prefix": "f88df761df6ca7544210d8c592bb9f04cf17ae3df2e5223b299d38573e438e2c",
+        "size_in_bytes": 45981
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/FusedNode.cp39-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "1b7d9b562e9bac92b7f952e9a0387be8e6a4acafb4a03b5fb2a0ac923b7e1371",
+        "sha256_in_prefix": "1b7d9b562e9bac92b7f952e9a0387be8e6a4acafb4a03b5fb2a0ac923b7e1371",
+        "size_in_bytes": 268288
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/FusedNode.py",
+        "path_type": "hardlink",
+        "sha256": "aa61d51f29443e99652bfc7ee3bd71046fb333302dd11179dad2f1b7ff9166ab",
+        "sha256_in_prefix": "aa61d51f29443e99652bfc7ee3bd71046fb333302dd11179dad2f1b7ff9166ab",
+        "size_in_bytes": 37794
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Future.py",
+        "path_type": "hardlink",
+        "sha256": "1b071667f56d8b46ad7db38045f4b6908bd93af46e3eedfcc1b4a1227e28e240",
+        "sha256_in_prefix": "1b071667f56d8b46ad7db38045f4b6908bd93af46e3eedfcc1b4a1227e28e240",
+        "size_in_bytes": 587
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Interpreter.py",
+        "path_type": "hardlink",
+        "sha256": "88dc1e7b15f61c32399d98f6af3916fa5c3d46ade0cccfff3fb481a87deec5b5",
+        "sha256_in_prefix": "88dc1e7b15f61c32399d98f6af3916fa5c3d46ade0cccfff3fb481a87deec5b5",
+        "size_in_bytes": 2106
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Lexicon.py",
+        "path_type": "hardlink",
+        "sha256": "0b0ff021f43299c4c4764a28f36576c5b57c92f0a9df43be3dceea17885b7c22",
+        "sha256_in_prefix": "0b0ff021f43299c4c4764a28f36576c5b57c92f0a9df43be3dceea17885b7c22",
+        "size_in_bytes": 4855
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Main.py",
+        "path_type": "hardlink",
+        "sha256": "fdbd5c0de7603d10c5cb8b0defe159b0ac79a9b703e174de7e10fda99c258164",
+        "sha256_in_prefix": "fdbd5c0de7603d10c5cb8b0defe159b0ac79a9b703e174de7e10fda99c258164",
+        "size_in_bytes": 36488
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/MemoryView.py",
+        "path_type": "hardlink",
+        "sha256": "73a27b3ed43ac1c71bf6e071bdb2e78226b88cefa1dae79aeef888cc93610d85",
+        "sha256_in_prefix": "73a27b3ed43ac1c71bf6e071bdb2e78226b88cefa1dae79aeef888cc93610d85",
+        "size_in_bytes": 30009
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/ModuleNode.py",
+        "path_type": "hardlink",
+        "sha256": "9f6b3e85fdc87a01789f7da7a7c97c2e0f8404f34adfd2b5fc598d76a45d264e",
+        "sha256_in_prefix": "9f6b3e85fdc87a01789f7da7a7c97c2e0f8404f34adfd2b5fc598d76a45d264e",
+        "size_in_bytes": 142244
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Naming.py",
+        "path_type": "hardlink",
+        "sha256": "67a14b4683a5db517dd52328228312bbf0aa628b068710c92cef60ad84878552",
+        "sha256_in_prefix": "67a14b4683a5db517dd52328228312bbf0aa628b068710c92cef60ad84878552",
+        "size_in_bytes": 6333
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Nodes.py",
+        "path_type": "hardlink",
+        "sha256": "e543138a5e7a4c681e043128f712d562d73c27d4f93f41cd993b358f486f4f74",
+        "sha256_in_prefix": "e543138a5e7a4c681e043128f712d562d73c27d4f93f41cd993b358f486f4f74",
+        "size_in_bytes": 391463
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Optimize.py",
+        "path_type": "hardlink",
+        "sha256": "1d7ef6b585916d16f6c52abe139f1e0760cbcbf907921ede067cd7e060d3dd95",
+        "sha256_in_prefix": "1d7ef6b585916d16f6c52abe139f1e0760cbcbf907921ede067cd7e060d3dd95",
+        "size_in_bytes": 210105
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Options.py",
+        "path_type": "hardlink",
+        "sha256": "af2acb73f34da3441231a3fe8c7866a352f6a19240ea1ecaa44eb1b3f292c94a",
+        "sha256_in_prefix": "af2acb73f34da3441231a3fe8c7866a352f6a19240ea1ecaa44eb1b3f292c94a",
+        "size_in_bytes": 19707
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/ParseTreeTransforms.pxd",
+        "path_type": "hardlink",
+        "sha256": "a0349d6b75d83fbf68f2d080c449bf7a959654f5d268fcbc958ae9ad6611c8d9",
+        "sha256_in_prefix": "a0349d6b75d83fbf68f2d080c449bf7a959654f5d268fcbc958ae9ad6611c8d9",
+        "size_in_bytes": 2468
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/ParseTreeTransforms.py",
+        "path_type": "hardlink",
+        "sha256": "3fcbef483a18ea2e2368771e6acc403898b9bc5239fec1ecd4b04b35fdc80e20",
+        "sha256_in_prefix": "3fcbef483a18ea2e2368771e6acc403898b9bc5239fec1ecd4b04b35fdc80e20",
+        "size_in_bytes": 138419
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Parsing.pxd",
+        "path_type": "hardlink",
+        "sha256": "a4bfc441d5566b0ec46554d9af1ccc714be8489780a175cf461f2408bb9dcac9",
+        "sha256_in_prefix": "a4bfc441d5566b0ec46554d9af1ccc714be8489780a175cf461f2408bb9dcac9",
+        "size_in_bytes": 8984
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Parsing.py",
+        "path_type": "hardlink",
+        "sha256": "bbfe5258e375c2cf92ff9702c35c57999760c5394b59f4f114024911b5d7ee6f",
+        "sha256_in_prefix": "bbfe5258e375c2cf92ff9702c35c57999760c5394b59f4f114024911b5d7ee6f",
+        "size_in_bytes": 129791
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Pipeline.py",
+        "path_type": "hardlink",
+        "sha256": "eab6af774402479b02a0a973f47133db4f40d94aa02e9e10a74572b2829afe62",
+        "sha256_in_prefix": "eab6af774402479b02a0a973f47133db4f40d94aa02e9e10a74572b2829afe62",
+        "size_in_bytes": 14061
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/PyrexTypes.py",
+        "path_type": "hardlink",
+        "sha256": "fa7189c66e5a9a022391fbc1a5015e48b9fccd2d9f8bf701bceb600487ebe45f",
+        "sha256_in_prefix": "fa7189c66e5a9a022391fbc1a5015e48b9fccd2d9f8bf701bceb600487ebe45f",
+        "size_in_bytes": 173958
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Pythran.py",
+        "path_type": "hardlink",
+        "sha256": "347226974cb1d233cbc932d10075d9af42c74f21327d8aaca6062e578bdd34a2",
+        "sha256_in_prefix": "347226974cb1d233cbc932d10075d9af42c74f21327d8aaca6062e578bdd34a2",
+        "size_in_bytes": 7267
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Scanning.cp39-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "8cbf3936e07e675cd010cc97dff1e09d8a8f004d730bd9a2cf830bcf14afd21b",
+        "sha256_in_prefix": "8cbf3936e07e675cd010cc97dff1e09d8a8f004d730bd9a2cf830bcf14afd21b",
+        "size_in_bytes": 212480
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Scanning.pxd",
+        "path_type": "hardlink",
+        "sha256": "be38cf2d96f9b9d3f332993aec32a88d34c3525df5414f3aa17c80324b3b1ecc",
+        "sha256_in_prefix": "be38cf2d96f9b9d3f332993aec32a88d34c3525df5414f3aa17c80324b3b1ecc",
+        "size_in_bytes": 2113
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Scanning.py",
+        "path_type": "hardlink",
+        "sha256": "1a5eec539ac8fb91f9bfccfd40b641875862bd2d9c3866bd1fcefc41d129514e",
+        "sha256_in_prefix": "1a5eec539ac8fb91f9bfccfd40b641875862bd2d9c3866bd1fcefc41d129514e",
+        "size_in_bytes": 18438
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/StringEncoding.py",
+        "path_type": "hardlink",
+        "sha256": "767de35522f825271b7987f57f9ea3e51251f4ce7c02708374939b0be71cddf8",
+        "sha256_in_prefix": "767de35522f825271b7987f57f9ea3e51251f4ce7c02708374939b0be71cddf8",
+        "size_in_bytes": 10812
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Symtab.py",
+        "path_type": "hardlink",
+        "sha256": "9f4b5d4e76cf912b94e4480f92bea718137df0b85b9256e3b7ca3a35416ddbae",
+        "sha256_in_prefix": "9f4b5d4e76cf912b94e4480f92bea718137df0b85b9256e3b7ca3a35416ddbae",
+        "size_in_bytes": 111727
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestBuffer.py",
+        "path_type": "hardlink",
+        "sha256": "880b880041b0d01fb5e52302131ddb1472fcd2a42499ca4f151f9252a8e98403",
+        "sha256_in_prefix": "880b880041b0d01fb5e52302131ddb1472fcd2a42499ca4f151f9252a8e98403",
+        "size_in_bytes": 4122
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestCmdLine.py",
+        "path_type": "hardlink",
+        "sha256": "c01b5b36c7ab46c538fd88ffd16e9cba31bed3b3e4c0e453fabd59de82c799c5",
+        "sha256_in_prefix": "c01b5b36c7ab46c538fd88ffd16e9cba31bed3b3e4c0e453fabd59de82c799c5",
+        "size_in_bytes": 4414
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestFlowControl.py",
+        "path_type": "hardlink",
+        "sha256": "81ede2a81a2beb17b930b68b6ceb70ec44e7b499c087c11eaae17569eb55cccc",
+        "sha256_in_prefix": "81ede2a81a2beb17b930b68b6ceb70ec44e7b499c087c11eaae17569eb55cccc",
+        "size_in_bytes": 1848
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestGrammar.py",
+        "path_type": "hardlink",
+        "sha256": "cd632f606d7d9c81fce4b7bcada817b76bcb0655a518635e320ad37503b92463",
+        "sha256_in_prefix": "cd632f606d7d9c81fce4b7bcada817b76bcb0655a518635e320ad37503b92463",
+        "size_in_bytes": 3443
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestMemView.py",
+        "path_type": "hardlink",
+        "sha256": "9dd59d3c58561e2dac92e2b1be1c0b4fb874ef00e90f19b4049ac0c6656ba772",
+        "sha256_in_prefix": "9dd59d3c58561e2dac92e2b1be1c0b4fb874ef00e90f19b4049ac0c6656ba772",
+        "size_in_bytes": 2512
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestParseTreeTransforms.py",
+        "path_type": "hardlink",
+        "sha256": "1e3c3951ae0f3319247cf72c846a4012ca42ea4af238e9ebd28602812bcafddc",
+        "sha256_in_prefix": "1e3c3951ae0f3319247cf72c846a4012ca42ea4af238e9ebd28602812bcafddc",
+        "size_in_bytes": 8500
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestSignatureMatching.py",
+        "path_type": "hardlink",
+        "sha256": "a8c89065e839fc4bbc55f098fe531ac2aa63a4a355d2bea9ebef5ccca79cd5a6",
+        "sha256_in_prefix": "a8c89065e839fc4bbc55f098fe531ac2aa63a4a355d2bea9ebef5ccca79cd5a6",
+        "size_in_bytes": 3338
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestStringEncoding.py",
+        "path_type": "hardlink",
+        "sha256": "44bd580d7ace51ed6c3cb11b5a64c9439545fae119fca2f3d2369e428331f399",
+        "sha256_in_prefix": "44bd580d7ace51ed6c3cb11b5a64c9439545fae119fca2f3d2369e428331f399",
+        "size_in_bytes": 2315
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestTreeFragment.py",
+        "path_type": "hardlink",
+        "sha256": "bd204fe53b2cef45dd543142908ba9ada9a0650569932cadd45972b78c2d7787",
+        "sha256_in_prefix": "bd204fe53b2cef45dd543142908ba9ada9a0650569932cadd45972b78c2d7787",
+        "size_in_bytes": 2191
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestTreePath.py",
+        "path_type": "hardlink",
+        "sha256": "c7ed8a04885213afaf4fed813dedaafb369ad681ed738da26cacd5b3fcbcfd2a",
+        "sha256_in_prefix": "c7ed8a04885213afaf4fed813dedaafb369ad681ed738da26cacd5b3fcbcfd2a",
+        "size_in_bytes": 4238
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestTypes.py",
+        "path_type": "hardlink",
+        "sha256": "62e1626f958225f48f69fae1cb9cab0947706a3630eb5c863e8e07bde4f2cd4b",
+        "sha256_in_prefix": "62e1626f958225f48f69fae1cb9cab0947706a3630eb5c863e8e07bde4f2cd4b",
+        "size_in_bytes": 669
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestUtilityLoad.py",
+        "path_type": "hardlink",
+        "sha256": "5337f8fdb3a385afb3c106a290d6ec00e550b3764f5f7603ed04394f8b3ae986",
+        "sha256_in_prefix": "5337f8fdb3a385afb3c106a290d6ec00e550b3764f5f7603ed04394f8b3ae986",
+        "size_in_bytes": 3341
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/TestVisitor.py",
+        "path_type": "hardlink",
+        "sha256": "4009c1a548678ab4852aa5d689ac28f8e8578712114d089d5b11331a3243cfa3",
+        "sha256_in_prefix": "4009c1a548678ab4852aa5d689ac28f8e8578712114d089d5b11331a3243cfa3",
+        "size_in_bytes": 2228
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "sha256_in_prefix": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestBuffer.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1a674e27170f4f4a035ad41bf0d58ae35f73826e1dc2281a944641eb77c2e8ad",
+        "sha256_in_prefix": "1a674e27170f4f4a035ad41bf0d58ae35f73826e1dc2281a944641eb77c2e8ad",
+        "size_in_bytes": 4719
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestCmdLine.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "279e76d6287d302d81b4aed2e6494a894223461ad3a00a8d44e454d72190bce3",
+        "sha256_in_prefix": "279e76d6287d302d81b4aed2e6494a894223461ad3a00a8d44e454d72190bce3",
+        "size_in_bytes": 3894
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestFlowControl.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "77a97366bb454fe39ea2ea6309ac9012908dbe146c78643cabbda22db857af8f",
+        "sha256_in_prefix": "77a97366bb454fe39ea2ea6309ac9012908dbe146c78643cabbda22db857af8f",
+        "size_in_bytes": 2004
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestGrammar.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "3492c9a73f50e57192c8c82d2841755061aeb9703c6d402a719ed409804ace39",
+        "sha256_in_prefix": "3492c9a73f50e57192c8c82d2841755061aeb9703c6d402a719ed409804ace39",
+        "size_in_bytes": 2450
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestMemView.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "610281b352b4d4e68382d1293b5c70e200f56b896c62253dd6fd23820c7cbbc8",
+        "sha256_in_prefix": "610281b352b4d4e68382d1293b5c70e200f56b896c62253dd6fd23820c7cbbc8",
+        "size_in_bytes": 3916
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestParseTreeTransforms.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7016cca221416b2f529bc8dae278cf0874f9f857a8fe37831679f3c4cdc22b36",
+        "sha256_in_prefix": "7016cca221416b2f529bc8dae278cf0874f9f857a8fe37831679f3c4cdc22b36",
+        "size_in_bytes": 9418
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestSignatureMatching.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "12a402a8a2bea83b7ad1fd6c71fba1b3abcb8117a8a2487e1655673a99d0536e",
+        "sha256_in_prefix": "12a402a8a2bea83b7ad1fd6c71fba1b3abcb8117a8a2487e1655673a99d0536e",
+        "size_in_bytes": 3900
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestStringEncoding.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b75537af96c81c22f92b25324efe5395838288b7bbecffa76fab2aa9db3056d8",
+        "sha256_in_prefix": "b75537af96c81c22f92b25324efe5395838288b7bbecffa76fab2aa9db3056d8",
+        "size_in_bytes": 1530
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestTreeFragment.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5eb97faacae2389d0cd71be3e288d7eacafd23930ccc80c439ee5104b4daa59e",
+        "sha256_in_prefix": "5eb97faacae2389d0cd71be3e288d7eacafd23930ccc80c439ee5104b4daa59e",
+        "size_in_bytes": 2933
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestTreePath.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "791fbdc727443e91940dfda96085a0d930f15c6a3b8bd8e5bac14d1b64a3542d",
+        "sha256_in_prefix": "791fbdc727443e91940dfda96085a0d930f15c6a3b8bd8e5bac14d1b64a3542d",
+        "size_in_bytes": 4879
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestTypes.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8dbb8e40dce62d3181bec68e67df73aa3a45193162fb581c76a81545f540c0f0",
+        "sha256_in_prefix": "8dbb8e40dce62d3181bec68e67df73aa3a45193162fb581c76a81545f540c0f0",
+        "size_in_bytes": 1109
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestUtilityLoad.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "60c66c48a3dee6b731da4c8705ac8e9da705b9c21c3c0a39b22ec67c84b91f0b",
+        "sha256_in_prefix": "60c66c48a3dee6b731da4c8705ac8e9da705b9c21c3c0a39b22ec67c84b91f0b",
+        "size_in_bytes": 3158
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/TestVisitor.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a2b9bc566e6516e624d4fb886af1c0ac6154b91492eb46bda55a87f7fd880588",
+        "sha256_in_prefix": "a2b9bc566e6516e624d4fb886af1c0ac6154b91492eb46bda55a87f7fd880588",
+        "size_in_bytes": 3167
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Tests/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "93e592bc5052334b512292381f442028f4edfaa116e95837a427b54b1da54ae7",
+        "sha256_in_prefix": "93e592bc5052334b512292381f442028f4edfaa116e95837a427b54b1da54ae7",
+        "size_in_bytes": 142
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/TreeFragment.py",
+        "path_type": "hardlink",
+        "sha256": "8d09f82e9d9d35d749fad8cfaaea057324dc5fd108b9301b64a6402acf7e7065",
+        "sha256_in_prefix": "8d09f82e9d9d35d749fad8cfaaea057324dc5fd108b9301b64a6402acf7e7065",
+        "size_in_bytes": 9408
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/TreePath.py",
+        "path_type": "hardlink",
+        "sha256": "dff95270c01dd92972d9e919f073bc77266cb464abb88365d8c5d7abd3987764",
+        "sha256_in_prefix": "dff95270c01dd92972d9e919f073bc77266cb464abb88365d8c5d7abd3987764",
+        "size_in_bytes": 7641
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/TypeInference.py",
+        "path_type": "hardlink",
+        "sha256": "b3e18a65cab5e8a3cf818fcea45f1c4e54265f50a9bbea81302b660180e0f1f7",
+        "sha256_in_prefix": "b3e18a65cab5e8a3cf818fcea45f1c4e54265f50a9bbea81302b660180e0f1f7",
+        "size_in_bytes": 22326
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/TypeSlots.py",
+        "path_type": "hardlink",
+        "sha256": "0c1ba6f8d623a07765efe56d6506af2f1c708435e7a92e7ad707d3c2e91ec888",
+        "sha256_in_prefix": "0c1ba6f8d623a07765efe56d6506af2f1c708435e7a92e7ad707d3c2e91ec888",
+        "size_in_bytes": 37007
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/UtilNodes.py",
+        "path_type": "hardlink",
+        "sha256": "992ea3959e77d29d7b5865340296f0bcb79cb81c93d7c2c58a956b2898398eb3",
+        "sha256_in_prefix": "992ea3959e77d29d7b5865340296f0bcb79cb81c93d7c2c58a956b2898398eb3",
+        "size_in_bytes": 11636
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/UtilityCode.py",
+        "path_type": "hardlink",
+        "sha256": "3db42d26df5f4b0826e717978185908a1e9e5129892ff4704f139ae53f52ad95",
+        "sha256_in_prefix": "3db42d26df5f4b0826e717978185908a1e9e5129892ff4704f139ae53f52ad95",
+        "size_in_bytes": 9391
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Version.py",
+        "path_type": "hardlink",
+        "sha256": "7f6992e9a61876ed033112b707822eccc942a3e93e7df99e8426a8fef2a54dd9",
+        "sha256_in_prefix": "7f6992e9a61876ed033112b707822eccc942a3e93e7df99e8426a8fef2a54dd9",
+        "size_in_bytes": 181
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Visitor.cp39-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "f5da5eea64cf098ab0ad268288a4e4c24fc6310f962a5e7895c6524afaa504a7",
+        "sha256_in_prefix": "f5da5eea64cf098ab0ad268288a4e4c24fc6310f962a5e7895c6524afaa504a7",
+        "size_in_bytes": 242176
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Visitor.pxd",
+        "path_type": "hardlink",
+        "sha256": "2af399807a044443135585ebd59a0093d1f89fffeba66848c04d92d756a37983",
+        "sha256_in_prefix": "2af399807a044443135585ebd59a0093d1f89fffeba66848c04d92d756a37983",
+        "size_in_bytes": 1792
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/Visitor.py",
+        "path_type": "hardlink",
+        "sha256": "66de6bbc42b78731caad8a497160bb527b6bfb9716f781a1b8231b475edde17e",
+        "sha256_in_prefix": "66de6bbc42b78731caad8a497160bb527b6bfb9716f781a1b8231b475edde17e",
+        "size_in_bytes": 29970
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "sha256_in_prefix": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/AnalysedTreeTransforms.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "21ffac01d66d9e2d28faa7edfb300aebb6dc06be4ff4648ab34712058ea31017",
+        "sha256_in_prefix": "21ffac01d66d9e2d28faa7edfb300aebb6dc06be4ff4648ab34712058ea31017",
+        "size_in_bytes": 2920
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Annotate.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "aa3e584e8bf239e4ecff4f499e33ee3ffa54f32ed5b7f63b8966d473a4387bfa",
+        "sha256_in_prefix": "aa3e584e8bf239e4ecff4f499e33ee3ffa54f32ed5b7f63b8966d473a4387bfa",
+        "size_in_bytes": 11097
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/AutoDocTransforms.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7ce132310a863cd85c804eff483b0d1b17cf25ef4cec9ba5f5d80dcc6e8a3020",
+        "sha256_in_prefix": "7ce132310a863cd85c804eff483b0d1b17cf25ef4cec9ba5f5d80dcc6e8a3020",
+        "size_in_bytes": 5820
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Buffer.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f35ed2761f2674997cfc2a9d83623246f79b2cbbd36850458d17badba14ee287",
+        "sha256_in_prefix": "f35ed2761f2674997cfc2a9d83623246f79b2cbbd36850458d17badba14ee287",
+        "size_in_bytes": 23499
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Builtin.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7a3843ef9795e4cd6dfbeeb759c837d7b5f51c10f43a3c2956676b712b50b44c",
+        "sha256_in_prefix": "7a3843ef9795e4cd6dfbeeb759c837d7b5f51c10f43a3c2956676b712b50b44c",
+        "size_in_bytes": 11346
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/CmdLine.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "fa47d9a2eda0410dcf94755b66285802908bd0fb226441dd93dbb318d5d06d29",
+        "sha256_in_prefix": "fa47d9a2eda0410dcf94755b66285802908bd0fb226441dd93dbb318d5d06d29",
+        "size_in_bytes": 7560
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Code.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2b271df5658a521cda0def40c12442818c2e26126670a63e2b70a49ab52823c5",
+        "sha256_in_prefix": "2b271df5658a521cda0def40c12442818c2e26126670a63e2b70a49ab52823c5",
+        "size_in_bytes": 81741
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/CodeGeneration.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "69cf0677248b323282f5d3af508cdb8e850a65b129fa27b1123d9fd83f48611e",
+        "sha256_in_prefix": "69cf0677248b323282f5d3af508cdb8e850a65b129fa27b1123d9fd83f48611e",
+        "size_in_bytes": 1508
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/CythonScope.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "89a41e4d914c516591a4d789f9b8ad40a899c5e03ccd76ea932e300e8129f26f",
+        "sha256_in_prefix": "89a41e4d914c516591a4d789f9b8ad40a899c5e03ccd76ea932e300e8129f26f",
+        "size_in_bytes": 4574
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/DebugFlags.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ac71d4a0c0128ad9612682a22f2a9d197373f98f67a7b0ea542f4627bd0f917f",
+        "sha256_in_prefix": "ac71d4a0c0128ad9612682a22f2a9d197373f98f67a7b0ea542f4627bd0f917f",
+        "size_in_bytes": 376
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Errors.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "bec43d63078c71a58b84dfc5efa55856adfce31cfe067945c17e2a6f4181255a",
+        "sha256_in_prefix": "bec43d63078c71a58b84dfc5efa55856adfce31cfe067945c17e2a6f4181255a",
+        "size_in_bytes": 6939
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/ExprNodes.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8fd3eb16e8207f23bc82e0a2e10e2e37517af6bd336a2af60dc8e3764b6be090",
+        "sha256_in_prefix": "8fd3eb16e8207f23bc82e0a2e10e2e37517af6bd336a2af60dc8e3764b6be090",
+        "size_in_bytes": 353271
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/FlowControl.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1f98734ab4ba9782130e67e6d06abeac58125600907df62400ad5019dec93438",
+        "sha256_in_prefix": "1f98734ab4ba9782130e67e6d06abeac58125600907df62400ad5019dec93438",
+        "size_in_bytes": 35876
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/FusedNode.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b29a1a72552d02a37181803b1a43cc87bbbc889ef28fe4bd8ca52129db51c7f4",
+        "sha256_in_prefix": "b29a1a72552d02a37181803b1a43cc87bbbc889ef28fe4bd8ca52129db51c7f4",
+        "size_in_bytes": 27628
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Future.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f1570e7131ee9eb79a2b0d21c3ce1763f6c4a0975278e4e8cfd3ae8cefb38c58",
+        "sha256_in_prefix": "f1570e7131ee9eb79a2b0d21c3ce1763f6c4a0975278e4e8cfd3ae8cefb38c58",
+        "size_in_bytes": 539
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Interpreter.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0783ba0f8168d7863a887cdc25577181e190a2b4651ad16164a89411be3bc9de",
+        "sha256_in_prefix": "0783ba0f8168d7863a887cdc25577181e190a2b4651ad16164a89411be3bc9de",
+        "size_in_bytes": 2386
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Lexicon.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f72209c7b203ba13149680acfbf0832fc8a7988e99648330e561abb67efa2663",
+        "sha256_in_prefix": "f72209c7b203ba13149680acfbf0832fc8a7988e99648330e561abb67efa2663",
+        "size_in_bytes": 3272
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Main.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "26ff6d6ab37ab6a226ff273758a2e48dfb276ca899942c3ae2aa55464c31bcae",
+        "sha256_in_prefix": "26ff6d6ab37ab6a226ff273758a2e48dfb276ca899942c3ae2aa55464c31bcae",
+        "size_in_bytes": 22713
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/MemoryView.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "e7ef351858189a1e4664cdf019e67662d6fbd94fac3bd4f830fe95c13af08d3d",
+        "sha256_in_prefix": "e7ef351858189a1e4664cdf019e67662d6fbd94fac3bd4f830fe95c13af08d3d",
+        "size_in_bytes": 22643
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/ModuleNode.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "161a8aa52da506c95623d22e693911290bc2e271d3e3ea17aacbcbad23f124be",
+        "sha256_in_prefix": "161a8aa52da506c95623d22e693911290bc2e271d3e3ea17aacbcbad23f124be",
+        "size_in_bytes": 85137
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Naming.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "272bece90fbaea1a460f5da0866352ea8856330c8f55d330b375285891c40084",
+        "sha256_in_prefix": "272bece90fbaea1a460f5da0866352ea8856330c8f55d330b375285891c40084",
+        "size_in_bytes": 5068
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Nodes.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f83664e04faf0c05f05029d339dfd635eec4aa480ac5ed99c0ea7a0f086e8fad",
+        "sha256_in_prefix": "f83664e04faf0c05f05029d339dfd635eec4aa480ac5ed99c0ea7a0f086e8fad",
+        "size_in_bytes": 233137
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Optimize.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "fb264bdff5a92ad0da74f9d33b6dbd9fa710249af79c2d638382ee4e2353d4f1",
+        "sha256_in_prefix": "fb264bdff5a92ad0da74f9d33b6dbd9fa710249af79c2d638382ee4e2353d4f1",
+        "size_in_bytes": 115569
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Options.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "eded421931014e16a2deb742428447ceedcbb978bd2878514b72ab91088a9f3a",
+        "sha256_in_prefix": "eded421931014e16a2deb742428447ceedcbb978bd2878514b72ab91088a9f3a",
+        "size_in_bytes": 10649
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/ParseTreeTransforms.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f808b6b7b48c5bd8287f13cc728fafe7cfa07f0ca800ce801d778e8cfeb97967",
+        "sha256_in_prefix": "f808b6b7b48c5bd8287f13cc728fafe7cfa07f0ca800ce801d778e8cfeb97967",
+        "size_in_bytes": 100254
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Parsing.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c23af0506e72a509192b2f6ba2099af66bb6d54d46c3ede0fd95e51e7ae39388",
+        "sha256_in_prefix": "c23af0506e72a509192b2f6ba2099af66bb6d54d46c3ede0fd95e51e7ae39388",
+        "size_in_bytes": 82977
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Pipeline.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6fdbb4c4300a2c1a861a613cb5f1de1fa0c584daf5281979a3127b2d9c6454d4",
+        "sha256_in_prefix": "6fdbb4c4300a2c1a861a613cb5f1de1fa0c584daf5281979a3127b2d9c6454d4",
+        "size_in_bytes": 11140
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/PyrexTypes.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "63068e38b22d03a55405578877eef5f11c0871e9075fe181fb4373badd72aa6b",
+        "sha256_in_prefix": "63068e38b22d03a55405578877eef5f11c0871e9075fe181fb4373badd72aa6b",
+        "size_in_bytes": 127852
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Pythran.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "89e1325c80a107395a02719bbd778bfa5ddace57b0a73d81bf4273dd1736a9e7",
+        "sha256_in_prefix": "89e1325c80a107395a02719bbd778bfa5ddace57b0a73d81bf4273dd1736a9e7",
+        "size_in_bytes": 7377
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Scanning.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0fa06790c287243cee67b1b5683b45c433b32ee1f3c6caf2d797791617fc56fc",
+        "sha256_in_prefix": "0fa06790c287243cee67b1b5683b45c433b32ee1f3c6caf2d797791617fc56fc",
+        "size_in_bytes": 16952
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/StringEncoding.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5f73376f0870302ef68c444beead594d77308576c04c14e4ce97da5f0c250fbf",
+        "sha256_in_prefix": "5f73376f0870302ef68c444beead594d77308576c04c14e4ce97da5f0c250fbf",
+        "size_in_bytes": 11440
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Symtab.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1334cb625d07e2e76d9cd035d845c08614457ed96f9c1e5e970853986a496e49",
+        "sha256_in_prefix": "1334cb625d07e2e76d9cd035d845c08614457ed96f9c1e5e970853986a496e49",
+        "size_in_bytes": 62065
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/TreeFragment.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0e506b440cce8556171ee49e7d08dd58490f29f5e4c57997226c6eb721c410a9",
+        "sha256_in_prefix": "0e506b440cce8556171ee49e7d08dd58490f29f5e4c57997226c6eb721c410a9",
+        "size_in_bytes": 9179
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/TreePath.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5edcea1487e7341eb1855d13b44c6042141e155dd0baecd3b37590fd726d1737",
+        "sha256_in_prefix": "5edcea1487e7341eb1855d13b44c6042141e155dd0baecd3b37590fd726d1737",
+        "size_in_bytes": 7141
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/TypeInference.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a3f6825abcb184b7a3455764ee5a3cdafd4660e6600ea870680ed64505b8474f",
+        "sha256_in_prefix": "a3f6825abcb184b7a3455764ee5a3cdafd4660e6600ea870680ed64505b8474f",
+        "size_in_bytes": 16029
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/TypeSlots.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "52969b6f143c4a9596992e48a431c1301c2c38f6b659bfd676b8ffdcffab84fa",
+        "sha256_in_prefix": "52969b6f143c4a9596992e48a431c1301c2c38f6b659bfd676b8ffdcffab84fa",
+        "size_in_bytes": 21888
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/UtilNodes.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "eeee18dcec43ca260343aa362b40364ec02f07f3a87b64cbf866fb8e9cca4997",
+        "sha256_in_prefix": "eeee18dcec43ca260343aa362b40364ec02f07f3a87b64cbf866fb8e9cca4997",
+        "size_in_bytes": 11885
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/UtilityCode.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7803901dbdc34b31c8eaf82ea1ffc68a168016b25bf7d88a4581260ec0e25549",
+        "sha256_in_prefix": "7803901dbdc34b31c8eaf82ea1ffc68a168016b25bf7d88a4581260ec0e25549",
+        "size_in_bytes": 7409
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Version.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "3613115658be629be8f4b516ef49af3fa59708cb100812293c073ae8a6bfc76d",
+        "sha256_in_prefix": "3613115658be629be8f4b516ef49af3fa59708cb100812293c073ae8a6bfc76d",
+        "size_in_bytes": 261
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/Visitor.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "86017ca58b757fd08dfeb18473d447eee5bc78b1e2ed7ea402d88f9227e104f4",
+        "sha256_in_prefix": "86017ca58b757fd08dfeb18473d447eee5bc78b1e2ed7ea402d88f9227e104f4",
+        "size_in_bytes": 26505
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Compiler/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "10d2f0fee96f3c58534cdbc9f75ce244cc2c4f118018dd9e9785dae445160ea0",
+        "sha256_in_prefix": "10d2f0fee96f3c58534cdbc9f75ce244cc2c4f118018dd9e9785dae445160ea0",
+        "size_in_bytes": 136
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Coverage.py",
+        "path_type": "hardlink",
+        "sha256": "16d08c8ca2d85afb542f1588ccdfb2dd185bc10c0be06b4bc888e3f81dfed3b1",
+        "sha256_in_prefix": "16d08c8ca2d85afb542f1588ccdfb2dd185bc10c0be06b4bc888e3f81dfed3b1",
+        "size_in_bytes": 13537
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/Cygdb.py",
+        "path_type": "hardlink",
+        "sha256": "087fe95e6d09865e1201eeac2576b9352e3bbcc990d8a05b79cc95e7abcba851",
+        "sha256_in_prefix": "087fe95e6d09865e1201eeac2576b9352e3bbcc990d8a05b79cc95e7abcba851",
+        "size_in_bytes": 5751
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/DebugWriter.py",
+        "path_type": "hardlink",
+        "sha256": "633cf6f09478a997a9c6fc5ebbfd6b27122327825b3509b9bcce5efd4b4db91a",
+        "sha256_in_prefix": "633cf6f09478a997a9c6fc5ebbfd6b27122327825b3509b9bcce5efd4b4db91a",
+        "size_in_bytes": 1945
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/Tests/TestLibCython.py",
+        "path_type": "hardlink",
+        "sha256": "c6b10d2c46a19e9e96b4e7e8915b6c00b47a3adda3151e93e5965171a5f45719",
+        "sha256_in_prefix": "c6b10d2c46a19e9e96b4e7e8915b6c00b47a3adda3151e93e5965171a5f45719",
+        "size_in_bytes": 8327
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/Tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "sha256_in_prefix": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/Tests/__pycache__/TestLibCython.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "71724e68c4eb236ae070725af134a073d5837b63adaf3ab8fd34955f46a65b5b",
+        "sha256_in_prefix": "71724e68c4eb236ae070725af134a073d5837b63adaf3ab8fd34955f46a65b5b",
+        "size_in_bytes": 6608
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/Tests/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4b4bb43fb4b8718e1e3e75aea7156a4618a2587db5c56d388a8f26fe373ea635",
+        "sha256_in_prefix": "4b4bb43fb4b8718e1e3e75aea7156a4618a2587db5c56d388a8f26fe373ea635",
+        "size_in_bytes": 142
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/Tests/__pycache__/test_libcython_in_gdb.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0abf57a47c9cea4aaef36d83db06bb68ba566736b9fdc467dcfd4962fad9f3ce",
+        "sha256_in_prefix": "0abf57a47c9cea4aaef36d83db06bb68ba566736b9fdc467dcfd4962fad9f3ce",
+        "size_in_bytes": 17592
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/Tests/__pycache__/test_libpython_in_gdb.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "3fa5864900efacd169f9c9236aa83e6fbc94fe20babc5cf1b7318fc9df8b8654",
+        "sha256_in_prefix": "3fa5864900efacd169f9c9236aa83e6fbc94fe20babc5cf1b7318fc9df8b8654",
+        "size_in_bytes": 4564
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/Tests/cfuncs.c",
+        "path_type": "hardlink",
+        "sha256": "e1266eae69f3e49d52888b3d376e84bb8cdcdb0bc5fea30429a37479371b0cfa",
+        "sha256_in_prefix": "e1266eae69f3e49d52888b3d376e84bb8cdcdb0bc5fea30429a37479371b0cfa",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/Tests/codefile",
+        "path_type": "hardlink",
+        "sha256": "ba0c294fd18fb5864829ed97728e0faa293203ea684007987c4d2271799f6f8e",
+        "sha256_in_prefix": "ba0c294fd18fb5864829ed97728e0faa293203ea684007987c4d2271799f6f8e",
+        "size_in_bytes": 641
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/Tests/test_libcython_in_gdb.py",
+        "path_type": "hardlink",
+        "sha256": "12f3d362477b9f347726d1629be0122c8eb07dc6218167c8e0142bb9c2c96c76",
+        "sha256_in_prefix": "12f3d362477b9f347726d1629be0122c8eb07dc6218167c8e0142bb9c2c96c76",
+        "size_in_bytes": 15804
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/Tests/test_libpython_in_gdb.py",
+        "path_type": "hardlink",
+        "sha256": "d410ff16d324992e12a12419abb3200200e7bea230dc471864556bb680909b1a",
+        "sha256_in_prefix": "d410ff16d324992e12a12419abb3200200e7bea230dc471864556bb680909b1a",
+        "size_in_bytes": 4079
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "sha256_in_prefix": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/__pycache__/Cygdb.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "978bfb04fe53a09110c38962a39fe16a5a52ee5ac35a09951b1edebf9d98be48",
+        "sha256_in_prefix": "978bfb04fe53a09110c38962a39fe16a5a52ee5ac35a09951b1edebf9d98be48",
+        "size_in_bytes": 4908
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/__pycache__/DebugWriter.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "e00d6fe66444d7306a84c3296249724b051b72801fec88f50ed73367b4b25166",
+        "sha256_in_prefix": "e00d6fe66444d7306a84c3296249724b051b72801fec88f50ed73367b4b25166",
+        "size_in_bytes": 2382
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7b31c63194d55d6ae3a6414b7701e2756f4ffad89b5a3f543ad33b8de11dd244",
+        "sha256_in_prefix": "7b31c63194d55d6ae3a6414b7701e2756f4ffad89b5a3f543ad33b8de11dd244",
+        "size_in_bytes": 136
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/__pycache__/libcython.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5f30650c70ca493f34c4683c2c4aeea6710e99aae09ac928db420921f7d6cc9d",
+        "sha256_in_prefix": "5f30650c70ca493f34c4683c2c4aeea6710e99aae09ac928db420921f7d6cc9d",
+        "size_in_bytes": 39318
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/__pycache__/libpython.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a927d5f9f46149640ed214772b2f92ae07842bb640de17ef6f94eb693b3698a4",
+        "sha256_in_prefix": "a927d5f9f46149640ed214772b2f92ae07842bb640de17ef6f94eb693b3698a4",
+        "size_in_bytes": 77308
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/libcython.py",
+        "path_type": "hardlink",
+        "sha256": "42cd2a1b3794c9e63ffffde3443cbf5962031467d2447e1a97b3a7d97c64b8d8",
+        "sha256_in_prefix": "42cd2a1b3794c9e63ffffde3443cbf5962031467d2447e1a97b3a7d97c64b8d8",
+        "size_in_bytes": 44949
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugger/libpython.py",
+        "path_type": "hardlink",
+        "sha256": "2324c476d18b9e9426b765cf819ee8b2443ca86596576ff94cc819e4d8530349",
+        "sha256_in_prefix": "2324c476d18b9e9426b765cf819ee8b2443ca86596576ff94cc819e4d8530349",
+        "size_in_bytes": 90489
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Debugging.py",
+        "path_type": "hardlink",
+        "sha256": "bc5b49867ed0b2d31fe609d8aeedaa1c8cf96633e0d4a4a5655187afea410b03",
+        "sha256_in_prefix": "bc5b49867ed0b2d31fe609d8aeedaa1c8cf96633e0d4a4a5655187afea410b03",
+        "size_in_bytes": 552
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Distutils/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "bb259a376349fe62982f356c0cf8b4a9909d218a16e4cffb61812600e20bdc49",
+        "sha256_in_prefix": "bb259a376349fe62982f356c0cf8b4a9909d218a16e4cffb61812600e20bdc49",
+        "size_in_bytes": 98
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Distutils/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d57eff914192db4ad3eb70fde01d384eb1d2ee15908f8723f426d34858718947",
+        "sha256_in_prefix": "d57eff914192db4ad3eb70fde01d384eb1d2ee15908f8723f426d34858718947",
+        "size_in_bytes": 257
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Distutils/__pycache__/build_ext.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "67878e60718a340ca0cebb985014ce7fbb6d4ee4166bc0a915d2a81e206e829d",
+        "sha256_in_prefix": "67878e60718a340ca0cebb985014ce7fbb6d4ee4166bc0a915d2a81e206e829d",
+        "size_in_bytes": 999
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Distutils/__pycache__/extension.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "829b055338b343e78d13a8427ca09ffafebe1fb7a4c86d881358bb9c678e15bc",
+        "sha256_in_prefix": "829b055338b343e78d13a8427ca09ffafebe1fb7a4c86d881358bb9c678e15bc",
+        "size_in_bytes": 2742
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Distutils/__pycache__/old_build_ext.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "90105ce04a6ddd1fd5db7b54554e2665449b33d1bc14130eb4ed653b670aa807",
+        "sha256_in_prefix": "90105ce04a6ddd1fd5db7b54554e2665449b33d1bc14130eb4ed653b670aa807",
+        "size_in_bytes": 8432
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Distutils/build_ext.py",
+        "path_type": "hardlink",
+        "sha256": "15cfdc239c0dd1f4f531fda4e41e671fe3e067c1aada52fa3a5cc5feacf2ddd0",
+        "sha256_in_prefix": "15cfdc239c0dd1f4f531fda4e41e671fe3e067c1aada52fa3a5cc5feacf2ddd0",
+        "size_in_bytes": 1007
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Distutils/extension.py",
+        "path_type": "hardlink",
+        "sha256": "147bed2b74e3f4ca84d7b4ee67f8d6835321e17edef825c83d4a492bb9ea7101",
+        "sha256_in_prefix": "147bed2b74e3f4ca84d7b4ee67f8d6835321e17edef825c83d4a492bb9ea7101",
+        "size_in_bytes": 4706
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Distutils/old_build_ext.py",
+        "path_type": "hardlink",
+        "sha256": "1f2df80351ea8680cec94fa4acdda02546172b699859cf04d84641facb6f9ab1",
+        "sha256_in_prefix": "1f2df80351ea8680cec94fa4acdda02546172b699859cf04d84641facb6f9ab1",
+        "size_in_bytes": 13635
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python.pxd",
+        "path_type": "hardlink",
+        "sha256": "97b72b83c1fd71545e74c7230dfffdc432dd9d44f9ed5b750719595a89be87cf",
+        "sha256_in_prefix": "97b72b83c1fd71545e74c7230dfffdc432dd9d44f9ed5b750719595a89be87cf",
+        "size_in_bytes": 61
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_bool.pxd",
+        "path_type": "hardlink",
+        "sha256": "a8e6856ec3fafe92a80771c64e3414905850aae91785e0a67129e70502dd2864",
+        "sha256_in_prefix": "a8e6856ec3fafe92a80771c64e3414905850aae91785e0a67129e70502dd2864",
+        "size_in_bytes": 66
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_buffer.pxd",
+        "path_type": "hardlink",
+        "sha256": "82fd9ade781c3a744a6591d2a31fdb5b5583f2319bc5f1fd3499b5fa25177fd5",
+        "sha256_in_prefix": "82fd9ade781c3a744a6591d2a31fdb5b5583f2319bc5f1fd3499b5fa25177fd5",
+        "size_in_bytes": 68
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_bytes.pxd",
+        "path_type": "hardlink",
+        "sha256": "d3bf8793762937f8b898895b5986cd803923132b5001839ea492c94d8d42ad59",
+        "sha256_in_prefix": "d3bf8793762937f8b898895b5986cd803923132b5001839ea492c94d8d42ad59",
+        "size_in_bytes": 67
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_cobject.pxd",
+        "path_type": "hardlink",
+        "sha256": "57d1740c741b1593db27c4519cdf667edda2a6ae30b9b33c821042187afa3701",
+        "sha256_in_prefix": "57d1740c741b1593db27c4519cdf667edda2a6ae30b9b33c821042187afa3701",
+        "size_in_bytes": 69
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_complex.pxd",
+        "path_type": "hardlink",
+        "sha256": "2139aae79bf46f58226c4a4b4824c2cfaf158a58de9d2b861a38969ff9ef22f2",
+        "sha256_in_prefix": "2139aae79bf46f58226c4a4b4824c2cfaf158a58de9d2b861a38969ff9ef22f2",
+        "size_in_bytes": 69
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_dict.pxd",
+        "path_type": "hardlink",
+        "sha256": "81884690984c9b359cad7a0f9c91d4729faf76d73050009b1a57efdf0b46b0a5",
+        "sha256_in_prefix": "81884690984c9b359cad7a0f9c91d4729faf76d73050009b1a57efdf0b46b0a5",
+        "size_in_bytes": 66
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_exc.pxd",
+        "path_type": "hardlink",
+        "sha256": "8ab59dc03611594d7af8fe78b860cd7d4494b642f94a3ff5cc10d67b1b7ff348",
+        "sha256_in_prefix": "8ab59dc03611594d7af8fe78b860cd7d4494b642f94a3ff5cc10d67b1b7ff348",
+        "size_in_bytes": 65
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_float.pxd",
+        "path_type": "hardlink",
+        "sha256": "bf51dba5de1217785217b64bfe894c698273981340f635a7d1e3bd8202c196f7",
+        "sha256_in_prefix": "bf51dba5de1217785217b64bfe894c698273981340f635a7d1e3bd8202c196f7",
+        "size_in_bytes": 67
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_function.pxd",
+        "path_type": "hardlink",
+        "sha256": "96460ac92432d56dfa85fcb2009b1cdc4fbc77d6ecc7993c3a120c150ea4da30",
+        "sha256_in_prefix": "96460ac92432d56dfa85fcb2009b1cdc4fbc77d6ecc7993c3a120c150ea4da30",
+        "size_in_bytes": 70
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_getargs.pxd",
+        "path_type": "hardlink",
+        "sha256": "34475ea8faaee1d8b46099bfef22dfbee4bdd370807b82b63f36f5dd345f05d1",
+        "sha256_in_prefix": "34475ea8faaee1d8b46099bfef22dfbee4bdd370807b82b63f36f5dd345f05d1",
+        "size_in_bytes": 69
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_instance.pxd",
+        "path_type": "hardlink",
+        "sha256": "157f54958ad2c43af3721ef052f87f639231f9bb036004645f36493a0d85bc42",
+        "sha256_in_prefix": "157f54958ad2c43af3721ef052f87f639231f9bb036004645f36493a0d85bc42",
+        "size_in_bytes": 70
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_int.pxd",
+        "path_type": "hardlink",
+        "sha256": "0b07782782932a3c7010ccf505b0aca34834a4e203f409f248a382d60d242ea0",
+        "sha256_in_prefix": "0b07782782932a3c7010ccf505b0aca34834a4e203f409f248a382d60d242ea0",
+        "size_in_bytes": 65
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_iterator.pxd",
+        "path_type": "hardlink",
+        "sha256": "9cf2749ca4a69d457323548fad34adf70483ed24082f284e34974fd07ffe1467",
+        "sha256_in_prefix": "9cf2749ca4a69d457323548fad34adf70483ed24082f284e34974fd07ffe1467",
+        "size_in_bytes": 70
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_list.pxd",
+        "path_type": "hardlink",
+        "sha256": "547a7296c838ebee5477caf094f7baddb6f7cd24e85e6f51fdf3e8ad9ac9b141",
+        "sha256_in_prefix": "547a7296c838ebee5477caf094f7baddb6f7cd24e85e6f51fdf3e8ad9ac9b141",
+        "size_in_bytes": 66
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_long.pxd",
+        "path_type": "hardlink",
+        "sha256": "a60f2138a36829a5be32c96e8337aae8d09ece7270f77f4b4f6e005509ff72a1",
+        "sha256_in_prefix": "a60f2138a36829a5be32c96e8337aae8d09ece7270f77f4b4f6e005509ff72a1",
+        "size_in_bytes": 66
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_mapping.pxd",
+        "path_type": "hardlink",
+        "sha256": "019b497589b7ee094348d0a176e02c81abf3fbf0cf0e4c7140400ef650c6cbce",
+        "sha256_in_prefix": "019b497589b7ee094348d0a176e02c81abf3fbf0cf0e4c7140400ef650c6cbce",
+        "size_in_bytes": 69
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_mem.pxd",
+        "path_type": "hardlink",
+        "sha256": "33189d7a5e4fe32b89c493afa18af43cdd450fbf2808e20950430f60c614ee51",
+        "sha256_in_prefix": "33189d7a5e4fe32b89c493afa18af43cdd450fbf2808e20950430f60c614ee51",
+        "size_in_bytes": 65
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_method.pxd",
+        "path_type": "hardlink",
+        "sha256": "c79c9ee7ff0aaadb16d87ac4a27e4d7452662249950d5d4a795a45b2e0b65191",
+        "sha256_in_prefix": "c79c9ee7ff0aaadb16d87ac4a27e4d7452662249950d5d4a795a45b2e0b65191",
+        "size_in_bytes": 68
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_module.pxd",
+        "path_type": "hardlink",
+        "sha256": "94abb95580a00ba4bb2d28056b6d95d984d8f497cc2f4bc00436690a1871b3ad",
+        "sha256_in_prefix": "94abb95580a00ba4bb2d28056b6d95d984d8f497cc2f4bc00436690a1871b3ad",
+        "size_in_bytes": 68
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_number.pxd",
+        "path_type": "hardlink",
+        "sha256": "5f83311a821366e24d3ed0b670527c950c2e8bc30e0baad07c40db14871603d9",
+        "sha256_in_prefix": "5f83311a821366e24d3ed0b670527c950c2e8bc30e0baad07c40db14871603d9",
+        "size_in_bytes": 68
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_object.pxd",
+        "path_type": "hardlink",
+        "sha256": "aabd8ec18568b7810b2b7ffe9827da92d5e02c911a2960f20846e5436bd757e1",
+        "sha256_in_prefix": "aabd8ec18568b7810b2b7ffe9827da92d5e02c911a2960f20846e5436bd757e1",
+        "size_in_bytes": 68
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_oldbuffer.pxd",
+        "path_type": "hardlink",
+        "sha256": "432638567e7e70568eb74a19dbb1ae4576b7b4b6b080c64df0a31a9a7f45d72a",
+        "sha256_in_prefix": "432638567e7e70568eb74a19dbb1ae4576b7b4b6b080c64df0a31a9a7f45d72a",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_pycapsule.pxd",
+        "path_type": "hardlink",
+        "sha256": "b4725f8609b54eb4b0250c1015d8703fb604ee840589e83184d8600839a507a0",
+        "sha256_in_prefix": "b4725f8609b54eb4b0250c1015d8703fb604ee840589e83184d8600839a507a0",
+        "size_in_bytes": 71
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_ref.pxd",
+        "path_type": "hardlink",
+        "sha256": "c2fdfd1b7e55eed379b0885c2f500fa5ee4dba10b0630572e97e433cf9b98390",
+        "sha256_in_prefix": "c2fdfd1b7e55eed379b0885c2f500fa5ee4dba10b0630572e97e433cf9b98390",
+        "size_in_bytes": 65
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_sequence.pxd",
+        "path_type": "hardlink",
+        "sha256": "f72702b9ad4e0df10228f779ebf18199eab35ab7ddaa692385b12676df3b342d",
+        "sha256_in_prefix": "f72702b9ad4e0df10228f779ebf18199eab35ab7ddaa692385b12676df3b342d",
+        "size_in_bytes": 70
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_set.pxd",
+        "path_type": "hardlink",
+        "sha256": "fd9e4a557b3457f4fc7e980b5fed8b6c3019218d479ee84ef9e4d41c7458c2ed",
+        "sha256_in_prefix": "fd9e4a557b3457f4fc7e980b5fed8b6c3019218d479ee84ef9e4d41c7458c2ed",
+        "size_in_bytes": 65
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_string.pxd",
+        "path_type": "hardlink",
+        "sha256": "e958007a1c16f4f7140bd2a9fc76d154c60f785fd0f8bf32afda367b3b93cf2b",
+        "sha256_in_prefix": "e958007a1c16f4f7140bd2a9fc76d154c60f785fd0f8bf32afda367b3b93cf2b",
+        "size_in_bytes": 68
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_tuple.pxd",
+        "path_type": "hardlink",
+        "sha256": "fd94d087b751066ad1b3d9ad98e1633f7eddd08148b71b36d24cc5b4ab6463e8",
+        "sha256_in_prefix": "fd94d087b751066ad1b3d9ad98e1633f7eddd08148b71b36d24cc5b4ab6463e8",
+        "size_in_bytes": 67
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_type.pxd",
+        "path_type": "hardlink",
+        "sha256": "d8e2a611d4aaa322bc7d7b6d9471b735182e67e66291451eb7e92328babe7845",
+        "sha256_in_prefix": "d8e2a611d4aaa322bc7d7b6d9471b735182e67e66291451eb7e92328babe7845",
+        "size_in_bytes": 66
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_unicode.pxd",
+        "path_type": "hardlink",
+        "sha256": "4c5f3e374ba7d5677271c4c3a3d85954005ce77498cca9c2dcc10aac66f7bd5d",
+        "sha256_in_prefix": "4c5f3e374ba7d5677271c4c3a3d85954005ce77498cca9c2dcc10aac66f7bd5d",
+        "size_in_bytes": 69
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_version.pxd",
+        "path_type": "hardlink",
+        "sha256": "657acad14194b7cbc76d83f19bb3d376131ed7f87b623e8ba3be281718e7367b",
+        "sha256_in_prefix": "657acad14194b7cbc76d83f19bb3d376131ed7f87b623e8ba3be281718e7367b",
+        "size_in_bytes": 69
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/python_weakref.pxd",
+        "path_type": "hardlink",
+        "sha256": "09458c4a60a5ad63e84e794294e1424876ba5dde79a8380895c0c20fab5f1213",
+        "sha256_in_prefix": "09458c4a60a5ad63e84e794294e1424876ba5dde79a8380895c0c20fab5f1213",
+        "size_in_bytes": 69
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/stdio.pxd",
+        "path_type": "hardlink",
+        "sha256": "94d73662ebd627e2cd49274deda743a3595ff82d8cd2bd74847e1bcac85af528",
+        "sha256_in_prefix": "94d73662ebd627e2cd49274deda743a3595ff82d8cd2bd74847e1bcac85af528",
+        "size_in_bytes": 64
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/stdlib.pxd",
+        "path_type": "hardlink",
+        "sha256": "3db09b8d3f0c8c38d5463c7946877bf608b6dbef58237e634ee95e3c02823d71",
+        "sha256_in_prefix": "3db09b8d3f0c8c38d5463c7946877bf608b6dbef58237e634ee95e3c02823d71",
+        "size_in_bytes": 65
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/Deprecated/stl.pxd",
+        "path_type": "hardlink",
+        "sha256": "b47a41c9e620362725af762d09d28a01e12cdc21c97e5a9a702ed8815ed837c9",
+        "sha256_in_prefix": "b47a41c9e620362725af762d09d28a01e12cdc21c97e5a9a702ed8815ed837c9",
+        "size_in_bytes": 2187
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/__init__.pxd",
+        "path_type": "hardlink",
+        "sha256": "f1444d46f6fb264621a8366fd89d1b56c75e64110906eeeed90158903c973c6f",
+        "sha256_in_prefix": "f1444d46f6fb264621a8366fd89d1b56c75e64110906eeeed90158903c973c6f",
+        "size_in_bytes": 8254
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/array.pxd",
+        "path_type": "hardlink",
+        "sha256": "83a6a90625c91bfedad268c6aa415aaa57108ec83ae2e28ad55957145c975429",
+        "sha256_in_prefix": "83a6a90625c91bfedad268c6aa415aaa57108ec83ae2e28ad55957145c975429",
+        "size_in_bytes": 6056
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/bool.pxd",
+        "path_type": "hardlink",
+        "sha256": "15a367f0af93a2af05030b3c060b8a324d083ccec8266f488945060114ab2989",
+        "sha256_in_prefix": "15a367f0af93a2af05030b3c060b8a324d083ccec8266f488945060114ab2989",
+        "size_in_bytes": 1359
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/buffer.pxd",
+        "path_type": "hardlink",
+        "sha256": "c26eda1f28065287ff1f7f89c8808e7a4ff1894e8e92cd7bf1aae4d4d7e4f9ad",
+        "sha256_in_prefix": "c26eda1f28065287ff1f7f89c8808e7a4ff1894e8e92cd7bf1aae4d4d7e4f9ad",
+        "size_in_bytes": 4870
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/bytearray.pxd",
+        "path_type": "hardlink",
+        "sha256": "9b455da07828b85d53d15b518c52d76797e2db6bda31d570156a45dc8c41ea6e",
+        "sha256_in_prefix": "9b455da07828b85d53d15b518c52d76797e2db6bda31d570156a45dc8c41ea6e",
+        "size_in_bytes": 1443
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/bytes.pxd",
+        "path_type": "hardlink",
+        "sha256": "b462ee881333423bab2bfa6aefb08cecfd02f879f42942036425d6f50be52402",
+        "sha256_in_prefix": "b462ee881333423bab2bfa6aefb08cecfd02f879f42942036425d6f50be52402",
+        "size_in_bytes": 9906
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/cellobject.pxd",
+        "path_type": "hardlink",
+        "sha256": "0d77538d237544fd66e02b1a1ae820c880359c68883b82abefe7346567eba51a",
+        "sha256_in_prefix": "0d77538d237544fd66e02b1a1ae820c880359c68883b82abefe7346567eba51a",
+        "size_in_bytes": 1390
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/ceval.pxd",
+        "path_type": "hardlink",
+        "sha256": "87a7c17ad64252f5937029f76e45d983692a9c8bb20b96520a1ca13a873156eb",
+        "sha256_in_prefix": "87a7c17ad64252f5937029f76e45d983692a9c8bb20b96520a1ca13a873156eb",
+        "size_in_bytes": 236
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/cobject.pxd",
+        "path_type": "hardlink",
+        "sha256": "65e31d6e964baa9713cb076fd95a29a4c4d60f85ffca084be90a31ecb55f3b28",
+        "sha256_in_prefix": "65e31d6e964baa9713cb076fd95a29a4c4d60f85ffca084be90a31ecb55f3b28",
+        "size_in_bytes": 1524
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/codecs.pxd",
+        "path_type": "hardlink",
+        "sha256": "ddfcae74496390d190ededdd24fb2deae75719c01e34abe530af54f040758177",
+        "sha256_in_prefix": "ddfcae74496390d190ededdd24fb2deae75719c01e34abe530af54f040758177",
+        "size_in_bytes": 5084
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/complex.pxd",
+        "path_type": "hardlink",
+        "sha256": "f9bbb40aaf75b52fd4e6d4eb6b5f12d23aadd458122531d727927cae4f8c3800",
+        "sha256_in_prefix": "f9bbb40aaf75b52fd4e6d4eb6b5f12d23aadd458122531d727927cae4f8c3800",
+        "size_in_bytes": 1777
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/conversion.pxd",
+        "path_type": "hardlink",
+        "sha256": "75b6c5b99245d12b1c99c68d0947f4b650500d174a61fe6d1fccb385353f5d82",
+        "sha256_in_prefix": "75b6c5b99245d12b1c99c68d0947f4b650500d174a61fe6d1fccb385353f5d82",
+        "size_in_bytes": 1696
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/datetime.pxd",
+        "path_type": "hardlink",
+        "sha256": "c10a81f22ded319393c3daab2dd6c7251931819aac70612a9aad2d2037e492ac",
+        "sha256_in_prefix": "c10a81f22ded319393c3daab2dd6c7251931819aac70612a9aad2d2037e492ac",
+        "size_in_bytes": 6776
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/dict.pxd",
+        "path_type": "hardlink",
+        "sha256": "17e9ab95c01f3664d2524a4979deb76e9d4868ed1cc06e7ab7f0cb93b7f4c6fd",
+        "sha256_in_prefix": "17e9ab95c01f3664d2524a4979deb76e9d4868ed1cc06e7ab7f0cb93b7f4c6fd",
+        "size_in_bytes": 6877
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/exc.pxd",
+        "path_type": "hardlink",
+        "sha256": "dbdf9b1844b07e832ac755d4dcc32082422bf29cff97450faeecf2e8a2331f18",
+        "sha256_in_prefix": "dbdf9b1844b07e832ac755d4dcc32082422bf29cff97450faeecf2e8a2331f18",
+        "size_in_bytes": 13606
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/float.pxd",
+        "path_type": "hardlink",
+        "sha256": "443d6a1005287171bda97ad1893f1a09249f184c93ce34dcf47424bf9c60d591",
+        "sha256_in_prefix": "443d6a1005287171bda97ad1893f1a09249f184c93ce34dcf47424bf9c60d591",
+        "size_in_bytes": 1424
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/function.pxd",
+        "path_type": "hardlink",
+        "sha256": "228254a6b6f3f05d740c42a1faf492a58ea75a4087c3b4aa1bda767fee201de9",
+        "sha256_in_prefix": "228254a6b6f3f05d740c42a1faf492a58ea75a4087c3b4aa1bda767fee201de9",
+        "size_in_bytes": 2671
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/genobject.pxd",
+        "path_type": "hardlink",
+        "sha256": "7a60b524f824baf05b182d2b81e65aa4a0da5d8123e3cb968830bec45d0cc762",
+        "sha256_in_prefix": "7a60b524f824baf05b182d2b81e65aa4a0da5d8123e3cb968830bec45d0cc762",
+        "size_in_bytes": 1052
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/getargs.pxd",
+        "path_type": "hardlink",
+        "sha256": "dbaf2dc0acdd88091031732c7ad36236536a6aace52ad88110d29b84e1ddf31e",
+        "sha256_in_prefix": "dbaf2dc0acdd88091031732c7ad36236536a6aace52ad88110d29b84e1ddf31e",
+        "size_in_bytes": 775
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/instance.pxd",
+        "path_type": "hardlink",
+        "sha256": "a826f13de1ca3896eeb330eedd411a23e28b5fd953a29b9a342729a0727d9e05",
+        "sha256_in_prefix": "a826f13de1ca3896eeb330eedd411a23e28b5fd953a29b9a342729a0727d9e05",
+        "size_in_bytes": 985
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/int.pxd",
+        "path_type": "hardlink",
+        "sha256": "77d6b4cd4c3f337a51c9c084496223b5f5d646f76f14e5b18dd3a391c6d7da0b",
+        "sha256_in_prefix": "77d6b4cd4c3f337a51c9c084496223b5f5d646f76f14e5b18dd3a391c6d7da0b",
+        "size_in_bytes": 4131
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/iterator.pxd",
+        "path_type": "hardlink",
+        "sha256": "a39da62c76dd9b5e0aa9a9edda1476cc0758cea2b87e449666d05c466a683fe2",
+        "sha256_in_prefix": "a39da62c76dd9b5e0aa9a9edda1476cc0758cea2b87e449666d05c466a683fe2",
+        "size_in_bytes": 1319
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/iterobject.pxd",
+        "path_type": "hardlink",
+        "sha256": "e541196701b9cf2cf1a02a649e842e87dd733d4575d54c6be85d6d689753bfc9",
+        "sha256_in_prefix": "e541196701b9cf2cf1a02a649e842e87dd733d4575d54c6be85d6d689753bfc9",
+        "size_in_bytes": 1036
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/list.pxd",
+        "path_type": "hardlink",
+        "sha256": "b7ec68ed139c7b07bafb4cedacd8ecc4c295d8ac43f882d4cde990dad4ee23b1",
+        "sha256_in_prefix": "b7ec68ed139c7b07bafb4cedacd8ecc4c295d8ac43f882d4cde990dad4ee23b1",
+        "size_in_bytes": 4084
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/long.pxd",
+        "path_type": "hardlink",
+        "sha256": "77a8c73755c98fb58be4f3c050af14f7720fca35ad9539b286b044566c66185f",
+        "sha256_in_prefix": "77a8c73755c98fb58be4f3c050af14f7720fca35ad9539b286b044566c66185f",
+        "size_in_bytes": 7051
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/longintrepr.pxd",
+        "path_type": "hardlink",
+        "sha256": "fea6b01364116c23c6c23f2fc440529f26885a33df31518f0eef71b33bb065d1",
+        "sha256_in_prefix": "fea6b01364116c23c6c23f2fc440529f26885a33df31518f0eef71b33bb065d1",
+        "size_in_bytes": 445
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/mapping.pxd",
+        "path_type": "hardlink",
+        "sha256": "38876f3555282295424909e46cb71e4e27123740ff8d1c3ac1099bb71b712ae4",
+        "sha256_in_prefix": "38876f3555282295424909e46cb71e4e27123740ff8d1c3ac1099bb71b712ae4",
+        "size_in_bytes": 2693
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/mem.pxd",
+        "path_type": "hardlink",
+        "sha256": "0165629da9d7141657bd4d78d707b6743f1d90ea8c27c5b7280033a4126a0798",
+        "sha256_in_prefix": "0165629da9d7141657bd4d78d707b6743f1d90ea8c27c5b7280033a4126a0798",
+        "size_in_bytes": 5386
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/memoryview.pxd",
+        "path_type": "hardlink",
+        "sha256": "97dec9e7e85b1f7869f5a31b757a779fbde124534db2783abb2878d2973c3fb2",
+        "sha256_in_prefix": "97dec9e7e85b1f7869f5a31b757a779fbde124534db2783abb2878d2973c3fb2",
+        "size_in_bytes": 2504
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/method.pxd",
+        "path_type": "hardlink",
+        "sha256": "5165df9612253f8cbb0795c36c7f6b435e62003722196fa2a95d7e765c365b08",
+        "sha256_in_prefix": "5165df9612253f8cbb0795c36c7f6b435e62003722196fa2a95d7e765c365b08",
+        "size_in_bytes": 2196
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/module.pxd",
+        "path_type": "hardlink",
+        "sha256": "55cd14a7bab5322af7f1b376f7713c44cba0c567eece32c51cce20d9dbe23c13",
+        "sha256_in_prefix": "55cd14a7bab5322af7f1b376f7713c44cba0c567eece32c51cce20d9dbe23c13",
+        "size_in_bytes": 9226
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/number.pxd",
+        "path_type": "hardlink",
+        "sha256": "b582749e7d24fe5954c778a59e25bd897776aca55e8c0f89e54522209dfa2b0c",
+        "sha256_in_prefix": "b582749e7d24fe5954c778a59e25bd897776aca55e8c0f89e54522209dfa2b0c",
+        "size_in_bytes": 11922
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/object.pxd",
+        "path_type": "hardlink",
+        "sha256": "00ae43f8bac36ef8ac3bac29921dbd1bac6303bd6c045fca7ca5329f49368738",
+        "sha256_in_prefix": "00ae43f8bac36ef8ac3bac29921dbd1bac6303bd6c045fca7ca5329f49368738",
+        "size_in_bytes": 18366
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/oldbuffer.pxd",
+        "path_type": "hardlink",
+        "sha256": "bf4f9867f230c23dd941d33c544e4d3d341c6c1949756c091ad34ef43a271a0c",
+        "sha256_in_prefix": "bf4f9867f230c23dd941d33c544e4d3d341c6c1949756c091ad34ef43a271a0c",
+        "size_in_bytes": 2916
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/pycapsule.pxd",
+        "path_type": "hardlink",
+        "sha256": "f2fc9229e6bfcf24d96751f7f65202624a499a7613a99aee9f70cb7fb776dbde",
+        "sha256_in_prefix": "f2fc9229e6bfcf24d96751f7f65202624a499a7613a99aee9f70cb7fb776dbde",
+        "size_in_bytes": 5692
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/pylifecycle.pxd",
+        "path_type": "hardlink",
+        "sha256": "2f388964772519db6caf7c93dbc7d42c7359fe7ebb6ecd43988f6cf18ceb0468",
+        "sha256_in_prefix": "2f388964772519db6caf7c93dbc7d42c7359fe7ebb6ecd43988f6cf18ceb0468",
+        "size_in_bytes": 2000
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/pystate.pxd",
+        "path_type": "hardlink",
+        "sha256": "c607f504192fdfaaafa8c691efbcd95983aea270307b845f34a13683dd40e9f9",
+        "sha256_in_prefix": "c607f504192fdfaaafa8c691efbcd95983aea270307b845f34a13683dd40e9f9",
+        "size_in_bytes": 3683
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/pythread.pxd",
+        "path_type": "hardlink",
+        "sha256": "d37ef94da626b4d0830e458187d598e2827f8e1a13c61bbf451e5088eb179988",
+        "sha256_in_prefix": "d37ef94da626b4d0830e458187d598e2827f8e1a13c61bbf451e5088eb179988",
+        "size_in_bytes": 1946
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/ref.pxd",
+        "path_type": "hardlink",
+        "sha256": "d809a0c860e1c00e2c72db348dc0537464c21b46f63fcf9e600285264e38c742",
+        "sha256_in_prefix": "d809a0c860e1c00e2c72db348dc0537464c21b46f63fcf9e600285264e38c742",
+        "size_in_bytes": 2557
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/sequence.pxd",
+        "path_type": "hardlink",
+        "sha256": "893a770bac0ebd376f8cb99d8f793d1aa42a0860e5405a735a2d3bc1542a492e",
+        "sha256_in_prefix": "893a770bac0ebd376f8cb99d8f793d1aa42a0860e5405a735a2d3bc1542a492e",
+        "size_in_bytes": 6008
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/set.pxd",
+        "path_type": "hardlink",
+        "sha256": "7b01d13d531b1d41832276773738a2b02abaf0bbed98427e49715bce6b89c4b7",
+        "sha256_in_prefix": "7b01d13d531b1d41832276773738a2b02abaf0bbed98427e49715bce6b89c4b7",
+        "size_in_bytes": 5383
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/slice.pxd",
+        "path_type": "hardlink",
+        "sha256": "473827f1d880b0dee54b6c464eae1566e715df388536b6b8a33e2d28610090ca",
+        "sha256_in_prefix": "473827f1d880b0dee54b6c464eae1566e715df388536b6b8a33e2d28610090ca",
+        "size_in_bytes": 3111
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/string.pxd",
+        "path_type": "hardlink",
+        "sha256": "10a8c31859cf7239e49ddc06309a91aeccc3577f7431cea8ec00030a19cd0a20",
+        "sha256_in_prefix": "10a8c31859cf7239e49ddc06309a91aeccc3577f7431cea8ec00030a19cd0a20",
+        "size_in_bytes": 9944
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/tuple.pxd",
+        "path_type": "hardlink",
+        "sha256": "78e2df1fbe5fb49798b33ced18559664fecb9f214e830f0636e13b3d0f6102fb",
+        "sha256_in_prefix": "78e2df1fbe5fb49798b33ced18559664fecb9f214e830f0636e13b3d0f6102fb",
+        "size_in_bytes": 3206
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/type.pxd",
+        "path_type": "hardlink",
+        "sha256": "14eca9c17d1961a98f738b8ef1b7a3ccef87ce089a49169710fb31c713c89de2",
+        "sha256_in_prefix": "14eca9c17d1961a98f738b8ef1b7a3ccef87ce089a49169710fb31c713c89de2",
+        "size_in_bytes": 1831
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/unicode.pxd",
+        "path_type": "hardlink",
+        "sha256": "f04a516d9e3433b6375b1762bcb0cb438d1810d84b8f52533f154412fec6d6e2",
+        "sha256_in_prefix": "f04a516d9e3433b6375b1762bcb0cb438d1810d84b8f52533f154412fec6d6e2",
+        "size_in_bytes": 26247
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/version.pxd",
+        "path_type": "hardlink",
+        "sha256": "979297b74e22b04bf7a9b191259f1f36509818edb81ec03697810cdd1c531211",
+        "sha256_in_prefix": "979297b74e22b04bf7a9b191259f1f36509818edb81ec03697810cdd1c531211",
+        "size_in_bytes": 847
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/cpython/weakref.pxd",
+        "path_type": "hardlink",
+        "sha256": "514f47fe8bc71b4ec51603ff918db1846bf7c890ebffc8ae8c2667c47da39e5a",
+        "sha256_in_prefix": "514f47fe8bc71b4ec51603ff918db1846bf7c890ebffc8ae8c2667c47da39e5a",
+        "size_in_bytes": 1984
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/__init__.pxd",
+        "path_type": "hardlink",
+        "sha256": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "sha256_in_prefix": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/errno.pxd",
+        "path_type": "hardlink",
+        "sha256": "8f985c2b1ef38a78af5366fa485332f0b67db092106395cbae9f5c4142afe404",
+        "sha256_in_prefix": "8f985c2b1ef38a78af5366fa485332f0b67db092106395cbae9f5c4142afe404",
+        "size_in_bytes": 2050
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/float.pxd",
+        "path_type": "hardlink",
+        "sha256": "221bd92658e94c6d1f66d708a7b1013b64aa75da33c68c708f844535570a2e96",
+        "sha256_in_prefix": "221bd92658e94c6d1f66d708a7b1013b64aa75da33c68c708f844535570a2e96",
+        "size_in_bytes": 966
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/limits.pxd",
+        "path_type": "hardlink",
+        "sha256": "c47948cae0c82a98ea725bd1458cd921c7dde46d6b7b942d6e6a0332a651fc47",
+        "sha256_in_prefix": "c47948cae0c82a98ea725bd1458cd921c7dde46d6b7b942d6e6a0332a651fc47",
+        "size_in_bytes": 621
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/locale.pxd",
+        "path_type": "hardlink",
+        "sha256": "b22c46f0427ac2255bd07211d4b589de55d38d3bf8eb7189f42ff8d07468bcde",
+        "sha256_in_prefix": "b22c46f0427ac2255bd07211d4b589de55d38d3bf8eb7189f42ff8d07468bcde",
+        "size_in_bytes": 1140
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/math.pxd",
+        "path_type": "hardlink",
+        "sha256": "e75614c527b4d51f7afebaf7b23e27e0c2d6f9e3a641b73074d9fc62d853c6a8",
+        "sha256_in_prefix": "e75614c527b4d51f7afebaf7b23e27e0c2d6f9e3a641b73074d9fc62d853c6a8",
+        "size_in_bytes": 2948
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/setjmp.pxd",
+        "path_type": "hardlink",
+        "sha256": "5d187e812ba1bc52e5d2746fcf93a149661ef5ea97d9ab6d01c937248ee6c1ae",
+        "sha256_in_prefix": "5d187e812ba1bc52e5d2746fcf93a149661ef5ea97d9ab6d01c937248ee6c1ae",
+        "size_in_bytes": 297
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/signal.pxd",
+        "path_type": "hardlink",
+        "sha256": "5ce49c3c3039bf395f126bb80fb0c54f5fb912edea32961d51aae3b7e7ea95bc",
+        "sha256_in_prefix": "5ce49c3c3039bf395f126bb80fb0c54f5fb912edea32961d51aae3b7e7ea95bc",
+        "size_in_bytes": 1170
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/stddef.pxd",
+        "path_type": "hardlink",
+        "sha256": "d2b0b2a287027c32fed4e428de9c4743ee9f5b6d1201892d38b3e86b877def0f",
+        "sha256_in_prefix": "d2b0b2a287027c32fed4e428de9c4743ee9f5b6d1201892d38b3e86b877def0f",
+        "size_in_bytes": 164
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/stdint.pxd",
+        "path_type": "hardlink",
+        "sha256": "a87257ce9582adbbc95926876192f6ed524fba942b793665f551a3d2380b7515",
+        "sha256_in_prefix": "a87257ce9582adbbc95926876192f6ed524fba942b793665f551a3d2380b7515",
+        "size_in_bytes": 3449
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/stdio.pxd",
+        "path_type": "hardlink",
+        "sha256": "a946b113036b425d7ee321cba2bcf3259f9afb2e7ff919bf9bb67999e691a87d",
+        "sha256_in_prefix": "a946b113036b425d7ee321cba2bcf3259f9afb2e7ff919bf9bb67999e691a87d",
+        "size_in_bytes": 2476
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/stdlib.pxd",
+        "path_type": "hardlink",
+        "sha256": "a7adb1ab65df076e167cd0a3457803e9c398a11b95e3b0276228e48d6bf8ba01",
+        "sha256_in_prefix": "a7adb1ab65df076e167cd0a3457803e9c398a11b95e3b0276228e48d6bf8ba01",
+        "size_in_bytes": 2444
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/string.pxd",
+        "path_type": "hardlink",
+        "sha256": "b736066d1ae771c79d14b7acf8a1a026a334144b701c5feae1fd9faa5b4dbf21",
+        "sha256_in_prefix": "b736066d1ae771c79d14b7acf8a1a026a334144b701c5feae1fd9faa5b4dbf21",
+        "size_in_bytes": 2038
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libc/time.pxd",
+        "path_type": "hardlink",
+        "sha256": "f88447edf4eadf02812a64109e965185a2ec9e5ec3fea5c5cffe012c1f4edeed",
+        "sha256_in_prefix": "f88447edf4eadf02812a64109e965185a2ec9e5ec3fea5c5cffe012c1f4edeed",
+        "size_in_bytes": 1317
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/__init__.pxd",
+        "path_type": "hardlink",
+        "sha256": "3c2c7c6517ce7a8c8c46ee353cf94f63dba8da4666b7feddd0a478129cdf7bb7",
+        "sha256_in_prefix": "3c2c7c6517ce7a8c8c46ee353cf94f63dba8da4666b7feddd0a478129cdf7bb7",
+        "size_in_bytes": 94
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/algorithm.pxd",
+        "path_type": "hardlink",
+        "sha256": "fb6574a11fdc15b1c7cde593f5171f2ef8b93b2facfd5da53b7388e99b57e9f3",
+        "sha256_in_prefix": "fb6574a11fdc15b1c7cde593f5171f2ef8b93b2facfd5da53b7388e99b57e9f3",
+        "size_in_bytes": 1770
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/cast.pxd",
+        "path_type": "hardlink",
+        "sha256": "127e0b06e6dd8a77e99bd45e974efbb4afcb1b083fde4e0502ef669486ca8eec",
+        "sha256_in_prefix": "127e0b06e6dd8a77e99bd45e974efbb4afcb1b083fde4e0502ef669486ca8eec",
+        "size_in_bytes": 501
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/complex.pxd",
+        "path_type": "hardlink",
+        "sha256": "2232fccbdb008258466d32a1aac25b5b49a031360451b60cd5e92be550e14206",
+        "sha256_in_prefix": "2232fccbdb008258466d32a1aac25b5b49a031360451b60cd5e92be550e14206",
+        "size_in_bytes": 3012
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/deque.pxd",
+        "path_type": "hardlink",
+        "sha256": "696a99f63dce810baa14b92a44efd4d852306d27b67ca9a66034407c3d2f1aa5",
+        "sha256_in_prefix": "696a99f63dce810baa14b92a44efd4d852306d27b67ca9a66034407c3d2f1aa5",
+        "size_in_bytes": 3106
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/forward_list.pxd",
+        "path_type": "hardlink",
+        "sha256": "f92a3513110e9283dfb1274c9494a5239ebae7ecf258b3285319669b60e5a249",
+        "sha256_in_prefix": "f92a3513110e9283dfb1274c9494a5239ebae7ecf258b3285319669b60e5a249",
+        "size_in_bytes": 2392
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/functional.pxd",
+        "path_type": "hardlink",
+        "sha256": "0573d891f7c43a528ed5ead32ea96404b7b1e866f96f20cc17886afcc6766952",
+        "sha256_in_prefix": "0573d891f7c43a528ed5ead32ea96404b7b1e866f96f20cc17886afcc6766952",
+        "size_in_bytes": 381
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/iterator.pxd",
+        "path_type": "hardlink",
+        "sha256": "995735aec0187e7fc046b750e091be52de62979ca721ad424572e4f017bc664b",
+        "sha256_in_prefix": "995735aec0187e7fc046b750e091be52de62979ca721ad424572e4f017bc664b",
+        "size_in_bytes": 1432
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/limits.pxd",
+        "path_type": "hardlink",
+        "sha256": "44a577c0fbe4e2d57fbd7e4261044920ae66e715dabfb49e07196d94bca4f1eb",
+        "sha256_in_prefix": "44a577c0fbe4e2d57fbd7e4261044920ae66e715dabfb49e07196d94bca4f1eb",
+        "size_in_bytes": 1661
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/list.pxd",
+        "path_type": "hardlink",
+        "sha256": "ac641f077fe60dc46418ab4c06ebc342f00f9a0cd1e63c527f778e491811e180",
+        "sha256_in_prefix": "ac641f077fe60dc46418ab4c06ebc342f00f9a0cd1e63c527f778e491811e180",
+        "size_in_bytes": 2658
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/map.pxd",
+        "path_type": "hardlink",
+        "sha256": "185dac0e71411d9a14dd172ea35ae7eb22a1e399e1917d3f887dbdc63e7cd68c",
+        "sha256_in_prefix": "185dac0e71411d9a14dd172ea35ae7eb22a1e399e1917d3f887dbdc63e7cd68c",
+        "size_in_bytes": 2551
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/memory.pxd",
+        "path_type": "hardlink",
+        "sha256": "1e3db46929e65133c08450ab96617f69e1c92a23226766c32a16989f6cb26c9a",
+        "sha256_in_prefix": "1e3db46929e65133c08450ab96617f69e1c92a23226766c32a16989f6cb26c9a",
+        "size_in_bytes": 3600
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/pair.pxd",
+        "path_type": "hardlink",
+        "sha256": "501257c38dee1e40e536caf43eed5a3f9b59f882d785403238b6a6daa7569990",
+        "sha256_in_prefix": "501257c38dee1e40e536caf43eed5a3f9b59f882d785403238b6a6daa7569990",
+        "size_in_bytes": 27
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/queue.pxd",
+        "path_type": "hardlink",
+        "sha256": "15b2f843b0b7960b59d98ce272d5355c15f343b1beeb2f62ffb9767aacc0dd77",
+        "sha256_in_prefix": "15b2f843b0b7960b59d98ce272d5355c15f343b1beeb2f62ffb9767aacc0dd77",
+        "size_in_bytes": 649
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/set.pxd",
+        "path_type": "hardlink",
+        "sha256": "df2e48af64e3183ee0dd546f9645d5d5add5dd963326fc0e01f793bfcb9c382c",
+        "sha256_in_prefix": "df2e48af64e3183ee0dd546f9645d5d5add5dd963326fc0e01f793bfcb9c382c",
+        "size_in_bytes": 2170
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/stack.pxd",
+        "path_type": "hardlink",
+        "sha256": "cccdd240ea8c58e355aae775dda8376d4ba903ea3353f60cab801dd9090be9f2",
+        "sha256_in_prefix": "cccdd240ea8c58e355aae775dda8376d4ba903ea3353f60cab801dd9090be9f2",
+        "size_in_bytes": 292
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/string.pxd",
+        "path_type": "hardlink",
+        "sha256": "cecbf3c96e8882020316a705f94b8b8f188d0073ed4e802873d56128a1b65390",
+        "sha256_in_prefix": "cecbf3c96e8882020316a705f94b8b8f188d0073ed4e802873d56128a1b65390",
+        "size_in_bytes": 8731
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/typeindex.pxd",
+        "path_type": "hardlink",
+        "sha256": "9881ebe4caba2e89744a5cea78aeb0fe0895111877b808d99bbf323c32d7cdce",
+        "sha256_in_prefix": "9881ebe4caba2e89744a5cea78aeb0fe0895111877b808d99bbf323c32d7cdce",
+        "size_in_bytes": 524
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/typeinfo.pxd",
+        "path_type": "hardlink",
+        "sha256": "b484ecaaeaeb75a663b0418592c7a6f7166d5614b1411c476717280bee18f836",
+        "sha256_in_prefix": "b484ecaaeaeb75a663b0418592c7a6f7166d5614b1411c476717280bee18f836",
+        "size_in_bytes": 304
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/unordered_map.pxd",
+        "path_type": "hardlink",
+        "sha256": "78d9dae21440b9c40b9e58817c432eed49df77f941d7c238da2c0a9ac08ed3e3",
+        "sha256_in_prefix": "78d9dae21440b9c40b9e58817c432eed49df77f941d7c238da2c0a9ac08ed3e3",
+        "size_in_bytes": 2867
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/unordered_set.pxd",
+        "path_type": "hardlink",
+        "sha256": "79461238c4f91adf2465609429ecd01b25d6cdab44c8d83afa7980966701a3e9",
+        "sha256_in_prefix": "79461238c4f91adf2465609429ecd01b25d6cdab44c8d83afa7980966701a3e9",
+        "size_in_bytes": 2622
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/utility.pxd",
+        "path_type": "hardlink",
+        "sha256": "0f1804c8ac475a7158ddb44c91b5045acc7e71d69e6db10b98b7c899c44da272",
+        "sha256_in_prefix": "0f1804c8ac475a7158ddb44c91b5045acc7e71d69e6db10b98b7c899c44da272",
+        "size_in_bytes": 903
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/libcpp/vector.pxd",
+        "path_type": "hardlink",
+        "sha256": "198a8b6fbe28c213263501d409c652c467183e036ec3aa942ec7d62abee0e8e4",
+        "sha256_in_prefix": "198a8b6fbe28c213263501d409c652c467183e036ec3aa942ec7d62abee0e8e4",
+        "size_in_bytes": 3350
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/numpy/__init__.pxd",
+        "path_type": "hardlink",
+        "sha256": "09b2f0bc0e2efb18fb447c5b3bd1ecda8ea15ddec66892651849fd5c9547e1ce",
+        "sha256_in_prefix": "09b2f0bc0e2efb18fb447c5b3bd1ecda8ea15ddec66892651849fd5c9547e1ce",
+        "size_in_bytes": 38138
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/numpy/math.pxd",
+        "path_type": "hardlink",
+        "sha256": "a9911d6a668f802156e09ec8b5ce815a03ab4122997710d3ea46d4fe0ab1da0e",
+        "sha256_in_prefix": "a9911d6a668f802156e09ec8b5ce815a03ab4122997710d3ea46d4fe0ab1da0e",
+        "size_in_bytes": 5807
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/openmp.pxd",
+        "path_type": "hardlink",
+        "sha256": "a2b08805816e54fb4b7517618429b9ba119b795fdf815080d8993606db357b68",
+        "sha256_in_prefix": "a2b08805816e54fb4b7517618429b9ba119b795fdf815080d8993606db357b68",
+        "size_in_bytes": 1713
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/__init__.pxd",
+        "path_type": "hardlink",
+        "sha256": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "sha256_in_prefix": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/dlfcn.pxd",
+        "path_type": "hardlink",
+        "sha256": "d8815c1817d912602b744d01c41ef5793fd86fb9fd493695335d40b54720fe91",
+        "sha256_in_prefix": "d8815c1817d912602b744d01c41ef5793fd86fb9fd493695335d40b54720fe91",
+        "size_in_bytes": 355
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/fcntl.pxd",
+        "path_type": "hardlink",
+        "sha256": "a112fcf8eb20729947306718ab9f96e6dc084afc4afaf0dfcc06847ee4070bee",
+        "sha256_in_prefix": "a112fcf8eb20729947306718ab9f96e6dc084afc4afaf0dfcc06847ee4070bee",
+        "size_in_bytes": 1194
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/ioctl.pxd",
+        "path_type": "hardlink",
+        "sha256": "d910b9cde8cf3824e46ab0d933fe95776c1ce2806e37b89a88bfc2e4c3c1b3dd",
+        "sha256_in_prefix": "d910b9cde8cf3824e46ab0d933fe95776c1ce2806e37b89a88bfc2e4c3c1b3dd",
+        "size_in_bytes": 99
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/mman.pxd",
+        "path_type": "hardlink",
+        "sha256": "8ee25c2e2f7637d05ce8bda9e33ad499840880d9ab4ec67a844c5b975d7cd697",
+        "sha256_in_prefix": "8ee25c2e2f7637d05ce8bda9e33ad499840880d9ab4ec67a844c5b975d7cd697",
+        "size_in_bytes": 3362
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/resource.pxd",
+        "path_type": "hardlink",
+        "sha256": "3107b56c24d840554cb1a828de980ebd1eade8d125404960eeb85500dc5845c1",
+        "sha256_in_prefix": "3107b56c24d840554cb1a828de980ebd1eade8d125404960eeb85500dc5845c1",
+        "size_in_bytes": 1254
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/select.pxd",
+        "path_type": "hardlink",
+        "sha256": "7b89e118747c4d1c3a5ecf5dbb926816d91df14f6c9b7817fc11ead857e653a1",
+        "sha256_in_prefix": "7b89e118747c4d1c3a5ecf5dbb926816d91df14f6c9b7817fc11ead857e653a1",
+        "size_in_bytes": 546
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/signal.pxd",
+        "path_type": "hardlink",
+        "sha256": "c05248e54b6176d53d9995a3101799f4821f797db9d895700e4dadb1b5bfab75",
+        "sha256_in_prefix": "c05248e54b6176d53d9995a3101799f4821f797db9d895700e4dadb1b5bfab75",
+        "size_in_bytes": 1876
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/stat.pxd",
+        "path_type": "hardlink",
+        "sha256": "64e70f0a95e7c654511dc524be0e79f61ac57c1ef9b936c86115a841ec81098b",
+        "sha256_in_prefix": "64e70f0a95e7c654511dc524be0e79f61ac57c1ef9b936c86115a841ec81098b",
+        "size_in_bytes": 1734
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/stdio.pxd",
+        "path_type": "hardlink",
+        "sha256": "2bc0c41f7f2158cbf2d80f3370a6c746b1d21ac8304c8ad0f6a0b353ed1c592d",
+        "sha256_in_prefix": "2bc0c41f7f2158cbf2d80f3370a6c746b1d21ac8304c8ad0f6a0b353ed1c592d",
+        "size_in_bytes": 1054
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/stdlib.pxd",
+        "path_type": "hardlink",
+        "sha256": "b8644f6b4d3f1d667a0a1bf9135dc5f7a7aeb74c561d27d1ec88a82bdaca54b6",
+        "sha256_in_prefix": "b8644f6b4d3f1d667a0a1bf9135dc5f7a7aeb74c561d27d1ec88a82bdaca54b6",
+        "size_in_bytes": 934
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/strings.pxd",
+        "path_type": "hardlink",
+        "sha256": "18d12d7aa343db08175d2be4bfa53d78a482f682289b70bba36cd0e96fc9fd2e",
+        "sha256_in_prefix": "18d12d7aa343db08175d2be4bfa53d78a482f682289b70bba36cd0e96fc9fd2e",
+        "size_in_bytes": 374
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/time.pxd",
+        "path_type": "hardlink",
+        "sha256": "c0f503ec08f1a719a75189a88133058eba01d95cdc3e1f3e6fff0d123fb21b5e",
+        "sha256_in_prefix": "c0f503ec08f1a719a75189a88133058eba01d95cdc3e1f3e6fff0d123fb21b5e",
+        "size_in_bytes": 1980
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/types.pxd",
+        "path_type": "hardlink",
+        "sha256": "b56116c524f81061c88184be09ed921a367e2a098cd9255ed5e82075c82fdc94",
+        "sha256_in_prefix": "b56116c524f81061c88184be09ed921a367e2a098cd9255ed5e82075c82fdc94",
+        "size_in_bytes": 1162
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/unistd.pxd",
+        "path_type": "hardlink",
+        "sha256": "c3d07877d35a5c1b10eb65ceaf6c5ef5414f19ec26124e411bab2a89159da0cf",
+        "sha256_in_prefix": "c3d07877d35a5c1b10eb65ceaf6c5ef5414f19ec26124e411bab2a89159da0cf",
+        "size_in_bytes": 8061
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Includes/posix/wait.pxd",
+        "path_type": "hardlink",
+        "sha256": "58da2042f2aeda131f110882c9a00d7d55859f225293a4f1054d1cea7a5e26b0",
+        "sha256_in_prefix": "58da2042f2aeda131f110882c9a00d7d55859f225293a4f1054d1cea7a5e26b0",
+        "size_in_bytes": 1244
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Actions.cp39-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "6f187d1e06a843ba281bb7757f12aade3bd8a8ef54ec49e81deafe5c94143651",
+        "sha256_in_prefix": "6f187d1e06a843ba281bb7757f12aade3bd8a8ef54ec49e81deafe5c94143651",
+        "size_in_bytes": 52224
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Actions.pxd",
+        "path_type": "hardlink",
+        "sha256": "142fba7dfcd64788b7ad1e9548bd82eb85f1b35a81869044cd1b14ed6a4b9f56",
+        "sha256_in_prefix": "142fba7dfcd64788b7ad1e9548bd82eb85f1b35a81869044cd1b14ed6a4b9f56",
+        "size_in_bytes": 585
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Actions.py",
+        "path_type": "hardlink",
+        "sha256": "09ac64c7c2aea7d9b8b31db865c0d3abe7c07cf186d3a4c01eed8d2350fdccfb",
+        "sha256_in_prefix": "09ac64c7c2aea7d9b8b31db865c0d3abe7c07cf186d3a4c01eed8d2350fdccfb",
+        "size_in_bytes": 2545
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/DFA.py",
+        "path_type": "hardlink",
+        "sha256": "c38be5d9e8d7bfaa6d20bb644c26c1f0d72f17cca5c1ce83690da03c5ad6ba8e",
+        "sha256_in_prefix": "c38be5d9e8d7bfaa6d20bb644c26c1f0d72f17cca5c1ce83690da03c5ad6ba8e",
+        "size_in_bytes": 6012
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Errors.py",
+        "path_type": "hardlink",
+        "sha256": "02ce6eb869aa65ee30d01ec39bdf359594e70c6fa795748762a88650a9e1aeb6",
+        "sha256_in_prefix": "02ce6eb869aa65ee30d01ec39bdf359594e70c6fa795748762a88650a9e1aeb6",
+        "size_in_bytes": 1169
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Lexicons.py",
+        "path_type": "hardlink",
+        "sha256": "6b2df2cbd7ea239cb995f829278b9b063619439de01435603466e6a129790f12",
+        "sha256_in_prefix": "6b2df2cbd7ea239cb995f829278b9b063619439de01435603466e6a129790f12",
+        "size_in_bytes": 6907
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Machines.py",
+        "path_type": "hardlink",
+        "sha256": "6c82a0dfecb10ffafbc7ecc4a3027b12c3c15a58179bf5e1228ceab0b4017939",
+        "sha256_in_prefix": "6c82a0dfecb10ffafbc7ecc4a3027b12c3c15a58179bf5e1228ceab0b4017939",
+        "size_in_bytes": 7760
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Regexps.py",
+        "path_type": "hardlink",
+        "sha256": "a9a3fe16bf8680a366055b0cc973b796d9761c7d4941c4221665f6a3253278e0",
+        "sha256_in_prefix": "a9a3fe16bf8680a366055b0cc973b796d9761c7d4941c4221665f6a3253278e0",
+        "size_in_bytes": 16208
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Scanners.cp39-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "4b4de4ae03737e2f4ef40c10c665e2459304268dcb80d45a1204a65508c76b73",
+        "sha256_in_prefix": "4b4de4ae03737e2f4ef40c10c665e2459304268dcb80d45a1204a65508c76b73",
+        "size_in_bytes": 87552
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Scanners.pxd",
+        "path_type": "hardlink",
+        "sha256": "a127dc0d4677b327366a0ef7b9dc14e71a1a2060f188d77c6b617f2cbc393f36",
+        "sha256_in_prefix": "a127dc0d4677b327366a0ef7b9dc14e71a1a2060f188d77c6b617f2cbc393f36",
+        "size_in_bytes": 1481
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Scanners.py",
+        "path_type": "hardlink",
+        "sha256": "f935c0c4a5b8dd96d034248490c5842744a6a985550a448e4fd52780e0916674",
+        "sha256_in_prefix": "f935c0c4a5b8dd96d034248490c5842744a6a985550a448e4fd52780e0916674",
+        "size_in_bytes": 12259
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Timing.py",
+        "path_type": "hardlink",
+        "sha256": "f95810bde4be229ff612b8eb571878c3b717a725419146926a22da7720f76f0d",
+        "sha256_in_prefix": "f95810bde4be229ff612b8eb571878c3b717a725419146926a22da7720f76f0d",
+        "size_in_bytes": 472
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Traditional.py",
+        "path_type": "hardlink",
+        "sha256": "7004fea599ea2300896aa812aa028e0d2ce7159e43ba7530fcc2d6c7c63ae747",
+        "sha256_in_prefix": "7004fea599ea2300896aa812aa028e0d2ce7159e43ba7530fcc2d6c7c63ae747",
+        "size_in_bytes": 4120
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/Transitions.py",
+        "path_type": "hardlink",
+        "sha256": "4efa7b7055d1dd904f3c79b44c0854302ffeba2451f5874e905e2dd30b64f9fd",
+        "sha256_in_prefix": "4efa7b7055d1dd904f3c79b44c0854302ffeba2451f5874e905e2dd30b64f9fd",
+        "size_in_bytes": 7187
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "76f31e4294b2644ef95b48247f85e8e4b0318102cd864017890a083ad70e919d",
+        "sha256_in_prefix": "76f31e4294b2644ef95b48247f85e8e4b0318102cd864017890a083ad70e919d",
+        "size_in_bytes": 1282
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__pycache__/Actions.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "e894f56337dc9f3c12a65690fe1bf568496821bd98e6d746c3faf5038d4ca68c",
+        "sha256_in_prefix": "e894f56337dc9f3c12a65690fe1bf568496821bd98e6d746c3faf5038d4ca68c",
+        "size_in_bytes": 3939
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__pycache__/DFA.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6d78a69128d9f040924e26acceb88101c121210f514a30ea70fcef63fb8965e7",
+        "sha256_in_prefix": "6d78a69128d9f040924e26acceb88101c121210f514a30ea70fcef63fb8965e7",
+        "size_in_bytes": 4169
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__pycache__/Errors.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ffa896a826d171a36eb1236492f106bbf87086886fd58c47e81dd547e7e00879",
+        "sha256_in_prefix": "ffa896a826d171a36eb1236492f106bbf87086886fd58c47e81dd547e7e00879",
+        "size_in_bytes": 2114
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__pycache__/Lexicons.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "811ad99db7b5f05a48fa7e495b68710aa68f0bd0772e70520c7020f8ac046e6f",
+        "sha256_in_prefix": "811ad99db7b5f05a48fa7e495b68710aa68f0bd0772e70520c7020f8ac046e6f",
+        "size_in_bytes": 5918
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__pycache__/Machines.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "93655d3aa8835a27b09b48cce3e02dd306a88427eb72fd320f4335eada7b729b",
+        "sha256_in_prefix": "93655d3aa8835a27b09b48cce3e02dd306a88427eb72fd320f4335eada7b729b",
+        "size_in_bytes": 7691
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__pycache__/Regexps.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "01b7a88bf40f53a642334e56dc662689129a8a5f6ca7b8563ceb79c0bf9d41a4",
+        "sha256_in_prefix": "01b7a88bf40f53a642334e56dc662689129a8a5f6ca7b8563ceb79c0bf9d41a4",
+        "size_in_bytes": 14765
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__pycache__/Scanners.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8ece37479104c285e9bb39860db1b5202abfbb931a483f1ece303b97d0eb7fcc",
+        "sha256_in_prefix": "8ece37479104c285e9bb39860db1b5202abfbb931a483f1ece303b97d0eb7fcc",
+        "size_in_bytes": 7352
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__pycache__/Timing.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "98cf82d4775b4dacd126261f37e462b523b52d65801928b9cbf530437a1bf226",
+        "sha256_in_prefix": "98cf82d4775b4dacd126261f37e462b523b52d65801928b9cbf530437a1bf226",
+        "size_in_bytes": 710
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__pycache__/Traditional.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6a1a378369511e35ce8aefe2c76b9587660f31f3a531581514017f0c5a1a9799",
+        "sha256_in_prefix": "6a1a378369511e35ce8aefe2c76b9587660f31f3a531581514017f0c5a1a9799",
+        "size_in_bytes": 4275
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__pycache__/Transitions.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "65df2a8da4272d9198aeee16d2f71f89b2c58d299e69de54314d8aad9be0b576",
+        "sha256_in_prefix": "65df2a8da4272d9198aeee16d2f71f89b2c58d299e69de54314d8aad9be0b576",
+        "size_in_bytes": 6172
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Plex/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c62aefeaae75aa37d10c13368ae249ecb5cc7e2516af4cd363a9c4b4701714da",
+        "sha256_in_prefix": "c62aefeaae75aa37d10c13368ae249ecb5cc7e2516af4cd363a9c4b4701714da",
+        "size_in_bytes": 1465
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Runtime/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "sha256_in_prefix": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Runtime/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c02a753119805a63639afc0e622e226c5c7cb6932bbc89442fba7df289c81439",
+        "sha256_in_prefix": "c02a753119805a63639afc0e622e226c5c7cb6932bbc89442fba7df289c81439",
+        "size_in_bytes": 135
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Runtime/refnanny.cp39-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "cad0ef1b656628e2abe26b2d5190238e191fdf1948768086684a3fc49641c92f",
+        "sha256_in_prefix": "cad0ef1b656628e2abe26b2d5190238e191fdf1948768086684a3fc49641c92f",
+        "size_in_bytes": 64000
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Runtime/refnanny.pyx",
+        "path_type": "hardlink",
+        "sha256": "7f6a75ff46312b6e659bc41fb2edb2b6f974226ec66328b1d50f64ac40700ba7",
+        "sha256_in_prefix": "7f6a75ff46312b6e659bc41fb2edb2b6f974226ec66328b1d50f64ac40700ba7",
+        "size_in_bytes": 6279
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Shadow.py",
+        "path_type": "hardlink",
+        "sha256": "b0560794257d5aae67a978a0ef1b83c8fdf2a9b4d0530fadaabf0bdd7e0a2d82",
+        "sha256_in_prefix": "b0560794257d5aae67a978a0ef1b83c8fdf2a9b4d0530fadaabf0bdd7e0a2d82",
+        "size_in_bytes": 12987
+      },
+      {
+        "_path": "Lib/site-packages/Cython/StringIOTree.py",
+        "path_type": "hardlink",
+        "sha256": "197f935a7f571f063979c6f88a7f28bec4d2e42b4f4ec4b16696a72d6990c601",
+        "sha256_in_prefix": "197f935a7f571f063979c6f88a7f28bec4d2e42b4f4ec4b16696a72d6990c601",
+        "size_in_bytes": 3336
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tempita/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "607ba360788ba1853014d36cc090a0cd2ac3ba27b7b15d3c26c593f4d6e6a7bf",
+        "sha256_in_prefix": "607ba360788ba1853014d36cc090a0cd2ac3ba27b7b15d3c26c593f4d6e6a7bf",
+        "size_in_bytes": 152
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tempita/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2bc88837f204ef15f7e804d98e72dc925cdef4f43896ef9efbab64cd5c683a98",
+        "sha256_in_prefix": "2bc88837f204ef15f7e804d98e72dc925cdef4f43896ef9efbab64cd5c683a98",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tempita/__pycache__/_looper.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "3e2ded562415bae2b35abd36ac9d605655b0bc1c143de764353f5705dcf41ce2",
+        "sha256_in_prefix": "3e2ded562415bae2b35abd36ac9d605655b0bc1c143de764353f5705dcf41ce2",
+        "size_in_bytes": 5437
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tempita/__pycache__/_tempita.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c7f57068cab0eca8c8752b0114e83321686d9fd6ad79d7ae46b6f7a115e445d7",
+        "sha256_in_prefix": "c7f57068cab0eca8c8752b0114e83321686d9fd6ad79d7ae46b6f7a115e445d7",
+        "size_in_bytes": 31304
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tempita/__pycache__/compat3.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "20a41b3af7345341be3df99ad998a796d6f8bd5c78c5085e73ef4b263b6eb019",
+        "sha256_in_prefix": "20a41b3af7345341be3df99ad998a796d6f8bd5c78c5085e73ef4b263b6eb019",
+        "size_in_bytes": 1106
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tempita/_looper.py",
+        "path_type": "hardlink",
+        "sha256": "8e54ad621cfd3e0a7a35ab57f3a93e9deb413419afc1a796c42452fd2f2f7083",
+        "sha256_in_prefix": "8e54ad621cfd3e0a7a35ab57f3a93e9deb413419afc1a796c42452fd2f2f7083",
+        "size_in_bytes": 4168
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tempita/_tempita.cp39-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "e581734f5f4c6b0f349e9998fe1e335fabc65a313f1ee4ac067730f0f54f3835",
+        "sha256_in_prefix": "e581734f5f4c6b0f349e9998fe1e335fabc65a313f1ee4ac067730f0f54f3835",
+        "size_in_bytes": 382976
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tempita/_tempita.py",
+        "path_type": "hardlink",
+        "sha256": "e209c986e548b06722bbfe417ac6efc36ea0f363e6ec28976b33208593b77a3b",
+        "sha256_in_prefix": "e209c986e548b06722bbfe417ac6efc36ea0f363e6ec28976b33208593b77a3b",
+        "size_in_bytes": 39588
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tempita/compat3.py",
+        "path_type": "hardlink",
+        "sha256": "7235b5cb6ebabd11795ef87c900bbbfea1c64fc0061aeda41922512ba0c8fb41",
+        "sha256_in_prefix": "7235b5cb6ebabd11795ef87c900bbbfea1c64fc0061aeda41922512ba0c8fb41",
+        "size_in_bytes": 903
+      },
+      {
+        "_path": "Lib/site-packages/Cython/TestUtils.py",
+        "path_type": "hardlink",
+        "sha256": "7f3a6273dc54f8b3f4c1e9a95eac1441665aa41bd79c581b5bf5bdfbe20aa480",
+        "sha256_in_prefix": "7f3a6273dc54f8b3f4c1e9a95eac1441665aa41bd79c581b5bf5bdfbe20aa480",
+        "size_in_bytes": 7979
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/TestCodeWriter.py",
+        "path_type": "hardlink",
+        "sha256": "a8a69de3727784decf2e9ee655b103112b7deaab24f32dc42d1c30229f639cdc",
+        "sha256_in_prefix": "a8a69de3727784decf2e9ee655b103112b7deaab24f32dc42d1c30229f639cdc",
+        "size_in_bytes": 2316
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/TestCythonUtils.py",
+        "path_type": "hardlink",
+        "sha256": "5c5e05c382791d9e2350f2d5bfb79af1965c9768bdc979f9731dbb593b6b7265",
+        "sha256_in_prefix": "5c5e05c382791d9e2350f2d5bfb79af1965c9768bdc979f9731dbb593b6b7265",
+        "size_in_bytes": 474
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/TestJediTyper.py",
+        "path_type": "hardlink",
+        "sha256": "17a3141bc49dcc65d0c246f0e96bf53ea5659a5213d73ffb947d9bb953854ff2",
+        "sha256_in_prefix": "17a3141bc49dcc65d0c246f0e96bf53ea5659a5213d73ffb947d9bb953854ff2",
+        "size_in_bytes": 6996
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/TestStringIOTree.py",
+        "path_type": "hardlink",
+        "sha256": "bd3baedf3df659372625a7f47c1abad8d320858b5a3cbdab4677dd97658cfbee",
+        "sha256_in_prefix": "bd3baedf3df659372625a7f47c1abad8d320858b5a3cbdab4677dd97658cfbee",
+        "size_in_bytes": 1946
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "sha256_in_prefix": "8ceaad98f2c2bcc0aad3154cc067a4b8ba4199582ad31b4f16651e3f249d3a3b",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/__pycache__/TestCodeWriter.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "47e1c449eee5ab889d0154e24761ed4785181848f59820442b51ed1db0ef5fbe",
+        "sha256_in_prefix": "47e1c449eee5ab889d0154e24761ed4785181848f59820442b51ed1db0ef5fbe",
+        "size_in_bytes": 3184
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/__pycache__/TestCythonUtils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2eecbc0a27d37a65733a5935699e5c00e3d5f3086d04160ffdd53a89a4c3d88f",
+        "sha256_in_prefix": "2eecbc0a27d37a65733a5935699e5c00e3d5f3086d04160ffdd53a89a4c3d88f",
+        "size_in_bytes": 722
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/__pycache__/TestJediTyper.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d37029d1de64db34c2cc0858d33e4afeb8005c8a4d79096a8a7adbf8237e8650",
+        "sha256_in_prefix": "d37029d1de64db34c2cc0858d33e4afeb8005c8a4d79096a8a7adbf8237e8650",
+        "size_in_bytes": 7342
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/__pycache__/TestStringIOTree.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2119c7ec76765d69d355b5d324b22821001f5f3268c23a33b9dc2ef8eb03bca2",
+        "sha256_in_prefix": "2119c7ec76765d69d355b5d324b22821001f5f3268c23a33b9dc2ef8eb03bca2",
+        "size_in_bytes": 2142
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "575719548ca707cd0e05101e7d087f2b6306302bd0d91a4157634dc9cda85e2c",
+        "sha256_in_prefix": "575719548ca707cd0e05101e7d087f2b6306302bd0d91a4157634dc9cda85e2c",
+        "size_in_bytes": 133
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/__pycache__/xmlrunner.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "447cd916d26fea51f608e08e6f9b3cec9d490e31b387b8532ac6c36a1014bae0",
+        "sha256_in_prefix": "447cd916d26fea51f608e08e6f9b3cec9d490e31b387b8532ac6c36a1014bae0",
+        "size_in_bytes": 12692
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Tests/xmlrunner.py",
+        "path_type": "hardlink",
+        "sha256": "146756447944a2c86723e2df4ddbb79d6a079ea98e68e0351e8886918d28c52b",
+        "sha256_in_prefix": "146756447944a2c86723e2df4ddbb79d6a079ea98e68e0351e8886918d28c52b",
+        "size_in_bytes": 14799
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/AsyncGen.c",
+        "path_type": "hardlink",
+        "sha256": "9750739ab68fac73f514c6a45ddd82f8c6fb3c32811ebc79cfb287e32b86d01e",
+        "sha256_in_prefix": "9750739ab68fac73f514c6a45ddd82f8c6fb3c32811ebc79cfb287e32b86d01e",
+        "size_in_bytes": 40051
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/Buffer.c",
+        "path_type": "hardlink",
+        "sha256": "554178c47289197ed0313be924ee34688d4950bf921112c4be55d75c49367475",
+        "sha256_in_prefix": "554178c47289197ed0313be924ee34688d4950bf921112c4be55d75c49367475",
+        "size_in_bytes": 29654
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/Builtins.c",
+        "path_type": "hardlink",
+        "sha256": "65191915cc29ebb0f1ad5b51aaa8756268270dad4dbeb103bba6b6469aa407bb",
+        "sha256_in_prefix": "65191915cc29ebb0f1ad5b51aaa8756268270dad4dbeb103bba6b6469aa407bb",
+        "size_in_bytes": 16783
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/CConvert.pyx",
+        "path_type": "hardlink",
+        "sha256": "7db6551ef9b6be55a3dab826f1a8c1b798eb6cddf49d8edd1261e50421a89a55",
+        "sha256_in_prefix": "7db6551ef9b6be55a3dab826f1a8c1b798eb6cddf49d8edd1261e50421a89a55",
+        "size_in_bytes": 4338
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/CMath.c",
+        "path_type": "hardlink",
+        "sha256": "18873b81dd96cda66bc8324cded79fa9789f2c9a5426cebf4ff73f985aebfacf",
+        "sha256_in_prefix": "18873b81dd96cda66bc8324cded79fa9789f2c9a5426cebf4ff73f985aebfacf",
+        "size_in_bytes": 2566
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/Capsule.c",
+        "path_type": "hardlink",
+        "sha256": "48e794ec4ed3ee9890131f3de13d90147d919521be326b22cae638955375caca",
+        "sha256_in_prefix": "48e794ec4ed3ee9890131f3de13d90147d919521be326b22cae638955375caca",
+        "size_in_bytes": 505
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/CommonStructures.c",
+        "path_type": "hardlink",
+        "sha256": "a7ae471e04eb7fb87b4e3ec92bbb488242ebac2ae3a2e2fc1cbf741077e83285",
+        "sha256_in_prefix": "a7ae471e04eb7fb87b4e3ec92bbb488242ebac2ae3a2e2fc1cbf741077e83285",
+        "size_in_bytes": 2558
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/Complex.c",
+        "path_type": "hardlink",
+        "sha256": "2781ec7957013b31a8e5dc9ed06bacf1b7fcac6c162c4ccdf6c44933be125a22",
+        "sha256_in_prefix": "2781ec7957013b31a8e5dc9ed06bacf1b7fcac6c162c4ccdf6c44933be125a22",
+        "size_in_bytes": 10043
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/Coroutine.c",
+        "path_type": "hardlink",
+        "sha256": "5e6fdd68e19a361dbabfc2a9b1de12ca7a98bc6e02ef0c86979412a0a03c93c4",
+        "sha256_in_prefix": "5e6fdd68e19a361dbabfc2a9b1de12ca7a98bc6e02ef0c86979412a0a03c93c4",
+        "size_in_bytes": 88160
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/CpdefEnums.pyx",
+        "path_type": "hardlink",
+        "sha256": "5cc83cb1d96d412363db01957e71c8591bf21c509c2caf197e92b39ca8b89616",
+        "sha256_in_prefix": "5cc83cb1d96d412363db01957e71c8591bf21c509c2caf197e92b39ca8b89616",
+        "size_in_bytes": 1893
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/CppConvert.pyx",
+        "path_type": "hardlink",
+        "sha256": "f9ee62dff275492fc66dcb6c7e5430ca5c7d72a764fc227649f4121031daef59",
+        "sha256_in_prefix": "f9ee62dff275492fc66dcb6c7e5430ca5c7d72a764fc227649f4121031daef59",
+        "size_in_bytes": 6098
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/CppSupport.cpp",
+        "path_type": "hardlink",
+        "sha256": "3539d24429a2d8f1ee4f727a432d79c4c646c746dff65f8c6b101b5ba39593ab",
+        "sha256_in_prefix": "3539d24429a2d8f1ee4f727a432d79c4c646c746dff65f8c6b101b5ba39593ab",
+        "size_in_bytes": 2234
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/CythonFunction.c",
+        "path_type": "hardlink",
+        "sha256": "ab129f36159001cb733e002ebc9a96e2d0aa1992a8517a5e69c994364760a9ca",
+        "sha256_in_prefix": "ab129f36159001cb733e002ebc9a96e2d0aa1992a8517a5e69c994364760a9ca",
+        "size_in_bytes": 45595
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/Embed.c",
+        "path_type": "hardlink",
+        "sha256": "b0c0efed7549b3068645341b407b440d38596809af6e7fbac9e22aad4cdba0be",
+        "sha256_in_prefix": "b0c0efed7549b3068645341b407b440d38596809af6e7fbac9e22aad4cdba0be",
+        "size_in_bytes": 6854
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/Exceptions.c",
+        "path_type": "hardlink",
+        "sha256": "bdcaef167f6a4781a62d245633d957b5d62d417ebe0772f28eaf4a44cf6df23b",
+        "sha256_in_prefix": "bdcaef167f6a4781a62d245633d957b5d62d417ebe0772f28eaf4a44cf6df23b",
+        "size_in_bytes": 26379
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/ExtensionTypes.c",
+        "path_type": "hardlink",
+        "sha256": "20f68ba79a364a44be26027c2d51dfe1ac8903e5178b5cd21a5200ca8e59bf89",
+        "sha256_in_prefix": "20f68ba79a364a44be26027c2d51dfe1ac8903e5178b5cd21a5200ca8e59bf89",
+        "size_in_bytes": 10831
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/FunctionArguments.c",
+        "path_type": "hardlink",
+        "sha256": "207f58e5a57fb4dac92e8fc2587b2412715a8bd7e9f5c28bbd19086589765064",
+        "sha256_in_prefix": "207f58e5a57fb4dac92e8fc2587b2412715a8bd7e9f5c28bbd19086589765064",
+        "size_in_bytes": 12040
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/ImportExport.c",
+        "path_type": "hardlink",
+        "sha256": "10cde5178b85665af5dd83bff1a64272bfb9ff8e564053d92ff823ccbf99f884",
+        "sha256_in_prefix": "10cde5178b85665af5dd83bff1a64272bfb9ff8e564053d92ff823ccbf99f884",
+        "size_in_bytes": 22279
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/MemoryView.pyx",
+        "path_type": "hardlink",
+        "sha256": "bc26c64f7583a1a07d831bf8794af85064bc6211f2dcb2b713faf7dbdb3e2ff9",
+        "sha256_in_prefix": "bc26c64f7583a1a07d831bf8794af85064bc6211f2dcb2b713faf7dbdb3e2ff9",
+        "size_in_bytes": 49621
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/MemoryView_C.c",
+        "path_type": "hardlink",
+        "sha256": "a33e1bfb0252412c52f1ee90146d3378d2710a88275d4a2133e152f916c5051b",
+        "sha256_in_prefix": "a33e1bfb0252412c52f1ee90146d3378d2710a88275d4a2133e152f916c5051b",
+        "size_in_bytes": 29243
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/ModuleSetupCode.c",
+        "path_type": "hardlink",
+        "sha256": "ed8880eb6d252be0ddc658652638b4926cd967f6b6388d7f113a82d39e99a658",
+        "sha256_in_prefix": "ed8880eb6d252be0ddc658652638b4926cd967f6b6388d7f113a82d39e99a658",
+        "size_in_bytes": 51626
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/ObjectHandling.c",
+        "path_type": "hardlink",
+        "sha256": "621a6410bd0262a57bfccb8598b5cc5ac7c534c0bb6488643afdeb0870bebcf2",
+        "sha256_in_prefix": "621a6410bd0262a57bfccb8598b5cc5ac7c534c0bb6488643afdeb0870bebcf2",
+        "size_in_bytes": 88574
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/Optimize.c",
+        "path_type": "hardlink",
+        "sha256": "c6d299f1684e7bc97851838d1950e294d161cc632e789c40ee76099fc4085a67",
+        "sha256_in_prefix": "c6d299f1684e7bc97851838d1950e294d161cc632e789c40ee76099fc4085a67",
+        "size_in_bytes": 45184
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/Overflow.c",
+        "path_type": "hardlink",
+        "sha256": "37f14bfcc9fe26411505c5d7c7e34696c125fc062089f6bea7b7e62c76d0aecb",
+        "sha256_in_prefix": "37f14bfcc9fe26411505c5d7c7e34696c125fc062089f6bea7b7e62c76d0aecb",
+        "size_in_bytes": 12358
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/Printing.c",
+        "path_type": "hardlink",
+        "sha256": "a3c5e77e33484fc51be4a638140a7f14dc3e384df1aa3cb43209985a00dc59aa",
+        "sha256_in_prefix": "a3c5e77e33484fc51be4a638140a7f14dc3e384df1aa3cb43209985a00dc59aa",
+        "size_in_bytes": 5103
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/Profile.c",
+        "path_type": "hardlink",
+        "sha256": "0cf66f8ef6634d46eb6cd276d748c8f6f767f8eac46ee1a33be232ff8711166a",
+        "sha256_in_prefix": "0cf66f8ef6634d46eb6cd276d748c8f6f767f8eac46ee1a33be232ff8711166a",
+        "size_in_bytes": 17169
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/StringTools.c",
+        "path_type": "hardlink",
+        "sha256": "6bdc5e1d120a908924f3d8e84024e4311e226c9336d0f643bae0c47f6c908175",
+        "sha256_in_prefix": "6bdc5e1d120a908924f3d8e84024e4311e226c9336d0f643bae0c47f6c908175",
+        "size_in_bytes": 42181
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/TestCyUtilityLoader.pyx",
+        "path_type": "hardlink",
+        "sha256": "f75956589b9bee5ffac4d9f79dcaef41967de11a64433131d8db40685a6faf16",
+        "sha256_in_prefix": "f75956589b9bee5ffac4d9f79dcaef41967de11a64433131d8db40685a6faf16",
+        "size_in_bytes": 152
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/TestCythonScope.pyx",
+        "path_type": "hardlink",
+        "sha256": "1d09b913911e86bded9030d44544725670e9bad286dfe5a7da4d9a200a2bbbd8",
+        "sha256_in_prefix": "1d09b913911e86bded9030d44544725670e9bad286dfe5a7da4d9a200a2bbbd8",
+        "size_in_bytes": 1595
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/TestUtilityLoader.c",
+        "path_type": "hardlink",
+        "sha256": "746cba6562f6901aad99463b905ef9504a31e6469d419fff06664ab1cc20d9a6",
+        "sha256_in_prefix": "746cba6562f6901aad99463b905ef9504a31e6469d419fff06664ab1cc20d9a6",
+        "size_in_bytes": 279
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/TypeConversion.c",
+        "path_type": "hardlink",
+        "sha256": "f35c2585e78a65da095fe9574ba5dc3c1bede211fcbba02e055fddfbfa94b597",
+        "sha256_in_prefix": "f35c2585e78a65da095fe9574ba5dc3c1bede211fcbba02e055fddfbfa94b597",
+        "size_in_bytes": 36001
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b766e963e4d8497f2525d6cab81149d6405fa56573806c38c6866508a7f28ffb",
+        "sha256_in_prefix": "b766e963e4d8497f2525d6cab81149d6405fa56573806c38c6866508a7f28ffb",
+        "size_in_bytes": 1159
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6c77753e5816feefcaca101d7f6fa2da4b67f5d047bcd4729b8f1e5df67567de",
+        "sha256_in_prefix": "6c77753e5816feefcaca101d7f6fa2da4b67f5d047bcd4729b8f1e5df67567de",
+        "size_in_bytes": 1487
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utility/arrayarray.h",
+        "path_type": "hardlink",
+        "sha256": "dcb97c19dfd2e2bbfc1da4df8398baf9a6a807db5a235bf3c13a7b35e03b5b2d",
+        "sha256_in_prefix": "dcb97c19dfd2e2bbfc1da4df8398baf9a6a807db5a235bf3c13a7b35e03b5b2d",
+        "size_in_bytes": 4089
+      },
+      {
+        "_path": "Lib/site-packages/Cython/Utils.py",
+        "path_type": "hardlink",
+        "sha256": "6096b844fe9f490916a5b03f5f40e735111ddd8e4db8f0e31b051d36f556d8e3",
+        "sha256_in_prefix": "6096b844fe9f490916a5b03f5f40e735111ddd8e4db8f0e31b051d36f556d8e3",
+        "size_in_bytes": 13458
+      },
+      {
+        "_path": "Lib/site-packages/Cython/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "18c9e4a086acea17cdfe67aa640245f4112cd4db98e3ee01d8bd1496cee15da0",
+        "sha256_in_prefix": "18c9e4a086acea17cdfe67aa640245f4112cd4db98e3ee01d8bd1496cee15da0",
+        "size_in_bytes": 358
+      },
+      {
+        "_path": "Lib/site-packages/Cython/__pycache__/CodeWriter.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8a3f37a2f2e7ecc2a137ae0f4ea478d251868b7362ff881d54d93a080f2ef6e7",
+        "sha256_in_prefix": "8a3f37a2f2e7ecc2a137ae0f4ea478d251868b7362ff881d54d93a080f2ef6e7",
+        "size_in_bytes": 28494
+      },
+      {
+        "_path": "Lib/site-packages/Cython/__pycache__/Coverage.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c51663e5d79969ca8b52a130ef0cd10bfb1350220f881716ff39fe14a7f0454b",
+        "sha256_in_prefix": "c51663e5d79969ca8b52a130ef0cd10bfb1350220f881716ff39fe14a7f0454b",
+        "size_in_bytes": 9446
+      },
+      {
+        "_path": "Lib/site-packages/Cython/__pycache__/Debugging.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "641d5a6fb306f60f3721c1084817b3debba064dbd5d4555c3c4b47f853413110",
+        "sha256_in_prefix": "641d5a6fb306f60f3721c1084817b3debba064dbd5d4555c3c4b47f853413110",
+        "size_in_bytes": 647
+      },
+      {
+        "_path": "Lib/site-packages/Cython/__pycache__/Shadow.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1aa57709be5e0b653203ed5be3610f1bccd941d805f891ea9c8f72ea0c8938a7",
+        "sha256_in_prefix": "1aa57709be5e0b653203ed5be3610f1bccd941d805f891ea9c8f72ea0c8938a7",
+        "size_in_bytes": 15031
+      },
+      {
+        "_path": "Lib/site-packages/Cython/__pycache__/StringIOTree.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ed71eb0a6e5756db013a999fc793788664811f563ce36fc1900014cc7ee4e282",
+        "sha256_in_prefix": "ed71eb0a6e5756db013a999fc793788664811f563ce36fc1900014cc7ee4e282",
+        "size_in_bytes": 3589
+      },
+      {
+        "_path": "Lib/site-packages/Cython/__pycache__/TestUtils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "eb8f7c1a10f653be5ab2da8ec86201547320fff96a09544c86916ea6303d945f",
+        "sha256_in_prefix": "eb8f7c1a10f653be5ab2da8ec86201547320fff96a09544c86916ea6303d945f",
+        "size_in_bytes": 7902
+      },
+      {
+        "_path": "Lib/site-packages/Cython/__pycache__/Utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "3b3a73715c55e47413db7db549697f7f6da55761c9cb997a21ee65ccea9f5409",
+        "sha256_in_prefix": "3b3a73715c55e47413db7db549697f7f6da55761c9cb997a21ee65ccea9f5409",
+        "size_in_bytes": 11468
+      },
+      {
+        "_path": "Lib/site-packages/Cython/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f55359100af62b6b9d33a8660779338d223d1157d03104dd22445af1a528cfda",
+        "sha256_in_prefix": "f55359100af62b6b9d33a8660779338d223d1157d03104dd22445af1a528cfda",
+        "size_in_bytes": 478
+      },
+      {
+        "_path": "Lib/site-packages/__pycache__/cython.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5b5b23932c1cc96cb0336b7e6a75c1d0b8c82c027f2c9a7310efb694c5692b05",
+        "sha256_in_prefix": "5b5b23932c1cc96cb0336b7e6a75c1d0b8c82c027f2c9a7310efb694c5692b05",
+        "size_in_bytes": 476
+      },
+      {
+        "_path": "Lib/site-packages/cython.py",
+        "path_type": "hardlink",
+        "sha256": "cf602d807046874c7487465c1a37bb22162547a9c61ff3263a1d5f14c8ea627d",
+        "sha256_in_prefix": "cf602d807046874c7487465c1a37bb22162547a9c61ff3263a1d5f14c8ea627d",
+        "size_in_bytes": 520
+      },
+      {
+        "_path": "Lib/site-packages/pyximport/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f613b22a8945b4e7ab3e2544ca4b4aad3d55b736c67b1abd526391ce8e768872",
+        "sha256_in_prefix": "f613b22a8945b4e7ab3e2544ca4b4aad3d55b736c67b1abd526391ce8e768872",
+        "size_in_bytes": 79
+      },
+      {
+        "_path": "Lib/site-packages/pyximport/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ee28cdb0825f684b193636488597a538956c53f05c841a78f939f538271134c4",
+        "sha256_in_prefix": "ee28cdb0825f684b193636488597a538956c53f05c841a78f939f538271134c4",
+        "size_in_bytes": 186
+      },
+      {
+        "_path": "Lib/site-packages/pyximport/__pycache__/pyxbuild.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "125c1d72842cb9590b86aac9583f005fbf43bb886a53ed7774e29e4c2c945a44",
+        "sha256_in_prefix": "125c1d72842cb9590b86aac9583f005fbf43bb886a53ed7774e29e4c2c945a44",
+        "size_in_bytes": 3452
+      },
+      {
+        "_path": "Lib/site-packages/pyximport/__pycache__/pyximport.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0f231fd56aacad0e0e9ace94e2009d68f5e584fee86f2ebf207a3f182d7d402d",
+        "sha256_in_prefix": "0f231fd56aacad0e0e9ace94e2009d68f5e584fee86f2ebf207a3f182d7d402d",
+        "size_in_bytes": 15700
+      },
+      {
+        "_path": "Lib/site-packages/pyximport/pyxbuild.py",
+        "path_type": "hardlink",
+        "sha256": "4e202486d4b149b456d3824ab603b714fde17d5cd0d668e3cc28793ea6433ab3",
+        "sha256_in_prefix": "4e202486d4b149b456d3824ab603b714fde17d5cd0d668e3cc28793ea6433ab3",
+        "size_in_bytes": 5702
+      },
+      {
+        "_path": "Lib/site-packages/pyximport/pyximport.py",
+        "path_type": "hardlink",
+        "sha256": "563c69de46e61517fd8f4c9ae1fd26d00872b648e39afd94905b9e6ac5f12f90",
+        "sha256_in_prefix": "563c69de46e61517fd8f4c9ae1fd26d00872b648e39afd94905b9e6ac5f12f90",
+        "size_in_bytes": 23578
+      },
+      {
+        "_path": "Scripts/cygdb-script.py",
+        "path_type": "hardlink",
+        "sha256": "2e9e4e61662fa1049de7e7f6bd263601e83993a0b4e68bb0553047d4ec4301a6",
+        "sha256_in_prefix": "2e9e4e61662fa1049de7e7f6bd263601e83993a0b4e68bb0553047d4ec4301a6",
+        "size_in_bytes": 215
+      },
+      {
+        "_path": "Scripts/cygdb.exe",
+        "path_type": "hardlink",
+        "sha256": "5ea569f2b5bc9c273351641a1a3c52821ce2a9370bc8202f0247c793ebd8a618",
+        "sha256_in_prefix": "5ea569f2b5bc9c273351641a1a3c52821ce2a9370bc8202f0247c793ebd8a618",
+        "size_in_bytes": 41984
+      },
+      {
+        "_path": "Scripts/cython-script.py",
+        "path_type": "hardlink",
+        "sha256": "40b8e181f5b7bcbcadaec4b0ae7766d58d1254d0ab708859585d6b07bee644c8",
+        "sha256_in_prefix": "40b8e181f5b7bcbcadaec4b0ae7766d58d1254d0ab708859585d6b07bee644c8",
+        "size_in_bytes": 236
+      },
+      {
+        "_path": "Scripts/cython.exe",
+        "path_type": "hardlink",
+        "sha256": "5ea569f2b5bc9c273351641a1a3c52821ce2a9370bc8202f0247c793ebd8a618",
+        "sha256_in_prefix": "5ea569f2b5bc9c273351641a1a3c52821ce2a9370bc8202f0247c793ebd8a618",
+        "size_in_bytes": 41984
+      },
+      {
+        "_path": "Scripts/cythonize-script.py",
+        "path_type": "hardlink",
+        "sha256": "3e6cd7abacb4069e5a110c86b66392f61a05b85003558dc65bf8abecf3eba731",
+        "sha256_in_prefix": "3e6cd7abacb4069e5a110c86b66392f61a05b85003558dc65bf8abecf3eba731",
+        "size_in_bytes": 216
+      },
+      {
+        "_path": "Scripts/cythonize.exe",
+        "path_type": "hardlink",
+        "sha256": "5ea569f2b5bc9c273351641a1a3c52821ce2a9370bc8202f0247c793ebd8a618",
+        "sha256_in_prefix": "5ea569f2b5bc9c273351641a1a3c52821ce2a9370bc8202f0247c793ebd8a618",
+        "size_in_bytes": 41984
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "cython==0.29.24",
+  "sha256": "8d76380aeb7504aa3a0833aa524effd8c91ca8fd982a79aa4f4330d18e724a99",
+  "size": 1839751,
+  "subdir": "win-64",
+  "timestamp": 1636018614396,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/cython-0.29.24-py39h604cdb4_0.conda",
+  "version": "0.29.24"
+}

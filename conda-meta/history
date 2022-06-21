@@ -1,0 +1,244 @@
+==> 2022-05-22 23:19:49 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py create -p C:\Users\valee\anaconda3\envs\public-2021-fall-master -y python=3.9
+# conda version: 4.12.0
++defaults/noarch::tzdata-2022a-hda174b7_0
++defaults/noarch::wheel-0.37.1-pyhd3eb1b0_0
++defaults/win-64::ca-certificates-2022.4.26-haa95532_0
++defaults/win-64::certifi-2022.5.18.1-py39haa95532_0
++defaults/win-64::openssl-1.1.1o-h2bbff1b_0
++defaults/win-64::pip-21.2.4-py39haa95532_0
++defaults/win-64::python-3.9.12-h6244533_0
++defaults/win-64::setuptools-61.2.0-py39haa95532_0
++defaults/win-64::sqlite-3.38.3-h2bbff1b_0
++defaults/win-64::vc-14.2-h21ff451_1
++defaults/win-64::vs2015_runtime-14.27.29016-h5e58377_2
++defaults/win-64::wincertstore-0.2-py39haa95532_2
+# update specs: ['python=3.9']
+==> 2022-05-22 23:21:38 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master requests==2.26.0 -y
+# conda version: 4.12.0
++defaults/noarch::charset-normalizer-2.0.4-pyhd3eb1b0_0
++defaults/noarch::idna-3.3-pyhd3eb1b0_0
++defaults/noarch::pycparser-2.21-pyhd3eb1b0_0
++defaults/noarch::pyopenssl-22.0.0-pyhd3eb1b0_0
++defaults/noarch::requests-2.26.0-pyhd3eb1b0_0
++defaults/win-64::brotlipy-0.7.0-py39h2bbff1b_1003
++defaults/win-64::cffi-1.15.0-py39h2bbff1b_1
++defaults/win-64::cryptography-37.0.1-py39h21b164f_0
++defaults/win-64::pysocks-1.7.1-py39haa95532_0
++defaults/win-64::urllib3-1.26.9-py39haa95532_0
++defaults/win-64::win_inet_pton-1.1.0-py39haa95532_0
+# update specs: ['requests==2.26.0']
+==> 2022-05-22 23:21:48 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master beautifulsoup4==4.9.3 -y
+# conda version: 4.12.0
++defaults/noarch::beautifulsoup4-4.9.3-pyha847dfd_0
++defaults/noarch::soupsieve-2.3.1-pyhd3eb1b0_0
+# update specs: ['beautifulsoup4==4.9.3']
+==> 2022-05-22 23:21:57 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master aiohttp==3.7.4.post0 -y
+# conda version: 4.12.0
++defaults/noarch::attrs-21.4.0-pyhd3eb1b0_0
++defaults/noarch::typing-extensions-4.1.1-hd3eb1b0_0
++defaults/noarch::typing_extensions-4.1.1-pyh06a4308_0
++defaults/win-64::aiohttp-3.7.4.post0-py39h2bbff1b_2
++defaults/win-64::async-timeout-3.0.1-py39haa95532_0
++defaults/win-64::chardet-4.0.0-py39haa95532_1003
++defaults/win-64::multidict-5.1.0-py39h2bbff1b_2
++defaults/win-64::yarl-1.6.3-py39h2bbff1b_0
+# update specs: ['aiohttp==3.7.4.post0']
+==> 2022-05-22 23:22:23 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master Cython==0.29.24 -y
+# conda version: 4.12.0
++defaults/win-64::cython-0.29.24-py39h604cdb4_0
+# update specs: ['cython==0.29.24']
+==> 2022-05-22 23:23:04 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master scipy==1.7.1 -y
+# conda version: 4.12.0
++defaults/noarch::six-1.16.0-pyhd3eb1b0_1
++defaults/win-64::blas-1.0-mkl
++defaults/win-64::icc_rt-2019.0.0-h0cc432a_1
++defaults/win-64::intel-openmp-2021.4.0-haa95532_3556
++defaults/win-64::mkl-2021.4.0-haa95532_640
++defaults/win-64::mkl-service-2.4.0-py39h2bbff1b_0
++defaults/win-64::mkl_fft-1.3.1-py39h277e83a_0
++defaults/win-64::mkl_random-1.2.2-py39hf11a4ad_0
++defaults/win-64::numpy-1.22.3-py39h7a0a035_0
++defaults/win-64::numpy-base-1.22.3-py39hca35cd5_0
++defaults/win-64::scipy-1.7.1-py39hbe87c03_2
+# update specs: ['scipy==1.7.1']
+==> 2022-05-22 23:23:46 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master numpy==1.20.2 -y
+# conda version: 4.12.0
+-defaults/win-64::numpy-1.22.3-py39h7a0a035_0
+-defaults/win-64::numpy-base-1.22.3-py39hca35cd5_0
++defaults/win-64::numpy-1.20.2-py39ha4e8547_0
++defaults/win-64::numpy-base-1.20.2-py39hc2deb75_0
+# update specs: ['numpy==1.20.2']
+==> 2022-05-22 23:24:38 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master pandas==1.3.1 -y
+# conda version: 4.12.0
++defaults/noarch::packaging-21.3-pyhd3eb1b0_0
++defaults/noarch::pyparsing-3.0.4-pyhd3eb1b0_0
++defaults/noarch::python-dateutil-2.8.2-pyhd3eb1b0_0
++defaults/noarch::pytz-2021.3-pyhd3eb1b0_0
++defaults/win-64::bottleneck-1.3.4-py39h080aedc_0
++defaults/win-64::numexpr-2.8.1-py39hb80d3ca_0
++defaults/win-64::pandas-1.3.1-py39h6214cd6_0
+# update specs: ['pandas==1.3.1']
+==> 2022-05-22 23:26:16 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master matplotlib==3.4.3 -y
+# conda version: 4.12.0
++defaults/noarch::cycler-0.11.0-pyhd3eb1b0_0
++defaults/noarch::fonttools-4.25.0-pyhd3eb1b0_0
++defaults/noarch::munkres-1.1.4-py_0
++defaults/win-64::brotli-1.0.9-ha925a31_2
++defaults/win-64::freetype-2.10.4-hd328e21_0
++defaults/win-64::icu-58.2-ha925a31_3
++defaults/win-64::jpeg-9e-h2bbff1b_0
++defaults/win-64::kiwisolver-1.3.2-py39hd77b12b_0
++defaults/win-64::libpng-1.6.37-h2a8f88b_0
++defaults/win-64::libtiff-4.2.0-he0120a3_1
++defaults/win-64::libwebp-1.2.2-h2bbff1b_0
++defaults/win-64::lz4-c-1.9.3-h2bbff1b_1
++defaults/win-64::matplotlib-3.4.3-py39haa95532_0
++defaults/win-64::matplotlib-base-3.4.3-py39h49ac443_0
++defaults/win-64::pillow-9.0.1-py39hdc2b20a_0
++defaults/win-64::pyqt-5.9.2-py39hd77b12b_6
++defaults/win-64::qt-5.9.7-vc14h73c81de_0
++defaults/win-64::sip-4.19.13-py39hd77b12b_0
++defaults/win-64::tk-8.6.11-h2bbff1b_1
++defaults/win-64::tornado-6.1-py39h2bbff1b_0
++defaults/win-64::xz-5.2.5-h8cc25b3_1
++defaults/win-64::zlib-1.2.12-h8cc25b3_2
++defaults/win-64::zstd-1.5.2-h19a0ad4_0
+# update specs: ['matplotlib==3.4.3']
+==> 2022-05-22 23:26:53 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master seaborn==0.11.2 -y
+# conda version: 4.12.0
++defaults/noarch::seaborn-0.11.2-pyhd3eb1b0_0
+# update specs: ['seaborn==0.11.2']
+==> 2022-05-22 23:28:16 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master lxml==4.6.3 -y
+# conda version: 4.12.0
++defaults/win-64::libiconv-1.16-h2bbff1b_2
++defaults/win-64::libxml2-2.9.12-h0ad7f3c_2
++defaults/win-64::libxslt-1.1.34-he774522_0
++defaults/win-64::lxml-4.6.3-py39h9b66d53_0
+# update specs: ['lxml==4.6.3']
+==> 2022-05-22 23:28:50 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master flatbuffers==2.0 -y
+# conda version: 4.12.0
++defaults/win-64::flatbuffers-2.0.0-h6c2663c_0
+# update specs: ['flatbuffers==2.0']
+==> 2022-05-22 23:31:04 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master flake8==3.9.2 -y
+# conda version: 4.12.0
++defaults/noarch::flake8-3.9.2-pyhd3eb1b0_0
++defaults/noarch::pycodestyle-2.7.0-pyhd3eb1b0_0
++defaults/noarch::pyflakes-2.3.1-pyhd3eb1b0_0
++defaults/win-64::importlib-metadata-4.11.3-py39haa95532_0
++defaults/win-64::mccabe-0.6.1-py39haa95532_1
++defaults/win-64::zipp-3.8.0-py39haa95532_0
+# update specs: ['flake8==3.9.2']
+==> 2022-05-22 23:31:26 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master mypy==0.910 -y
+# conda version: 4.12.0
++defaults/noarch::mypy-0.910-pyhd3eb1b0_0
++defaults/noarch::toml-0.10.2-pyhd3eb1b0_0
++defaults/win-64::mypy_extensions-0.4.3-py39haa95532_1
++defaults/win-64::psutil-5.8.0-py39h2bbff1b_1
+# update specs: ['mypy==0.910']
+==> 2022-05-22 23:31:45 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master pytest==6.2.5 -y
+# conda version: 4.12.0
++defaults/noarch::atomicwrites-1.4.0-py_0
++defaults/noarch::colorama-0.4.4-pyhd3eb1b0_0
++defaults/noarch::iniconfig-1.1.1-pyhd3eb1b0_0
++defaults/noarch::py-1.11.0-pyhd3eb1b0_0
++defaults/win-64::pluggy-1.0.0-py39haa95532_1
++defaults/win-64::pytest-6.2.5-py39haa95532_2
+# update specs: ['pytest==6.2.5']
+==> 2022-05-22 23:31:56 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master pytest-timeout==1.4.2 -y
+# conda version: 4.12.0
++defaults/noarch::pytest-timeout-1.4.2-py_0
+# update specs: ['pytest-timeout==1.4.2']
+==> 2022-05-22 23:32:18 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master pytest-mock==3.6.1 -y
+# conda version: 4.12.0
++defaults/noarch::pytest-mock-3.6.1-pyhd3eb1b0_0
+# update specs: ['pytest-mock==3.6.1']
+==> 2022-05-22 23:32:31 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master pytest-cov==2.12.1 -y
+# conda version: 4.12.0
++defaults/noarch::pytest-cov-2.12.1-pyhd3eb1b0_0
++defaults/win-64::coverage-6.3.2-py39h2bbff1b_0
+# update specs: ['pytest-cov==2.12.1']
+==> 2022-05-22 23:33:23 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install -p C:/Users/valee/anaconda3/envs/public-2021-fall-master pydantic~=1.9.0 -y
+# conda version: 4.12.0
++defaults/win-64::pydantic-1.9.0-py39h2bbff1b_1
+# update specs: ['pydantic~=1.9.0']
+==> 2022-05-23 01:38:10 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install --yes --json --force-pscheck --prefix C:\Users\valee\anaconda3\envs\public-2021-fall-master console_shortcut
+# conda version: 4.12.0
++defaults/win-64::console_shortcut-0.1.1-4
+# update specs: ['console_shortcut']
+==> 2022-05-23 22:07:37 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install --yes --json --force-pscheck --prefix C:\Users\valee\anaconda3\envs\public-2021-fall-master powershell_shortcut
+# conda version: 4.12.0
++defaults/win-64::powershell_shortcut-0.0.1-3
+# update specs: ['powershell_shortcut']
+# neutered specs: ['matplotlib', 'seaborn']
+==> 2022-06-18 16:46:29 <==
+# cmd: C:\Users\valee\anaconda3\Scripts\conda-script.py install --yes --json --force-pscheck --prefix C:\Users\valee\anaconda3\envs\public-2021-fall-master notebook
+# conda version: 4.12.0
++defaults/noarch::argon2-cffi-21.3.0-pyhd3eb1b0_0
++defaults/noarch::asttokens-2.0.5-pyhd3eb1b0_0
++defaults/noarch::backcall-0.2.0-pyhd3eb1b0_0
++defaults/noarch::bleach-4.1.0-pyhd3eb1b0_0
++defaults/noarch::decorator-5.1.1-pyhd3eb1b0_0
++defaults/noarch::defusedxml-0.7.1-pyhd3eb1b0_0
++defaults/noarch::executing-0.8.3-pyhd3eb1b0_0
++defaults/noarch::ipython_genutils-0.2.0-pyhd3eb1b0_1
++defaults/noarch::jinja2-3.0.3-pyhd3eb1b0_0
++defaults/noarch::jupyterlab_pygments-0.1.2-py_0
++defaults/noarch::matplotlib-inline-0.1.2-pyhd3eb1b0_2
++defaults/noarch::pandocfilters-1.5.0-pyhd3eb1b0_0
++defaults/noarch::parso-0.8.3-pyhd3eb1b0_0
++defaults/noarch::pickleshare-0.7.5-pyhd3eb1b0_1003
++defaults/noarch::prometheus_client-0.13.1-pyhd3eb1b0_0
++defaults/noarch::prompt-toolkit-3.0.20-pyhd3eb1b0_0
++defaults/noarch::pure_eval-0.2.2-pyhd3eb1b0_0
++defaults/noarch::pygments-2.11.2-pyhd3eb1b0_0
++defaults/noarch::python-fastjsonschema-2.15.1-pyhd3eb1b0_0
++defaults/noarch::send2trash-1.8.0-pyhd3eb1b0_1
++defaults/noarch::stack_data-0.2.0-pyhd3eb1b0_0
++defaults/noarch::testpath-0.5.0-pyhd3eb1b0_0
++defaults/noarch::traitlets-5.1.1-pyhd3eb1b0_0
++defaults/noarch::wcwidth-0.2.5-pyhd3eb1b0_0
++defaults/win-64::argon2-cffi-bindings-21.2.0-py39h2bbff1b_0
++defaults/win-64::debugpy-1.5.1-py39hd77b12b_0
++defaults/win-64::entrypoints-0.4-py39haa95532_0
++defaults/win-64::ipykernel-6.9.1-py39haa95532_0
++defaults/win-64::ipython-8.3.0-py39haa95532_0
++defaults/win-64::jedi-0.18.1-py39haa95532_1
++defaults/win-64::jsonschema-4.4.0-py39haa95532_0
++defaults/win-64::jupyter_client-7.2.2-py39haa95532_0
++defaults/win-64::jupyter_core-4.10.0-py39haa95532_0
++defaults/win-64::markupsafe-2.1.1-py39h2bbff1b_0
++defaults/win-64::mistune-0.8.4-py39h2bbff1b_1000
++defaults/win-64::nbclient-0.5.13-py39haa95532_0
++defaults/win-64::nbconvert-6.4.4-py39haa95532_0
++defaults/win-64::nbformat-5.3.0-py39haa95532_0
++defaults/win-64::nest-asyncio-1.5.5-py39haa95532_0
++defaults/win-64::notebook-6.4.11-py39haa95532_0
++defaults/win-64::pyrsistent-0.18.0-py39h196d8e1_0
++defaults/win-64::pywin32-302-py39h2bbff1b_2
++defaults/win-64::pywinpty-2.0.2-py39h5da7b33_0
++defaults/win-64::pyzmq-22.3.0-py39hd77b12b_2
++defaults/win-64::terminado-0.13.1-py39haa95532_0
++defaults/win-64::webencodings-0.5.1-py39haa95532_1
++defaults/win-64::winpty-0.4.3-4
+# update specs: ['notebook']

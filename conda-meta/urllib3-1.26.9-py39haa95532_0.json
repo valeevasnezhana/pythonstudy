@@ -1,0 +1,717 @@
+{
+  "build": "py39haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "brotlipy >=0.6.0",
+    "certifi",
+    "cryptography >=1.3.4",
+    "idna >=2.0.0",
+    "pyopenssl >=0.14",
+    "pysocks >=1.5.6,<2.0,!=1.5.7",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\valee\\anaconda3\\pkgs\\urllib3-1.26.9-py39haa95532_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/urllib3-1.26.9.dist-info/INSTALLER",
+    "Lib/site-packages/urllib3-1.26.9.dist-info/LICENSE.txt",
+    "Lib/site-packages/urllib3-1.26.9.dist-info/METADATA",
+    "Lib/site-packages/urllib3-1.26.9.dist-info/RECORD",
+    "Lib/site-packages/urllib3-1.26.9.dist-info/REQUESTED",
+    "Lib/site-packages/urllib3-1.26.9.dist-info/WHEEL",
+    "Lib/site-packages/urllib3-1.26.9.dist-info/direct_url.json",
+    "Lib/site-packages/urllib3-1.26.9.dist-info/top_level.txt",
+    "Lib/site-packages/urllib3/__init__.py",
+    "Lib/site-packages/urllib3/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/urllib3/__pycache__/_collections.cpython-39.pyc",
+    "Lib/site-packages/urllib3/__pycache__/_version.cpython-39.pyc",
+    "Lib/site-packages/urllib3/__pycache__/connection.cpython-39.pyc",
+    "Lib/site-packages/urllib3/__pycache__/connectionpool.cpython-39.pyc",
+    "Lib/site-packages/urllib3/__pycache__/exceptions.cpython-39.pyc",
+    "Lib/site-packages/urllib3/__pycache__/fields.cpython-39.pyc",
+    "Lib/site-packages/urllib3/__pycache__/filepost.cpython-39.pyc",
+    "Lib/site-packages/urllib3/__pycache__/poolmanager.cpython-39.pyc",
+    "Lib/site-packages/urllib3/__pycache__/request.cpython-39.pyc",
+    "Lib/site-packages/urllib3/__pycache__/response.cpython-39.pyc",
+    "Lib/site-packages/urllib3/_collections.py",
+    "Lib/site-packages/urllib3/_version.py",
+    "Lib/site-packages/urllib3/connection.py",
+    "Lib/site-packages/urllib3/connectionpool.py",
+    "Lib/site-packages/urllib3/contrib/__init__.py",
+    "Lib/site-packages/urllib3/contrib/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/urllib3/contrib/__pycache__/_appengine_environ.cpython-39.pyc",
+    "Lib/site-packages/urllib3/contrib/__pycache__/appengine.cpython-39.pyc",
+    "Lib/site-packages/urllib3/contrib/__pycache__/ntlmpool.cpython-39.pyc",
+    "Lib/site-packages/urllib3/contrib/__pycache__/pyopenssl.cpython-39.pyc",
+    "Lib/site-packages/urllib3/contrib/__pycache__/securetransport.cpython-39.pyc",
+    "Lib/site-packages/urllib3/contrib/__pycache__/socks.cpython-39.pyc",
+    "Lib/site-packages/urllib3/contrib/_appengine_environ.py",
+    "Lib/site-packages/urllib3/contrib/_securetransport/__init__.py",
+    "Lib/site-packages/urllib3/contrib/_securetransport/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/urllib3/contrib/_securetransport/__pycache__/bindings.cpython-39.pyc",
+    "Lib/site-packages/urllib3/contrib/_securetransport/__pycache__/low_level.cpython-39.pyc",
+    "Lib/site-packages/urllib3/contrib/_securetransport/bindings.py",
+    "Lib/site-packages/urllib3/contrib/_securetransport/low_level.py",
+    "Lib/site-packages/urllib3/contrib/appengine.py",
+    "Lib/site-packages/urllib3/contrib/ntlmpool.py",
+    "Lib/site-packages/urllib3/contrib/pyopenssl.py",
+    "Lib/site-packages/urllib3/contrib/securetransport.py",
+    "Lib/site-packages/urllib3/contrib/socks.py",
+    "Lib/site-packages/urllib3/exceptions.py",
+    "Lib/site-packages/urllib3/fields.py",
+    "Lib/site-packages/urllib3/filepost.py",
+    "Lib/site-packages/urllib3/packages/__init__.py",
+    "Lib/site-packages/urllib3/packages/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/urllib3/packages/__pycache__/six.cpython-39.pyc",
+    "Lib/site-packages/urllib3/packages/backports/__init__.py",
+    "Lib/site-packages/urllib3/packages/backports/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/urllib3/packages/backports/__pycache__/makefile.cpython-39.pyc",
+    "Lib/site-packages/urllib3/packages/backports/makefile.py",
+    "Lib/site-packages/urllib3/packages/six.py",
+    "Lib/site-packages/urllib3/poolmanager.py",
+    "Lib/site-packages/urllib3/request.py",
+    "Lib/site-packages/urllib3/response.py",
+    "Lib/site-packages/urllib3/util/__init__.py",
+    "Lib/site-packages/urllib3/util/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/connection.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/proxy.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/queue.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/request.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/response.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/retry.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/ssl_.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/ssl_match_hostname.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/ssltransport.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/timeout.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/url.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/__pycache__/wait.cpython-39.pyc",
+    "Lib/site-packages/urllib3/util/connection.py",
+    "Lib/site-packages/urllib3/util/proxy.py",
+    "Lib/site-packages/urllib3/util/queue.py",
+    "Lib/site-packages/urllib3/util/request.py",
+    "Lib/site-packages/urllib3/util/response.py",
+    "Lib/site-packages/urllib3/util/retry.py",
+    "Lib/site-packages/urllib3/util/ssl_.py",
+    "Lib/site-packages/urllib3/util/ssl_match_hostname.py",
+    "Lib/site-packages/urllib3/util/ssltransport.py",
+    "Lib/site-packages/urllib3/util/timeout.py",
+    "Lib/site-packages/urllib3/util/url.py",
+    "Lib/site-packages/urllib3/util/wait.py",
+    ".nonadmin"
+  ],
+  "fn": "urllib3-1.26.9-py39haa95532_0.conda",
+  "legacy_bz2_md5": "158c2d4c0e2d3a21947fadb718b66de0",
+  "legacy_bz2_size": 189653,
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "C:\\Users\\valee\\anaconda3\\pkgs\\urllib3-1.26.9-py39haa95532_0",
+    "type": 1
+  },
+  "md5": "5b21be238a032dcc463d21ff2a986bc1",
+  "name": "urllib3",
+  "package_tarball_full_path": "C:\\Users\\valee\\anaconda3\\pkgs\\urllib3-1.26.9-py39haa95532_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/urllib3-1.26.9.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/urllib3-1.26.9.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "c37bf186e27cf9dbe9619e55edfe3cea7b30091ceb3da63c7dacbe0e6d77907b",
+        "sha256_in_prefix": "c37bf186e27cf9dbe9619e55edfe3cea7b30091ceb3da63c7dacbe0e6d77907b",
+        "size_in_bytes": 1115
+      },
+      {
+        "_path": "Lib/site-packages/urllib3-1.26.9.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "5227260f04cb22b60bd8ee1f381beaf30c4c300c0cd8bf0960fef98c45edf034",
+        "sha256_in_prefix": "5227260f04cb22b60bd8ee1f381beaf30c4c300c0cd8bf0960fef98c45edf034",
+        "size_in_bytes": 46325
+      },
+      {
+        "_path": "Lib/site-packages/urllib3-1.26.9.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "24c49581a8fcbd409f37d97c8563b169d7f9749e71c654c6ba3aa68b5ee72b29",
+        "sha256_in_prefix": "24c49581a8fcbd409f37d97c8563b169d7f9749e71c654c6ba3aa68b5ee72b29",
+        "size_in_bytes": 5926
+      },
+      {
+        "_path": "Lib/site-packages/urllib3-1.26.9.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/urllib3-1.26.9.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "cfd8f4c406bf26650a3299b3ef62b464600b48cfe7fb04159866e5797c765478",
+        "sha256_in_prefix": "cfd8f4c406bf26650a3299b3ef62b464600b48cfe7fb04159866e5797c765478",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "Lib/site-packages/urllib3-1.26.9.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "bbd3440aa993b34f4e7b2509b24270f547796704627ee3d8995bde8e03216841",
+        "sha256_in_prefix": "bbd3440aa993b34f4e7b2509b24270f547796704627ee3d8995bde8e03216841",
+        "size_in_bytes": 67
+      },
+      {
+        "_path": "Lib/site-packages/urllib3-1.26.9.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "10c8972f6b0aad3726accc481d3a9d737113e78a50236634ef62dec4511e9afa",
+        "sha256_in_prefix": "10c8972f6b0aad3726accc481d3a9d737113e78a50236634ef62dec4511e9afa",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8f7cb31c86e65bb092f8829027df8f3d07ff60a3bc10e01ecbfacc5b4511eeeb",
+        "sha256_in_prefix": "8f7cb31c86e65bb092f8829027df8f3d07ff60a3bc10e01ecbfacc5b4511eeeb",
+        "size_in_bytes": 2763
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "48dc4f16f7da40ac128d3e517f4b38dced9e881c2c1cf98f18e9f1bfd6d42af9",
+        "sha256_in_prefix": "48dc4f16f7da40ac128d3e517f4b38dced9e881c2c1cf98f18e9f1bfd6d42af9",
+        "size_in_bytes": 2126
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__pycache__/_collections.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4b559a0f7f3e69c07b12e639ff8bab56a5e14a6315031f6780d95eb7cf3721a7",
+        "sha256_in_prefix": "4b559a0f7f3e69c07b12e639ff8bab56a5e14a6315031f6780d95eb7cf3721a7",
+        "size_in_bytes": 10721
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__pycache__/_version.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ff8b72028dc780ba1eaaa1fd57e8979b87a72e595499fbecdd8f9590dd9ec99e",
+        "sha256_in_prefix": "ff8b72028dc780ba1eaaa1fd57e8979b87a72e595499fbecdd8f9590dd9ec99e",
+        "size_in_bytes": 150
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__pycache__/connection.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7722138e2e248b839f34308d2ea24ac7ccc3b58b74b2a0070acae64074b5a171",
+        "sha256_in_prefix": "7722138e2e248b839f34308d2ea24ac7ccc3b58b74b2a0070acae64074b5a171",
+        "size_in_bytes": 13619
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__pycache__/connectionpool.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "85d2a784003fd9693781bb53a07506f9cf4b4008df57e674e3dc35f1b93f15a4",
+        "sha256_in_prefix": "85d2a784003fd9693781bb53a07506f9cf4b4008df57e674e3dc35f1b93f15a4",
+        "size_in_bytes": 25299
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__pycache__/exceptions.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7bdfc4efe221f4acd078d03d6276488130f82dbe5d2a4982a9b8c39182199805",
+        "sha256_in_prefix": "7bdfc4efe221f4acd078d03d6276488130f82dbe5d2a4982a9b8c39182199805",
+        "size_in_bytes": 11583
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__pycache__/fields.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "21b11580932b7d7bb8a9bfaba8390458e610c30cf85333c088bc20cba7b3e7d5",
+        "sha256_in_prefix": "21b11580932b7d7bb8a9bfaba8390458e610c30cf85333c088bc20cba7b3e7d5",
+        "size_in_bytes": 8098
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__pycache__/filepost.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "55666363fc6e4787b09f7af7c527bdc4e0da4bd7462b063c28703e097199b232",
+        "sha256_in_prefix": "55666363fc6e4787b09f7af7c527bdc4e0da4bd7462b063c28703e097199b232",
+        "size_in_bytes": 2699
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__pycache__/poolmanager.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "e3b11a55fb256e009c31227eec1b4f1903ea61b50545c047d29ffb7bd8088005",
+        "sha256_in_prefix": "e3b11a55fb256e009c31227eec1b4f1903ea61b50545c047d29ffb7bd8088005",
+        "size_in_bytes": 15118
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__pycache__/request.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b2dd28abfea6391c2e217a3982bda685fcd3ff9f7cd44643f09b08c6eda98321",
+        "sha256_in_prefix": "b2dd28abfea6391c2e217a3982bda685fcd3ff9f7cd44643f09b08c6eda98321",
+        "size_in_bytes": 5562
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/__pycache__/response.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c4fab7684107b063489c6170739028cc9cfc68da60379605ecba4a5f62718423",
+        "sha256_in_prefix": "c4fab7684107b063489c6170739028cc9cfc68da60379605ecba4a5f62718423",
+        "size_in_bytes": 20823
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/_collections.py",
+        "path_type": "hardlink",
+        "sha256": "469d6657206073f52501ca7a3376add6c909057479278dcd6b0453bd6da0fd76",
+        "sha256_in_prefix": "469d6657206073f52501ca7a3376add6c909057479278dcd6b0453bd6da0fd76",
+        "size_in_bytes": 10811
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/_version.py",
+        "path_type": "hardlink",
+        "sha256": "584ec62d8774215c2093ed60419fbb8f0d346c25188d84c895c58893b34e8443",
+        "sha256_in_prefix": "584ec62d8774215c2093ed60419fbb8f0d346c25188d84c895c58893b34e8443",
+        "size_in_bytes": 63
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/connection.py",
+        "path_type": "hardlink",
+        "sha256": "98cb82223746d35911a45504370251a032a661eafb0993b9ea97d36c1092edcc",
+        "sha256_in_prefix": "98cb82223746d35911a45504370251a032a661eafb0993b9ea97d36c1092edcc",
+        "size_in_bytes": 20070
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/connectionpool.py",
+        "path_type": "hardlink",
+        "sha256": "ab3f880ab5ba8384d95426c343c7d17baf013295e4b24911f6f01563dcd45ad0",
+        "sha256_in_prefix": "ab3f880ab5ba8384d95426c343c7d17baf013295e4b24911f6f01563dcd45ad0",
+        "size_in_bytes": 39013
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f8dac04b04be6f3537ac68c8d61398fa5378b3e78bcd37640e60bfdda9fd94eb",
+        "sha256_in_prefix": "f8dac04b04be6f3537ac68c8d61398fa5378b3e78bcd37640e60bfdda9fd94eb",
+        "size_in_bytes": 136
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/__pycache__/_appengine_environ.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d4398e85211925f82658c130469a53585819b1ffb2e01effdf9a11bd1c839572",
+        "sha256_in_prefix": "d4398e85211925f82658c130469a53585819b1ffb2e01effdf9a11bd1c839572",
+        "size_in_bytes": 1356
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/__pycache__/appengine.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "84120a4e62d70bb5c6530d7c64380a481634a71a5f422a7ff3b296ed6b717d8b",
+        "sha256_in_prefix": "84120a4e62d70bb5c6530d7c64380a481634a71a5f422a7ff3b296ed6b717d8b",
+        "size_in_bytes": 8185
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/__pycache__/ntlmpool.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f69afce26f40f751fef1272a18ba992085eaf4974eb4cc24e4db01adfb2fee87",
+        "sha256_in_prefix": "f69afce26f40f751fef1272a18ba992085eaf4974eb4cc24e4db01adfb2fee87",
+        "size_in_bytes": 3563
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/__pycache__/pyopenssl.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ac3b4753fed3e0cc274129c9802830749495a3a72d49f92d433ec6938650f2cf",
+        "sha256_in_prefix": "ac3b4753fed3e0cc274129c9802830749495a3a72d49f92d433ec6938650f2cf",
+        "size_in_bytes": 15507
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/__pycache__/securetransport.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "aaeba7127c685c5a4a9eb8db34bf61f652862dfdfbe8833deebb0a87aef64cb7",
+        "sha256_in_prefix": "aaeba7127c685c5a4a9eb8db34bf61f652862dfdfbe8833deebb0a87aef64cb7",
+        "size_in_bytes": 21823
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/__pycache__/socks.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "25c008ed9abb5920857a1726dfb9612d377d2c3dcc0267bedf56e0af79746587",
+        "sha256_in_prefix": "25c008ed9abb5920857a1726dfb9612d377d2c3dcc0267bedf56e0af79746587",
+        "size_in_bytes": 5572
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/_appengine_environ.py",
+        "path_type": "hardlink",
+        "sha256": "6c36f2384856d8228b25c42a00a032ac41cdf9a925b321c52aaeaf17c645b269",
+        "sha256_in_prefix": "6c36f2384856d8228b25c42a00a032ac41cdf9a925b321c52aaeaf17c645b269",
+        "size_in_bytes": 957
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/_securetransport/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/_securetransport/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "82eb685155b1dadd4fd4146cf5c87aa64b5f695de0130f162dd4aa2576dab47d",
+        "sha256_in_prefix": "82eb685155b1dadd4fd4146cf5c87aa64b5f695de0130f162dd4aa2576dab47d",
+        "size_in_bytes": 153
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/_securetransport/__pycache__/bindings.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d5aaef0e49bb49c8c0843ba41600649ff0a8233d352f7ff27a4c89cee60574cf",
+        "sha256_in_prefix": "d5aaef0e49bb49c8c0843ba41600649ff0a8233d352f7ff27a4c89cee60574cf",
+        "size_in_bytes": 10645
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/_securetransport/__pycache__/low_level.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "cb9f16ed56ce498164fb778b723179e0177fc296b6f8d88ad88bb5904790c41a",
+        "sha256_in_prefix": "cb9f16ed56ce498164fb778b723179e0177fc296b6f8d88ad88bb5904790c41a",
+        "size_in_bytes": 9113
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/_securetransport/bindings.py",
+        "path_type": "hardlink",
+        "sha256": "e1793ae2a2243c1b74f40e6af9120552e0e135cf665e29556a99bb5a7627cd1c",
+        "sha256_in_prefix": "e1793ae2a2243c1b74f40e6af9120552e0e135cf665e29556a99bb5a7627cd1c",
+        "size_in_bytes": 17632
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/_securetransport/low_level.py",
+        "path_type": "hardlink",
+        "sha256": "076241076fcd44fd36c4ae8309ad4f6bd22ec6b3f0c730f365b8b14246fb53d3",
+        "sha256_in_prefix": "076241076fcd44fd36c4ae8309ad4f6bd22ec6b3f0c730f365b8b14246fb53d3",
+        "size_in_bytes": 13922
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/appengine.py",
+        "path_type": "hardlink",
+        "sha256": "8f3e75e636580431539e1478cea7de682a3a25d0e0010a986eacc72bdb0391fc",
+        "sha256_in_prefix": "8f3e75e636580431539e1478cea7de682a3a25d0e0010a986eacc72bdb0391fc",
+        "size_in_bytes": 11010
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/ntlmpool.py",
+        "path_type": "hardlink",
+        "sha256": "7a3f601af7c06f61add3495a7c5a78e52228473f90c2b438582866ea04260253",
+        "sha256_in_prefix": "7a3f601af7c06f61add3495a7c5a78e52228473f90c2b438582866ea04260253",
+        "size_in_bytes": 4538
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/pyopenssl.py",
+        "path_type": "hardlink",
+        "sha256": "6083324e25e22cf57f41f170dcf8d9df5986a8998ce44cf12238522f167b5543",
+        "sha256_in_prefix": "6083324e25e22cf57f41f170dcf8d9df5986a8998ce44cf12238522f167b5543",
+        "size_in_bytes": 16874
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/securetransport.py",
+        "path_type": "hardlink",
+        "sha256": "8b3771e37805a141854a0c5ab1994e08be3615a338bd2b005539a13b4107d6f3",
+        "sha256_in_prefix": "8b3771e37805a141854a0c5ab1994e08be3615a338bd2b005539a13b4107d6f3",
+        "size_in_bytes": 34417
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/contrib/socks.py",
+        "path_type": "hardlink",
+        "sha256": "6918bd7965e8f5911bf795d4c5e7f8676d421659e78db122028f473ac7a832de",
+        "sha256_in_prefix": "6918bd7965e8f5911bf795d4c5e7f8676d421659e78db122028f473ac7a832de",
+        "size_in_bytes": 7097
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "d0c9e7a372874cd7d745f63beb7f0db9f38f9146fa9973a6f8baa3fb8c76c3c0",
+        "sha256_in_prefix": "d0c9e7a372874cd7d745f63beb7f0db9f38f9146fa9973a6f8baa3fb8c76c3c0",
+        "size_in_bytes": 8217
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/fields.py",
+        "path_type": "hardlink",
+        "sha256": "92f2c30a0fc9987d652e3514118fc52d2f14858ee106f0cfb951136d8f2676b3",
+        "sha256_in_prefix": "92f2c30a0fc9987d652e3514118fc52d2f14858ee106f0cfb951136d8f2676b3",
+        "size_in_bytes": 8579
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/filepost.py",
+        "path_type": "hardlink",
+        "sha256": "e5bfeaaa04475652fbb8bb5d018073061f861e653901f255b7fd8dd174b73de6",
+        "sha256_in_prefix": "e5bfeaaa04475652fbb8bb5d018073061f861e653901f255b7fd8dd174b73de6",
+        "size_in_bytes": 2440
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/packages/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/packages/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "bd9e7fcb498fa80a6033b63013b99eb763349f2f685a2462dc0f54168331f8da",
+        "sha256_in_prefix": "bd9e7fcb498fa80a6033b63013b99eb763349f2f685a2462dc0f54168331f8da",
+        "size_in_bytes": 137
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/packages/__pycache__/six.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "25691f263c7a6cc3a051020c4c620d3aa6b93c35dddba7b3069dbd680eaaa398",
+        "sha256_in_prefix": "25691f263c7a6cc3a051020c4c620d3aa6b93c35dddba7b3069dbd680eaaa398",
+        "size_in_bytes": 27520
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/packages/backports/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/packages/backports/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "affca61abc356af0ce34a88b809424e3eb31fa65119bb8a1e48159972c891da9",
+        "sha256_in_prefix": "affca61abc356af0ce34a88b809424e3eb31fa65119bb8a1e48159972c891da9",
+        "size_in_bytes": 147
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/packages/backports/__pycache__/makefile.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c1f8fb7eb45c6c373c1354d087d6874d2693dab62a2a771d01e955fccc72f1e7",
+        "sha256_in_prefix": "c1f8fb7eb45c6c373c1354d087d6874d2693dab62a2a771d01e955fccc72f1e7",
+        "size_in_bytes": 1245
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/packages/backports/makefile.py",
+        "path_type": "hardlink",
+        "sha256": "9dbcedde2d1a80f54fd3b8eaaa08e16988cc9ae022fd6e44d04cb0662bd53bc1",
+        "sha256_in_prefix": "9dbcedde2d1a80f54fd3b8eaaa08e16988cc9ae022fd6e44d04cb0662bd53bc1",
+        "size_in_bytes": 1417
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/packages/six.py",
+        "path_type": "hardlink",
+        "sha256": "d4b556ee58ea462ac595f1318f097ebf507bbd20143539b318cb3ea9acacdb38",
+        "sha256_in_prefix": "d4b556ee58ea462ac595f1318f097ebf507bbd20143539b318cb3ea9acacdb38",
+        "size_in_bytes": 34666
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/poolmanager.py",
+        "path_type": "hardlink",
+        "sha256": "d0a38e2440a878b6158d41efbfed21e0eab7145410db26fe1678e46e3f2024ed",
+        "sha256_in_prefix": "d0a38e2440a878b6158d41efbfed21e0eab7145410db26fe1678e46e3f2024ed",
+        "size_in_bytes": 19786
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/request.py",
+        "path_type": "hardlink",
+        "sha256": "645488a97d02e968b38b179c0a1677fe8932bbb044bf4959bb5553d2cea1e123",
+        "sha256_in_prefix": "645488a97d02e968b38b179c0a1677fe8932bbb044bf4959bb5553d2cea1e123",
+        "size_in_bytes": 5985
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/response.py",
+        "path_type": "hardlink",
+        "sha256": "f5be4dadbcc70e70b697f402f6eb8d40fbfbe62b35aa02daeccdc0c7866bf73f",
+        "sha256_in_prefix": "f5be4dadbcc70e70b697f402f6eb8d40fbfbe62b35aa02daeccdc0c7866bf73f",
+        "size_in_bytes": 28276
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2449929a6aaa2f26b0f0fe75814226661f06c20f62d7349ef83a2a022b67da77",
+        "sha256_in_prefix": "2449929a6aaa2f26b0f0fe75814226661f06c20f62d7349ef83a2a022b67da77",
+        "size_in_bytes": 1155
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "82deecdc71190a6721e32ab9f7c075d2d3f2a7f88379c89b60e8840de964db33",
+        "sha256_in_prefix": "82deecdc71190a6721e32ab9f7c075d2d3f2a7f88379c89b60e8840de964db33",
+        "size_in_bytes": 1046
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/connection.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d3d92a2bc07d6ba92718236db77fa141b500c7caf31b6b06a3d6e922acb1fdbb",
+        "sha256_in_prefix": "d3d92a2bc07d6ba92718236db77fa141b500c7caf31b6b06a3d6e922acb1fdbb",
+        "size_in_bytes": 3378
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/proxy.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a3530f4b15f4e72443bf60dc774e4110b963e7d1742a5474101209f5f80e077a",
+        "sha256_in_prefix": "a3530f4b15f4e72443bf60dc774e4110b963e7d1742a5474101209f5f80e077a",
+        "size_in_bytes": 1282
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/queue.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "13a262f39ed25a3446726f46c1f0c2f98489d0b0028fad5be126d84d86a163a6",
+        "sha256_in_prefix": "13a262f39ed25a3446726f46c1f0c2f98489d0b0028fad5be126d84d86a163a6",
+        "size_in_bytes": 1001
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/request.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "696151c5e936082660d5bce6e36877cc339bac140b6f0f09c73ed95bbc15bdf0",
+        "sha256_in_prefix": "696151c5e936082660d5bce6e36877cc339bac140b6f0f09c73ed95bbc15bdf0",
+        "size_in_bytes": 3439
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/response.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b6564b999c5998f98b8cdd096788ae2a20310e356e0ffb2bae004e481865945f",
+        "sha256_in_prefix": "b6564b999c5998f98b8cdd096788ae2a20310e356e0ffb2bae004e481865945f",
+        "size_in_bytes": 2286
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/retry.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8b3d2689d424ae484d856910141d75ff9218456dbd4a92b25d44fec96bd8685b",
+        "sha256_in_prefix": "8b3d2689d424ae484d856910141d75ff9218456dbd4a92b25d44fec96bd8685b",
+        "size_in_bytes": 16193
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/ssl_.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6e9eba8771e484487b0905d550a1168c2de2a312e22feef3416fbadf3a8f8927",
+        "sha256_in_prefix": "6e9eba8771e484487b0905d550a1168c2de2a312e22feef3416fbadf3a8f8927",
+        "size_in_bytes": 11258
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/ssl_match_hostname.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a61e75bb6e381ba788dba3b1498be30542af3715fbb6010af8333b2b6b2327a4",
+        "sha256_in_prefix": "a61e75bb6e381ba788dba3b1498be30542af3715fbb6010af8333b2b6b2327a4",
+        "size_in_bytes": 3200
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/ssltransport.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "3f23ac72bb9fd2221649fa13dcb0a55ebb5491f80a82ad4dce22fbc0a32beb97",
+        "sha256_in_prefix": "3f23ac72bb9fd2221649fa13dcb0a55ebb5491f80a82ad4dce22fbc0a32beb97",
+        "size_in_bytes": 7416
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/timeout.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2d8753d46e6060de5fc451e22257a098326d9575ed15b36d8cbd6f08e8859c1d",
+        "sha256_in_prefix": "2d8753d46e6060de5fc451e22257a098326d9575ed15b36d8cbd6f08e8859c1d",
+        "size_in_bytes": 8884
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/url.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0b41964aca790016df8c809d9f0382d9bca6a5faffcdec76e03b55828cfe1f60",
+        "sha256_in_prefix": "0b41964aca790016df8c809d9f0382d9bca6a5faffcdec76e03b55828cfe1f60",
+        "size_in_bytes": 10585
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/__pycache__/wait.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "22059b5947dcd190eb308f246993dc32d43933d6d7caba0a69d489e2aac4353b",
+        "sha256_in_prefix": "22059b5947dcd190eb308f246993dc32d43933d6d7caba0a69d489e2aac4353b",
+        "size_in_bytes": 3069
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/connection.py",
+        "path_type": "hardlink",
+        "sha256": "e4bc760753d6dbd2b1067d93d3190dd420604416b780654904aa10a11a201159",
+        "sha256_in_prefix": "e4bc760753d6dbd2b1067d93d3190dd420604416b780654904aa10a11a201159",
+        "size_in_bytes": 4901
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/proxy.py",
+        "path_type": "hardlink",
+        "sha256": "cd4bcf3c226ba7a74e17437818055b39c97aa3ee2e5ca4ab1a24e492be6f512e",
+        "sha256_in_prefix": "cd4bcf3c226ba7a74e17437818055b39c97aa3ee2e5ca4ab1a24e492be6f512e",
+        "size_in_bytes": 1605
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/queue.py",
+        "path_type": "hardlink",
+        "sha256": "9d1817f3f797fbf564bf1a17d3de905a8cfc3ecd101d4004c482c263fecf9dc3",
+        "sha256_in_prefix": "9d1817f3f797fbf564bf1a17d3de905a8cfc3ecd101d4004c482c263fecf9dc3",
+        "size_in_bytes": 498
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/request.py",
+        "path_type": "hardlink",
+        "sha256": "7d688069af29c1d2cb22aa132c1c420b67b879df349aecca5377b71d6593cc54",
+        "sha256_in_prefix": "7d688069af29c1d2cb22aa132c1c420b67b879df349aecca5377b71d6593cc54",
+        "size_in_bytes": 4225
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/response.py",
+        "path_type": "hardlink",
+        "sha256": "189a60dc4822f6a6895d1c01879c2ff8c36e4566a7e4122ee34a117a8c563f6f",
+        "sha256_in_prefix": "189a60dc4822f6a6895d1c01879c2ff8c36e4566a7e4122ee34a117a8c563f6f",
+        "size_in_bytes": 3510
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/retry.py",
+        "path_type": "hardlink",
+        "sha256": "8844a0d8fbd588d7570516383292f887492ac0e3a41e4c662e7d649211473d4f",
+        "sha256_in_prefix": "8844a0d8fbd588d7570516383292f887492ac0e3a41e4c662e7d649211473d4f",
+        "size_in_bytes": 22001
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/ssl_.py",
+        "path_type": "hardlink",
+        "sha256": "734b188920badbbdabeae3e4c50a68e6b60f3fd402d5e47aa08ef4d38818a99a",
+        "sha256_in_prefix": "734b188920badbbdabeae3e4c50a68e6b60f3fd402d5e47aa08ef4d38818a99a",
+        "size_in_bytes": 17165
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/ssl_match_hostname.py",
+        "path_type": "hardlink",
+        "sha256": "22be1c65512398093c8140081d64a2ef0b4e3bcdd4098001636c450f5425fd60",
+        "sha256_in_prefix": "22be1c65512398093c8140081d64a2ef0b4e3bcdd4098001636c450f5425fd60",
+        "size_in_bytes": 5758
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/ssltransport.py",
+        "path_type": "hardlink",
+        "sha256": "340faee6b313ac3143142f10cd129410a306d39eb584e0f8a814ebdd9e29bfa1",
+        "sha256_in_prefix": "340faee6b313ac3143142f10cd129410a306d39eb584e0f8a814ebdd9e29bfa1",
+        "size_in_bytes": 6895
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/timeout.py",
+        "path_type": "hardlink",
+        "sha256": "4126c150d381f7287a0270e7eb54ab2d0d21839a33d08f7eb97106f75009b888",
+        "sha256_in_prefix": "4126c150d381f7287a0270e7eb54ab2d0d21839a33d08f7eb97106f75009b888",
+        "size_in_bytes": 10003
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/url.py",
+        "path_type": "hardlink",
+        "sha256": "6aef6391432756bf50a7ff648381df671f6af6eafac97438bb9335ec89fe50a6",
+        "sha256_in_prefix": "6aef6391432756bf50a7ff648381df671f6af6eafac97438bb9335ec89fe50a6",
+        "size_in_bytes": 14030
+      },
+      {
+        "_path": "Lib/site-packages/urllib3/util/wait.py",
+        "path_type": "hardlink",
+        "sha256": "dcc50a452014243076b60728eea454b245b4cd7180598bd1444e10d7feb194bb",
+        "sha256_in_prefix": "dcc50a452014243076b60728eea454b245b4cd7180598bd1444e10d7feb194bb",
+        "size_in_bytes": 5404
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "7d3da35bf90b2042808f70bcfd7e5e7683ce0911ad66053065d84f0c8ac833e3",
+  "size": 194407,
+  "subdir": "win-64",
+  "timestamp": 1650639944754,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/urllib3-1.26.9-py39haa95532_0.conda",
+  "version": "1.26.9"
+}
