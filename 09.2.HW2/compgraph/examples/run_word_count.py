@@ -1,21 +1,24 @@
-import click
+import itertools
+import json
+import os
 
-from compgraph.algorithms import word_count_graph
-
-
-# TODO: cli
-# You can use anything ypu want. We suggest you to use `click`
-def main() -> None:
-    graph = word_count_graph(input_stream_name="input", text_column='text', count_column='count')
-
-    input_filepath = None
-    output_filepath = None
-
-    result = graph.run(input=lambda: input_filepath)
-    with open(output_filepath, "w") as out:
-        for row in result:
-            print(row, file=out)
+from compgraph import algorithms as graphs
+from compgraph import operations as ops
 
 
-if __name__ == "__main__":
-    main()
+def parser(line: str) -> ops.TRow:
+    return json.loads(line)
+
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+resource_path = os.path.join(os.path.split(dir_path)[0], 'resources')
+
+
+def word_count() -> None:
+    graph = graphs.word_count_graph('docs', text_column='text', count_column='count')
+    filename = os.path.join(resource_path, "text_corpus.txt")
+    graph = graph.graph_from_file(filename=filename, parser=parser)
+
+    result = graph.run()
+    for res in itertools.islice(result, 5):
+        print(res)

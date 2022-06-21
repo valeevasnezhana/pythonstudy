@@ -355,9 +355,9 @@ class ProcessLength(Mapper):
         a2 = math.radians(a2)
         b1 = math.radians(b1)
         b2 = math.radians(b2)
-        row[self.length] = 6371 * 2 * math.asin(math.sqrt(math.sin(b2 / 2 - b1 / 2) * math.sin(b2 / 2 - b1 / 2) +
-                                                          math.cos(b1) * math.cos(b2) * math.sin(a2 / 2 - a1 / 2) *
-                                                          math.sin(a2 / 2 - a1 / 2)))
+        row[self.length] = 6371 * 2 * math.asin(math.sqrt(math.sin(a2 / 2 - a1 / 2) * math.sin(a2 / 2 - a1 / 2) +
+                                                          math.cos(a1) * math.cos(a2) * math.sin(b2 / 2 - b1 / 2) *
+                                                          math.sin(b2 / 2 - b1 / 2)))
         yield row
 
 

@@ -1,6 +1,7 @@
 import typing as tp
-from . import operations as ops, external_sort as sort
+from copy import copy
 
+from . import operations as ops, external_sort as sort
 
 Operations = tp.Union[ops.Operation, tp.Callable[[ops.TRowsGenerator, tp.Any], ops.TRowsGenerator]]
 
@@ -58,27 +59,42 @@ class Graph:
         graph.fabric = fabric
         return graph
 
+    def __copy__(self) -> 'Graph':
+        """Creates a copy of Graph class"""
+        graph = Graph([])
+        for elem in self.__slots__:
+            try:
+                attr = getattr(self, elem)
+            except AttributeError:
+                pass
+            else:
+                setattr(graph, elem, attr)
+        return graph
+
     def map(self, mapper: ops.Mapper) -> 'Graph':
         """Construct new graph extended with map operation with particular mapper
         :param mapper: mapper to use
         """
-        self.operations.append(ops.Map(mapper))
-        return self
+        graph = copy(self)
+        graph.operations.append(ops.Map(mapper))
+        return graph
 
     def reduce(self, reducer: ops.Reducer, keys: tp.Sequence[str]) -> 'Graph':
         """Construct new graph extended with reduce operation with particular reducer
         :param reducer: reducer to use
         :param keys: keys for grouping
         """
-        self.operations.append(ops.Reduce(reducer, tuple(keys)))
-        return self
+        graph = copy(self)
+        graph.operations.append(ops.Reduce(reducer, tuple(keys)))
+        return graph
 
     def sort(self, keys: tp.Sequence[str]) -> 'Graph':
         """Construct new graph extended with sort operation
         :param keys: sorting keys (typical is tuple of strings)
         """
-        self.operations.append(sort.ExternalSort(keys))
-        return self
+        graph = copy(self)
+        graph.operations.append(sort.ExternalSort(keys))
+        return graph
 
     def join(self, joiner: ops.Joiner, join_graph: 'Graph', keys: tp.Sequence[str]) -> 'Graph':
         """Construct new graph extended with join operation with another graph
@@ -97,8 +113,7 @@ class Graph:
     def run(self, **kwargs: tp.Any) -> ops.TRowsIterable:
         """Single method to start execution; data sources passed as kwargs"""
 
-        current_generator = kwargs[
-            self.source]() if self.source_type == "generator" \
+        current_generator = kwargs[self.source]() if self.source_type == "generator" \
             else self.fabric()(self.source, self.parser)
 
         for operation in self.operations:
