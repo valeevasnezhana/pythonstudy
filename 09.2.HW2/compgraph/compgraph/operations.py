@@ -349,8 +349,8 @@ class ProcessLength(Mapper):
         self.length = length_column
 
     def __call__(self, row: TRow) -> TRowsGenerator:
-        a1, b1 = row[self.start]
-        a2, b2 = row[self.end]
+        b1, a1 = row[self.start]
+        b2, a2 = row[self.end]
         a1 = math.radians(a1)
         a2 = math.radians(a2)
         b1 = math.radians(b1)
@@ -641,3 +641,16 @@ class RightJoiner(Joiner):
                 yield row_b
             for row_a in cache_a:
                 yield self._merge_rows(keys, row_a, row_b)
+
+
+class ReadFromFile(Mapper):
+    """Read from filename line-by-line and process every string using parser"""
+
+    def __init__(self, parser: tp.Callable[[str], TRow]) -> None:
+        """
+        @param parser: функция преобразующая строку в TRow
+        """
+        self.parser = parser
+
+    def __call__(self, row: str) -> TRowsGenerator:
+        yield self.parser(row)

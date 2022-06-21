@@ -1,100 +1,111 @@
+import json
 import typing as tp
-from copy import copy
 
-from . import operations as ops, external_sort as sort
+from abc import abstractmethod, ABC
+from . import operations as ops
+from . import external_sort as exts
+from .operations import TRow, TRowsIterable, TRowsGenerator
 
-Operations = tp.Union[ops.Operation, tp.Callable[[ops.TRowsGenerator, tp.Any], ops.TRowsGenerator]]
+
+TNode = tp.Union['Node', 'NodeFromFile', 'NodeFromIter']
+
+
+class AbstractNode(ABC):
+    @abstractmethod
+    def __call__(self, sources: tp.Dict[str, tp.Any]) -> tp.Generator[tp.Dict[str, tp.Any], None, None]:
+        pass
+
+
+class Node(AbstractNode):
+    """ Node of computational graph.
+        @param operation: фабрика типа operations.Operation, создает мапперы, редьюсеры, джоинеры
+        @param parents: список родителей данного узла
+    """
+    def __init__(self, operation: ops.Operation, parents: tp.List[TNode]) -> None:
+        self.operation = operation
+        self.parents = parents
+
+    def __call__(self, sources: tp.Dict[str, tp.Callable[[TRow], TRowsIterable]]) -> TRowsGenerator:
+        """ Starts computation in node, calling parent nodes if necessary."""
+        yield from self.operation(*[parent(sources) for parent in self.parents])
+
+
+class NodeFromFile(AbstractNode):
+    """Input node of computational graph which reads from file"""
+    def __init__(self, filename: str, parser: tp.Callable[[str], ops.TRow] = json.loads):
+        self.filename = filename
+        self.operation = ops.ReadFromFile(parser)
+
+    def __call__(self, sources: tp.Dict[str, tp.Callable[[TRow], TRowsIterable]]) -> TRowsGenerator:
+        with open(self.filename, 'r') as file:
+            for line in file:
+                yield from self.operation(line)
+
+
+class NodeFromIter(AbstractNode):
+    """Input node of computational graph which reads from iterator"""
+    def __init__(self, iterator_name: str) -> None:
+        self.iterator_name = iterator_name
+
+    def __call__(self, sources: tp.Dict[str, tp.Callable[[TRow], TRowsIterable]]) -> TRowsGenerator:
+        yield from sources[self.iterator_name]()  # type: ignore
 
 
 class Graph:
     """Computational graph implementation"""
 
-    __slots__ = (
-        "source_type",
-        "source",
-        "parser",
-        "fabric",
-        "operations",
-        "return_list"
-    )
-
-    def __init__(self, operations: tp.List[Operations]) -> None:
-        self.operations = operations
-
-    # ----
-
-    @staticmethod
-    def graph_from_iter(name: str) -> 'Graph':
-        """Construct new graph which reads data from row iterator (in form of sequence of Rows
-        from 'kwargs' passed to 'run' method) into graph data-flow
-        Use ops.ReadIterFactory
-        :param name: name of kwarg to use as data source
+    def __init__(self, tail: TNode) -> None:
+        """ Граф вычислений состоит из объектов класса Graph соединенных ссылками через поля prevs и heads.
+        @param tail: последний узел в графе, его output направляется пользователю
         """
-        graph = Graph([])
-        graph.return_list = True
-        graph.source_type = "generator"
-        graph.source = name
-        return graph
+        self.tail = tail
 
     @staticmethod
-    def graph_from_file(filename: str, parser: tp.Callable[[str], ops.TRow]) -> 'Graph':
+    def graph_from_iter(iterator: tp.Any) -> 'Graph':
+        """Construct new graph which reads data from row iterator (in form of sequence of Rows
+        from 'kwargs' passed to 'run' method) or from another graph into graph data-flow
+        :param iterator: name of kwarg to use as data source or Graph object
+        """
+        node = NodeFromIter(iterator)
+        return Graph(tail=node)
+
+    @staticmethod
+    def graph_from_file(filename: str, parser: tp.Callable[[str], ops.TRow] = json.loads) -> 'Graph':
         """Construct new graph extended with operation for reading rows from file
-        Use ops.Read
         :param filename: filename to read from
         :param parser: parser from string to Row
         """
+        node = NodeFromFile(filename, parser)
+        return Graph(tail=node)
 
-        def fabric() -> tp.Callable[[str, tp.Callable[[str], ops.TRow]], ops.TRowsGenerator]:
-            def generator(filename: str, parser: tp.Callable[[str], ops.TRow]) -> ops.TRowsGenerator:
-                with open(filename, "r") as file:
-                    for string in file:
-                        yield parser(string)
-
-            return generator
-
-        graph = Graph([])
-        graph.source_type = "file"
-        graph.source = filename
-        graph.parser = parser
-        graph.fabric = fabric
-        return graph
-
-    def __copy__(self) -> 'Graph':
-        """Creates a copy of Graph class"""
-        graph = Graph([])
-        for elem in self.__slots__:
-            try:
-                attr = getattr(self, elem)
-            except AttributeError:
-                pass
-            else:
-                setattr(graph, elem, attr)
-        return graph
+    @staticmethod
+    def graph_from_graph(graph: 'Graph') -> 'Graph':
+        return Graph(tail=graph.tail)
 
     def map(self, mapper: ops.Mapper) -> 'Graph':
         """Construct new graph extended with map operation with particular mapper
         :param mapper: mapper to use
         """
-        graph = copy(self)
-        graph.operations.append(ops.Map(mapper))
-        return graph
+        node = Node(operation=ops.Map(mapper), parents=[self.tail])
+        self.tail = node
+        return self
 
     def reduce(self, reducer: ops.Reducer, keys: tp.Sequence[str]) -> 'Graph':
         """Construct new graph extended with reduce operation with particular reducer
         :param reducer: reducer to use
         :param keys: keys for grouping
         """
-        graph = copy(self)
-        graph.operations.append(ops.Reduce(reducer, tuple(keys)))
-        return graph
+        node = Node(operation=ops.Reduce(reducer, keys), parents=[self.tail])
+        self.tail = node
+        return self
 
     def sort(self, keys: tp.Sequence[str]) -> 'Graph':
         """Construct new graph extended with sort operation
         :param keys: sorting keys (typical is tuple of strings)
         """
-        graph = copy(self)
-        graph.operations.append(sort.ExternalSort(keys))
-        return graph
+        node = Node(operation=exts.ExternalSort(keys), parents=[self.tail])
+        self.tail = node
+        return self
 
     def join(self, joiner: ops.Joiner, join_graph: 'Graph', keys: tp.Sequence[str]) -> 'Graph':
         """Construct new graph extended with join operation with another graph
@@ -102,21 +113,10 @@ class Graph:
         :param join_graph: other graph to join with
         :param keys: keys for grouping
         """
-
-        def join_op(left_generator: ops.TRowsGenerator, **right_kwargs: tp.Any) -> ops.TRowsGenerator:
-            right_generator = join_graph.run(**right_kwargs)
-            return ops.Join(joiner, keys=keys)(left_generator, right_generator)
-
-        self.operations.append(join_op)
+        node = Node(operation=ops.Join(joiner, keys), parents=[self.tail, join_graph.tail])
+        self.tail = node
         return self
 
-    def run(self, **kwargs: tp.Any) -> ops.TRowsIterable:
+    def run(self, **sources: tp.Any) -> tp.List[ops.TRow]:
         """Single method to start execution; data sources passed as kwargs"""
-
-        current_generator = kwargs[self.source]() if self.source_type == "generator" \
-            else self.fabric()(self.source, self.parser)
-
-        for operation in self.operations:
-            new_kwargs = kwargs.copy()
-            current_generator = operation(current_generator, **new_kwargs)
-        return list(current_generator)
+        return list(self.tail(sources))
