@@ -178,7 +178,7 @@ class FilterPunctuation(Mapper):
 
     @staticmethod
     def _filter_punctuation(txt: str):
-        punctuation_set = set(punctuation + '“”')
+        punctuation_set = set(punctuation + '“”‘')
 
         return "".join(symbol for symbol in txt if symbol not in punctuation_set)
 
@@ -186,6 +186,32 @@ class FilterPunctuation(Mapper):
         new_row = deepcopy(row)
         new_row[self.column] = self._filter_punctuation(row[self.column])
         yield new_row
+
+
+
+class ToASCII(Mapper):
+    """Left only non-punctuation symbols"""
+    def __init__(self, column: str):
+        """
+        :param column: name of column to process
+        """
+        self.column = column
+
+    @staticmethod
+    def _to_ascii(txt: str):
+        result = ''
+        for symbol in txt:
+            if symbol.isascii():
+                result += symbol
+            else:
+                result += " "
+        return result
+
+    def __call__(self, row: TRow) -> TRowsGenerator:
+        new_row = deepcopy(row)
+        new_row[self.column] = self._to_ascii(row[self.column])
+        yield new_row
+
 
 
 class LowerCase(Mapper):
@@ -221,6 +247,26 @@ class Split(Mapper):
             new_row = deepcopy(row)
             new_row[self.column] = field
             yield new_row
+
+
+class Split_remove_s(Mapper):
+    """Split row on multiple rows by separator"""
+    def __init__(self, column: str, separator: tp.Optional[str] = None) -> None:
+        """
+        :param column: name of column to split
+        :param separator: string to separate by
+        """
+        self.column = column
+        self.separator = separator
+
+    def __call__(self, row: TRow) -> TRowsGenerator:
+        for field in row[self.column].split(self.separator):
+            new_row = deepcopy(row)
+            new_row[self.column] = field
+            if field == "s":
+                continue
+            else:
+                yield new_row
 
 
 class Product(Mapper):

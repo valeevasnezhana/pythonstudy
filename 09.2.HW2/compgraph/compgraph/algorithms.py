@@ -147,7 +147,8 @@ def word_count_graph_from_file(input_file_name: str, text_column: str = 'text', 
         .map(operations.Split(text_column)) \
         .sort([text_column]) \
         .reduce(operations.Count(count_column), [text_column]) \
-        .sort([count_column, text_column])
+        .sort([count_column, text_column])\
+        .map(operations.ToASCII(text_column))
 
 
 def pmi_graph_from_file(input_stream_name: str, doc_column: str = 'doc_id', text_column: str = 'text',
@@ -180,16 +181,18 @@ def pmi_graph_from_file(input_stream_name: str, doc_column: str = 'doc_id', text
         .map(operations.PMI('tf', 'tf_total', result_column)) \
         .map(operations.Project([doc_column, text_column, result_column])) \
         .sort([doc_column]) \
-        .reduce(operations.TopN(result_column, 10), [doc_column])
+        .reduce(operations.TopN(result_column, 10), [doc_column])\
+        .map(operations.ToASCII(text_column))
 
 
 def inverted_index_graph_from_file(input_stream_name: str, doc_column: str = 'doc_id', text_column: str = 'text',
                                    result_column: str = 'tf_idf') -> Graph:
     """Constructs graph which calculates td-idf for every word/document pair"""
     word_graph = Graph.graph_from_file(input_stream_name) \
+        .map(operations.ToASCII(text_column))\
         .map(operations.FilterPunctuation(text_column)) \
         .map(operations.LowerCase(text_column)) \
-        .map(operations.Split(text_column))
+        .map(operations.Split_remove_s(text_column))
 
     count_graph = Graph.graph_from_file(input_stream_name) \
         .reduce(operations.Count('doc_count'), [])
@@ -203,17 +206,21 @@ def inverted_index_graph_from_file(input_stream_name: str, doc_column: str = 'do
         .map(operations.Idf('doc_count', 'num_word_entries', text_column, 'idf')) \
         .sort([text_column])  # [word, idf]
 
-    tf_graph = Graph.copy_graph(word_graph) \
+    print("algoritms before graph")
+
+    return Graph.copy_graph(word_graph) \
         .sort([doc_column]) \
         .reduce(operations.TermFrequency(text_column, 'tf'), [doc_column]) \
-        .sort([text_column])  # [doc_id, word, tf]
-
-    tf_idf_graph = Graph.copy_graph(tf_graph) \
+        .sort([text_column]) \
         .join(operations.InnerJoiner(), idf_graph, [text_column]) \
         .map(operations.Product(['tf', 'idf'], result_column)) \
         .map(operations.Project([result_column, doc_column, text_column])) \
         .sort([text_column]) \
-        .reduce(operations.TopN(result_column, 3), [text_column])
+        .reduce(operations.TopN(result_column, 3), [text_column])\
+        .sort([doc_column, result_column])\
+        .reduce(operations.TopN(result_column, 20), [doc_column])\
 
-    return tf_idf_graph
+
+
+
 

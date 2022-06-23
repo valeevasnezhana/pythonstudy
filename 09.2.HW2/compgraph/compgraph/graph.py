@@ -37,7 +37,7 @@ class NodeFromFile(AbstractNode):
         self.operation = ops.ReadFromFile(parser)
 
     def __call__(self, sources: tp.Dict[str, tp.Callable[[TRow], TRowsIterable]]) -> TRowsGenerator:
-        with open(self.filename, 'r', encoding='utf-8') as file:
+        with open(self.filename, 'r') as file:
             for line in file:
                 yield from self.operation(line)
 

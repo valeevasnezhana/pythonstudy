@@ -9,30 +9,31 @@ def word_count_from_file() -> None:
         и печатает результат в stdout.
     """
     filename = resources_path + 'text_corpus.txt'
+    result = results_path + 'word_count_result.txt'
 
     graph = algorithms.word_count_graph_from_file(filename)
-
-
-    for row in graph.run():
-        print(row)
+    with open(result, "w") as file:
+        for row in graph.run():
+            print(row, file=file)
 
 
 def pmi_graph_from_file() -> None:
     filename = resources_path + 'text_corpus.txt'
+    result = results_path + 'pmi_result.txt'
 
     graph = algorithms.pmi_graph_from_file(filename)
 
-    for row in graph.run():
-        print(row)
+    with open(result, "w") as file:
+        for row in graph.run():
+            print(row, file=file)
 
 
 def inverted_index_graph_from_file() -> None:
     filename = resources_path + 'text_corpus.txt'
-    result = results_path + 'tf_idf_result.txt'
+    result = results_path + 'tf_idf_result_new.txt'
     graph = algorithms.inverted_index_graph_from_file(filename)
-
-    for row in graph.run():
-        with open(result, "w") as file:
+    with open(result, "w") as file:
+        for row in graph.run():
             print(row, file=file)
 
 
@@ -44,10 +45,10 @@ def yandex_maps_from_file() -> None:
     input_stream_name_time = resources_path + 'travel_times.txt'
     input_stream_name_length = resources_path + 'road_graph_data.txt'
     graph = algorithms.yandex_maps_graph_from_file(input_stream_name_time, input_stream_name_length)
+    result = results_path + 'yandex_maps_result.txt'
 
-    result = graph.run()
-
-    for row in result:
-        print(row)
+    with open(result, "w") as file:
+        for row in graph.run():
+            print(row, file=file)
 
 
