@@ -20,26 +20,6 @@ class Operation(ABC):
         pass
 
 
-class Read(Operation):
-    def __init__(self, filename: str, parser: tp.Callable[[str], TRow]) -> None:
-        self.filename = filename
-        self.parser = parser
-
-    def __call__(self, *args: tp.Any, **kwargs: tp.Any) -> TRowsGenerator:
-        with open(self.filename) as f:
-            for line in f:
-                yield self.parser(line)
-
-
-class ReadIterFactory(Operation):
-    def __init__(self, name: str) -> None:
-        self.name = name
-
-    def __call__(self, *args: tp.Any, **kwargs: tp.Any) -> TRowsGenerator:
-        for row in kwargs[self.name]():
-            yield row
-
-
 # Operations
 
 
@@ -198,7 +178,8 @@ class FilterPunctuation(Mapper):
 
     @staticmethod
     def _filter_punctuation(txt: str):
-        punctuation_set = set(punctuation)
+        punctuation_set = set(punctuation + '“”')
+
         return "".join(symbol for symbol in txt if symbol not in punctuation_set)
 
     def __call__(self, row: TRow) -> TRowsGenerator:
@@ -286,6 +267,38 @@ class Project(Mapper):
         yield {key: row[key] for key in self.columns}
 
 
+class AddField(Mapper):
+    """add useless field column"""
+
+    def __init__(self, column: str, def_value: tp.Any = None):
+        """
+        :param column: name of column to process
+        """
+        self.column = column
+        self.def_value = def_value
+
+    def __call__(self, row: TRow) -> TRowsGenerator:
+        row[self.column] = self.def_value
+        yield row
+
+
+class RemoveField(Mapper):
+    """add useless field column"""
+
+    def __init__(self, column: str):
+        """
+        :param column: name of column to process
+        """
+        self.column = column
+
+    def __call__(self, row: TRow) -> TRowsGenerator:
+        row.pop(self.column)
+        yield row
+
+
+
+
+
 
 class Idf(Mapper):
     """Count idf metrics based on number of docs and \
@@ -314,23 +327,39 @@ class Idf(Mapper):
         yield result
 
 
-class Pmi(Mapper):
-    """Count pmi metrics based on frequency of word in docs and total"""
+class TFIDF(Mapper):
+    """Calculate IDF"""
 
-    def __init__(self, doc_freq: str, total_freq: str, result_column: str) -> None:
+    def __init__(self, tf_column: str, idf_column: str, tfidf_column: str = "tfidf") -> None:
+        """TFIDF(word_i, doc_i) = (frequency of word_i in doc_i) *
+        log((total number of docs) / (docs where word_i is present))
+        @param tf_column: имя столбца содержащего tf
+        @param idf_column: имя столбца содержащего idf
+        @param tfidf_column: имя столбца, в который записывается результат
         """
-        :param doc_freq: name of doc frequency column
-        :param total_freq: name of total frequency column
-        :param result_colum: name of column for pmi
-        """
-        self.doc_freq = doc_freq
-        self.total_freq = total_freq
-        self.result_column = result_column
+        self.tf_column = tf_column
+        self.idf_column = idf_column
+        self.tfidf_column = tfidf_column
 
     def __call__(self, row: TRow) -> TRowsGenerator:
-        doc_freq = row[self.doc_freq]
-        total_freq = row[self.total_freq]
-        row[self.result_column] = math.log(doc_freq / total_freq)
+        row[self.tfidf_column] = row[self.tf_column] * row[self.idf_column]
+        yield row
+
+
+class PMI(Mapper):
+    """Count pmi metrics based on frequency of word in docs and total"""
+    def __init__(self, tf_column: str, cf_column: str, pmi_column: str = "pmi") -> None:
+        """pmi(word_i, doc_i) = log((frequency of word_i in doc_i) / (frequency of word_i in all documents combined))
+        @param tf_column: frequency of word_i in doc_i
+        @param cf_column: frequency of word_i in all documents combined
+        @param pmi_column: result column
+        """
+        self.tf_column = tf_column
+        self.cf_column = cf_column
+        self.pmi_column = pmi_column
+
+    def __call__(self, row: TRow) -> TRowsGenerator:
+        row[self.pmi_column] = math.log(row[self.tf_column] / row[self.cf_column])
         yield row
 
 
@@ -355,9 +384,9 @@ class ProcessLength(Mapper):
         a2 = math.radians(a2)
         b1 = math.radians(b1)
         b2 = math.radians(b2)
-        row[self.length] = 6371 * 2 * math.asin(math.sqrt(math.sin(a2 / 2 - a1 / 2) * math.sin(a2 / 2 - a1 / 2) +
-                                                          math.cos(a1) * math.cos(a2) * math.sin(b2 / 2 - b1 / 2) *
-                                                          math.sin(b2 / 2 - b1 / 2)))
+        row[self.length] = round(6373 * 2 * math.asin(
+            math.sqrt(math.sin(a2 / 2 - a1 / 2) ** 2 + math.cos(a1) * math.cos(a2) * (math.sin(b2 / 2 - b1 / 2) ** 2))
+        ), 5)
         yield row
 
 
@@ -404,7 +433,7 @@ class ProcessSpeed(Mapper):
         self.speed = speed_column
 
     def __call__(self, row: TRow) -> TRowsGenerator:
-        row[self.speed] = row[self.length] / row[self.time] * 3600
+        row[self.speed] = round(row[self.length] / row[self.time] * 3600, 4)
         yield row
 
 
@@ -427,25 +456,20 @@ class MultipleSum(Reducer):
         self.columns = columns
 
     def __call__(self, group_key: tp.Tuple[str, ...], rows: TRowsIterable) -> TRowsGenerator:
-        result: TRow = {}
-        row_sample = None
-        s: TRow = {}
-
-        for col in self.columns:
-            s[col] = 0
-
+        start: bool = True
+        new_row: TRow = {}
+        for column in self.columns:
+            new_row[column] = 0
         for row in rows:
-            if row_sample is None:
-                row_sample = row
-            for col in self.columns:
-                s[col] += row[col]
+            if start:
+                for key in group_key:
+                    new_row[key] = row[key]
+                start = False
+            for column in self.columns:
+                new_row[column] += row[column]
+        yield new_row
 
-        assert row_sample is not None
-        for key in group_key:
-            result[key] = row_sample[key]
-        for col in self.columns:
-            result[col] = s[col]
-        yield result
+
 
 
 class TopN(Reducer):

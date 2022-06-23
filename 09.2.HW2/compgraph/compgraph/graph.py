@@ -37,7 +37,7 @@ class NodeFromFile(AbstractNode):
         self.operation = ops.ReadFromFile(parser)
 
     def __call__(self, sources: tp.Dict[str, tp.Callable[[TRow], TRowsIterable]]) -> TRowsGenerator:
-        with open(self.filename, 'r') as file:
+        with open(self.filename, 'r', encoding='utf-8') as file:
             for line in file:
                 yield from self.operation(line)
 
@@ -66,8 +66,7 @@ class Graph:
         from 'kwargs' passed to 'run' method) or from another graph into graph data-flow
         :param iterator: name of kwarg to use as data source or Graph object
         """
-        node = NodeFromIter(iterator)
-        return Graph(tail=node)
+        return Graph(tail=NodeFromIter(iterator))
 
     @staticmethod
     def graph_from_file(filename: str, parser: tp.Callable[[str], ops.TRow] = json.loads) -> 'Graph':
@@ -75,37 +74,36 @@ class Graph:
         :param filename: filename to read from
         :param parser: parser from string to Row
         """
-        node = NodeFromFile(filename, parser)
-        return Graph(tail=node)
+        return Graph(tail=NodeFromFile(filename, parser))
 
     @staticmethod
-    def graph_from_graph(graph: 'Graph') -> 'Graph':
+    def copy_graph(graph: 'Graph') -> 'Graph':
         return Graph(tail=graph.tail)
 
     def map(self, mapper: ops.Mapper) -> 'Graph':
         """Construct new graph extended with map operation with particular mapper
         :param mapper: mapper to use
         """
-        node = Node(operation=ops.Map(mapper), parents=[self.tail])
-        self.tail = node
-        return self
+        graph = Graph.copy_graph(self)
+        graph.tail = Node(operation=ops.Map(mapper), parents=[self.tail])
+        return graph
 
     def reduce(self, reducer: ops.Reducer, keys: tp.Sequence[str]) -> 'Graph':
         """Construct new graph extended with reduce operation with particular reducer
         :param reducer: reducer to use
         :param keys: keys for grouping
         """
-        node = Node(operation=ops.Reduce(reducer, keys), parents=[self.tail])
-        self.tail = node
-        return self
+        graph = Graph.copy_graph(self)
+        graph.tail = Node(operation=ops.Reduce(reducer, keys), parents=[self.tail])
+        return graph
 
     def sort(self, keys: tp.Sequence[str]) -> 'Graph':
         """Construct new graph extended with sort operation
         :param keys: sorting keys (typical is tuple of strings)
         """
-        node = Node(operation=exts.ExternalSort(keys), parents=[self.tail])
-        self.tail = node
-        return self
+        graph = Graph.copy_graph(self)
+        graph.tail = Node(operation=exts.ExternalSort(keys), parents=[self.tail])
+        return graph
 
     def join(self, joiner: ops.Joiner, join_graph: 'Graph', keys: tp.Sequence[str]) -> 'Graph':
         """Construct new graph extended with join operation with another graph
@@ -113,9 +111,9 @@ class Graph:
         :param join_graph: other graph to join with
         :param keys: keys for grouping
         """
-        node = Node(operation=ops.Join(joiner, keys), parents=[self.tail, join_graph.tail])
-        self.tail = node
-        return self
+        graph = Graph.copy_graph(self)
+        graph.tail = Node(operation=ops.Join(joiner, keys), parents=[self.tail, join_graph.tail])
+        return graph
 
     def run(self, **sources: tp.Any) -> tp.List[ops.TRow]:
         """Single method to start execution; data sources passed as kwargs"""
