@@ -72,7 +72,7 @@ class Joiner(ABC):
         self._b_suffix = suffix_b
 
     def _merge_rows(self, keys: tp.Sequence[str], row_a: TRow, row_b: TRow) -> TRow:
-        common_keys = {key for key in row_a.keys() if key in row_b.keys() and key not in set(keys)}
+        common_keys = {key for key in row_a.keys() if (key in row_b.keys() and key not in set(keys))}
 
         new_row: TRow = {}
 
@@ -283,8 +283,9 @@ class Product(Mapper):
         product = 1
         for column in self.columns:
             product *= row[column]
-        row[self.result_column] = product
-        yield row
+        new_row = deepcopy(row)
+        new_row[self.result_column] = product
+        yield new_row
 
 
 class Filter(Mapper):
@@ -324,8 +325,9 @@ class AddField(Mapper):
         self.def_value = def_value
 
     def __call__(self, row: TRow) -> TRowsGenerator:
-        row[self.column] = self.def_value
-        yield row
+        new_row = deepcopy(row)
+        new_row[self.column] = self.def_value
+        yield new_row
 
 
 class RemoveField(Mapper):
@@ -338,8 +340,9 @@ class RemoveField(Mapper):
         self.column = column
 
     def __call__(self, row: TRow) -> TRowsGenerator:
-        row.pop(self.column)
-        yield row
+        new_row = deepcopy(row)
+        new_row.pop(self.column)
+        yield new_row
 
 
 
@@ -373,24 +376,6 @@ class Idf(Mapper):
         yield result
 
 
-class TFIDF(Mapper):
-    """Calculate IDF"""
-
-    def __init__(self, tf_column: str, idf_column: str, tfidf_column: str = "tfidf") -> None:
-        """TFIDF(word_i, doc_i) = (frequency of word_i in doc_i) *
-        log((total number of docs) / (docs where word_i is present))
-        @param tf_column: имя столбца содержащего tf
-        @param idf_column: имя столбца содержащего idf
-        @param tfidf_column: имя столбца, в который записывается результат
-        """
-        self.tf_column = tf_column
-        self.idf_column = idf_column
-        self.tfidf_column = tfidf_column
-
-    def __call__(self, row: TRow) -> TRowsGenerator:
-        row[self.tfidf_column] = row[self.tf_column] * row[self.idf_column]
-        yield row
-
 
 class PMI(Mapper):
     """Count pmi metrics based on frequency of word in docs and total"""
@@ -405,8 +390,9 @@ class PMI(Mapper):
         self.pmi_column = pmi_column
 
     def __call__(self, row: TRow) -> TRowsGenerator:
-        row[self.pmi_column] = math.log(row[self.tf_column] / row[self.cf_column])
-        yield row
+        new_row = deepcopy(row)
+        new_row[self.pmi_column] = math.log(row[self.tf_column] / row[self.cf_column])
+        yield new_row
 
 
 
@@ -430,10 +416,11 @@ class ProcessLength(Mapper):
         a2 = math.radians(a2)
         b1 = math.radians(b1)
         b2 = math.radians(b2)
-        row[self.length] = round(6373 * 2 * math.asin(
+        new_row = deepcopy(row)
+        new_row[self.length] = round(6373 * 2 * math.asin(
             math.sqrt(math.sin(a2 / 2 - a1 / 2) ** 2 + math.cos(a1) * math.cos(a2) * (math.sin(b2 / 2 - b1 / 2) ** 2))
         ), 5)
-        yield row
+        yield new_row
 
 
 class ProcessTime(Mapper):
@@ -457,16 +444,18 @@ class ProcessTime(Mapper):
     def __call__(self, row: TRow) -> TRowsGenerator:
         date1 = dateutil_parser.parse(row[self.enter])
         date2 = dateutil_parser.parse(row[self.leave])
+        new_row = deepcopy(row)
 
-        row[self.day] = date1.strftime('%a')
-        row[self.hour] = date1.hour
-        row[self.time] = (date2 - date1).total_seconds()
-        yield row
+        new_row[self.day] = date1.strftime('%a')
+        new_row[self.hour] = date1.hour
+        new_row[self.time] = (date2 - date1).total_seconds()
+        yield new_row
 
 
 
 class ProcessSpeed(Mapper):
     """Get speed based on length and time"""
+
 
     def __init__(self, length_column: str, time_column: str, speed_column: str) -> None:
         """
@@ -479,8 +468,9 @@ class ProcessSpeed(Mapper):
         self.speed = speed_column
 
     def __call__(self, row: TRow) -> TRowsGenerator:
-        row[self.speed] = round(row[self.length] / row[self.time] * 3600, 4)
-        yield row
+        new_row = deepcopy(row)
+        new_row[self.speed] = round(row[self.length] / row[self.time] * 3600, 4)
+        yield new_row
 
 
 

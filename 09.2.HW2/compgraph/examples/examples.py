@@ -1,4 +1,5 @@
-from compgraph import algorithms
+from ..compgraph import algorithms
+
 
 resources_path = 'C:\\Users\\valee\\anaconda3\\envs\\public-2021-fall-master\\09.2.HW2\\compgraph\\resources\\'
 results_path = 'C:\\Users\\valee\\anaconda3\\envs\\public-2021-fall-master\\09.2.HW2\\compgraph\\results\\'
