@@ -337,7 +337,7 @@ def test_schedule_bad_waiter_task(capsys: CaptureFixture[str]) -> None:
 
     stdout = capsys.readouterr().out
     assert stdout.strip().split('\n') == [
-        'waiting...',  # immedialely continue task if it tries to wait for unexisting task_id
+        'waiting...',  # immediately continue task if it tries to wait for unexisting task_id
         'bad tid!'
     ]
 
