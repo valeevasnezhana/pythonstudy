@@ -11,7 +11,7 @@ class EmptyBannerStorageError(Exception):
 
 
 class BannerStat:
-    def __init__(self, clicks: int, shows: int):
+    def __init__(self, clicks: int = 0, shows: int = 0):
         self._clicks = clicks
         self._shows = shows
 
@@ -19,7 +19,7 @@ class BannerStat:
         self._clicks += 1
 
     def add_show(self) -> None:
-        self._clicks += 1
+        self._shows += 1
 
     @property
     def clicks(self) -> int:
@@ -37,14 +37,14 @@ class BannerStat:
         if self.shows == 0:
             return default_ctr
         else:
-            return self.shows / self.clicks
+            return self.clicks / self.shows
 
 
 class Banner:
     def __init__(self, banner_id: str, cost: int, stat: typing.Optional[BannerStat] = None):
         self._banner_id = banner_id
         self._cost = cost
-        self._stat = stat if stat is not None else BannerStat(0, 0)
+        self._stat = stat if stat is not None else BannerStat()
 
     @property
     def banner_id(self) -> str:
@@ -69,6 +69,9 @@ class BannerStorage:
         return len(self._banner_dict) == 0
 
     def add_click(self, banner_id: str) -> None:
+        if banner_id not in self._banner_dict:
+            raise NoBannerError("Unknown banner {}!".format(banner_id))
+
         self._banner_dict[banner_id].stat.add_click()
 
     def add_show(self, banner_id: str) -> None:
@@ -129,13 +132,15 @@ class EpsilonGreedyBannerEngine:
 
         self._show_count = 0
         self._total_cost = 0
+        if self._storage.is_empty():
+            raise EmptyBannerStorageError
 
     def show_banner(self) -> str:
         """
         Engine is asked to show banner.
         Engine selects banner with epsilon-greedy algorithms and updates banner show statistics.
         """
-        if random.random() > self._epsilon:
+        if random.random() < self._epsilon:
             selected_banner = self._storage.random_banner()
         else:
             selected_banner = self._storage.banner_with_highest_cpc()
@@ -151,7 +156,8 @@ class EpsilonGreedyBannerEngine:
         Important! Web page can send incorrect `banner_id`. Engine must not fail in that case!
         """
         try:
-            self._storage.add_show(banner_id)
+            self._storage.add_click(banner_id)
+            self._total_cost += self._storage.get_banner(banner_id).cost
         except NoBannerError:
             pass
 
