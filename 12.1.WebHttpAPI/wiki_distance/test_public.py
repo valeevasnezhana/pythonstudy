@@ -1,5 +1,5 @@
 import os
-from pathlib import Path
+from pathlib import WindowsPath as Path
 from dataclasses import dataclass
 from typing import Optional
 

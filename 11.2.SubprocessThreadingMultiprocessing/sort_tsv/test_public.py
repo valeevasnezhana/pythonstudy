@@ -93,6 +93,6 @@ def test_sort(case: Case) -> None:
 
     file_ground_truth = TESTDATA_DIR + '\\data_sorted_ground_truth.tsv'
 
-    filecmp.cmp(file_ground_truth, file_out)
+    assert filecmp.cmp(file_ground_truth, file_out)
 
     os.remove(file_out)
