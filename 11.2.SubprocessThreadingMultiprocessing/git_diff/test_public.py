@@ -1,6 +1,6 @@
 import zipfile
 from dataclasses import dataclass
-from pathlib import Path
+from pathlib import WindowsPath as Path
 import typing as tp
 
 import pytest
@@ -10,9 +10,10 @@ from .git_diff import get_changed_dirs
 
 @pytest.fixture(scope="function", autouse=True)
 def unzip_git_repo(tmp_path: Path) -> tp.Generator[Path, None, None]:
-    with zipfile.ZipFile(Path(__file__).parent / 'testdata.zip', 'r') as zip_ref:
+    with zipfile.ZipFile('C:\\Users\\valee\\anaconda3\\envs\\public-2021-fall-master\\11.2'
+                         '.SubprocessThreadingMultiprocessing\\git_diff\\testdata.zip', 'r') as zip_ref:
         zip_ref.extractall(tmp_path)
-    yield tmp_path / 'testdata'
+    yield f'{tmp_path}\\testdata'
 
 
 tasks = {

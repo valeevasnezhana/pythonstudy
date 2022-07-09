@@ -62,7 +62,7 @@ def test_used_very_slow_function() -> None:
 
 
 def test_used_multithreading() -> None:
-    assert_use(calc_squares_multithreading, "argval", "Thread")
+    assert_use(calc_squares_multithreading, "argval", "ThreadPoolExecutor")
 
 
 def test_used_multiprocessing() -> None:

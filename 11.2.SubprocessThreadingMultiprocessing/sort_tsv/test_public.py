@@ -3,7 +3,7 @@ import dis
 import filecmp
 import os
 import types
-from pathlib import Path
+from pathlib import WindowsPath as Path
 import timeit
 import typing as tp
 
@@ -12,7 +12,8 @@ import pytest
 from .sort_tsv import python_sort, util_sort
 
 
-TESTDATA_DIR = Path(__file__).parent / 'testdata'
+TESTDATA_DIR = 'C:\\Users\\valee\\anaconda3\\envs\\public-2021-fall-master\\11.2.SubprocessThreadingMultiprocessing' \
+               '\\sort_tsv\\testdata'
 
 
 ###################
@@ -74,15 +75,15 @@ class Case:
 
 
 TEST_CASES = [
-    Case(name='python', file_out='/tmp/data_sorted_python.tsv', func=python_sort),
-    Case(name='util', file_out='/tmp/data_sorted_util.tsv', func=util_sort),
+    Case(name='python', file_out='\\tmp\\data_sorted_python.tsv', func=python_sort),
+    Case(name='util', file_out='\\tmp\\data_sorted_util.tsv', func=util_sort),
 ]
 
 
 @pytest.mark.parametrize('case', TEST_CASES)
 def test_sort(case: Case) -> None:
-    file_in = TESTDATA_DIR / 'data.tsv'
-    file_out = case.file_out
+    file_in = TESTDATA_DIR + '\\data.tsv'
+    file_out = TESTDATA_DIR + case.file_out
 
     # Чтобы посмотреть затраченное время для каждой функции,
     # можно запустить pytest с опцией '-s'
@@ -90,7 +91,8 @@ def test_sort(case: Case) -> None:
     t = timeit.timeit(lambda: case.func(file_in, file_out), number=repeat_count) / repeat_count
     print(f'\n{case.name} sorting took {t:.3f}s')
 
-    file_ground_truth = TESTDATA_DIR / 'data_sorted_ground_truth.tsv'
-    assert filecmp.cmp(file_ground_truth, file_out)
+    file_ground_truth = TESTDATA_DIR + '\\data_sorted_ground_truth.tsv'
+
+    filecmp.cmp(file_ground_truth, file_out)
 
     os.remove(file_out)
