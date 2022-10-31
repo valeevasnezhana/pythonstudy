@@ -2,6 +2,8 @@ import typing as tp
 
 import pandas as pd
 
+result = pd.DataFrame()
+
 
 def male_age(df: pd.DataFrame) -> float:
     """

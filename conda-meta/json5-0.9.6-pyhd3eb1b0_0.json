@@ -1,0 +1,218 @@
+{
+  "build": "pyhd3eb1b0_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "extracted_package_dir": "C:\\Users\\valee\\anaconda3\\pkgs\\json5-0.9.6-pyhd3eb1b0_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/json5-0.9.6.dist-info/INSTALLER",
+    "Lib/site-packages/json5-0.9.6.dist-info/METADATA",
+    "Lib/site-packages/json5-0.9.6.dist-info/RECORD",
+    "Lib/site-packages/json5-0.9.6.dist-info/REQUESTED",
+    "Lib/site-packages/json5-0.9.6.dist-info/WHEEL",
+    "Lib/site-packages/json5-0.9.6.dist-info/direct_url.json",
+    "Lib/site-packages/json5-0.9.6.dist-info/entry_points.txt",
+    "Lib/site-packages/json5-0.9.6.dist-info/top_level.txt",
+    "Lib/site-packages/json5/__init__.py",
+    "Lib/site-packages/json5/__main__.py",
+    "Lib/site-packages/json5/arg_parser.py",
+    "Lib/site-packages/json5/host.py",
+    "Lib/site-packages/json5/lib.py",
+    "Lib/site-packages/json5/parser.py",
+    "Lib/site-packages/json5/tool.py",
+    "Lib/site-packages/json5/version.py",
+    ".nonadmin",
+    "Lib/site-packages/json5/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/json5/__pycache__/__main__.cpython-39.pyc",
+    "Lib/site-packages/json5/__pycache__/arg_parser.cpython-39.pyc",
+    "Lib/site-packages/json5/__pycache__/host.cpython-39.pyc",
+    "Lib/site-packages/json5/__pycache__/lib.cpython-39.pyc",
+    "Lib/site-packages/json5/__pycache__/parser.cpython-39.pyc",
+    "Lib/site-packages/json5/__pycache__/tool.cpython-39.pyc",
+    "Lib/site-packages/json5/__pycache__/version.cpython-39.pyc",
+    "Scripts/pyjson5-script.py",
+    "Scripts/pyjson5.exe"
+  ],
+  "fn": "json5-0.9.6-pyhd3eb1b0_0.conda",
+  "legacy_bz2_md5": "91e3336204a0ea3951957d7d5e8f3e26",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "C:\\Users\\valee\\anaconda3\\pkgs\\json5-0.9.6-pyhd3eb1b0_0",
+    "type": 1
+  },
+  "md5": "4e721ee2dbfa20069719d2ee19185031",
+  "name": "json5",
+  "noarch": "python",
+  "package_tarball_full_path": "C:\\Users\\valee\\anaconda3\\pkgs\\json5-0.9.6-pyhd3eb1b0_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/json5-0.9.6.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/json5-0.9.6.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "4e7ca683eb115df78d666adaabcba7175222f5958e63b5ff5a9ea15aba0e1cfd",
+        "sha256_in_prefix": "4e7ca683eb115df78d666adaabcba7175222f5958e63b5ff5a9ea15aba0e1cfd",
+        "size_in_bytes": 8029
+      },
+      {
+        "_path": "site-packages/json5-0.9.6.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "1594143033ad5b49c9c075a9c30a9906006aa2065cbc4e6e4e8cdc39b43434be",
+        "sha256_in_prefix": "1594143033ad5b49c9c075a9c30a9906006aa2065cbc4e6e4e8cdc39b43434be",
+        "size_in_bytes": 1661
+      },
+      {
+        "_path": "site-packages/json5-0.9.6.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/json5-0.9.6.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934",
+        "sha256_in_prefix": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/json5-0.9.6.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "cdc569ef17d4874d09a704a9fe4f3e0d9c86d69c9894f7b88f8c91e9414bbd53",
+        "sha256_in_prefix": "cdc569ef17d4874d09a704a9fe4f3e0d9c86d69c9894f7b88f8c91e9414bbd53",
+        "size_in_bytes": 78
+      },
+      {
+        "_path": "site-packages/json5-0.9.6.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "73c5985d53d580bcfa1888d5bbe7788fd182793268c914a6b5d701e23bfcfa9b",
+        "sha256_in_prefix": "73c5985d53d580bcfa1888d5bbe7788fd182793268c914a6b5d701e23bfcfa9b",
+        "size_in_bytes": 45
+      },
+      {
+        "_path": "site-packages/json5-0.9.6.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "e25aac985a11720fb52b48547ae21bc5804e77ee34060c3ca45f41759c240bb9",
+        "sha256_in_prefix": "e25aac985a11720fb52b48547ae21bc5804e77ee34060c3ca45f41759c240bb9",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "site-packages/json5/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "417e4532917217d19110c6381aed0b31a883cba80d058df0ab6bb0fc17fa49d0",
+        "sha256_in_prefix": "417e4532917217d19110c6381aed0b31a883cba80d058df0ab6bb0fc17fa49d0",
+        "size_in_bytes": 821
+      },
+      {
+        "_path": "site-packages/json5/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "3ef39ff8f9c281315c4a93f909ae425a689aa6251317c16fd0effd36aeaca8a1",
+        "sha256_in_prefix": "3ef39ff8f9c281315c4a93f909ae425a689aa6251317c16fd0effd36aeaca8a1",
+        "size_in_bytes": 741
+      },
+      {
+        "_path": "site-packages/json5/arg_parser.py",
+        "path_type": "hardlink",
+        "sha256": "d5312510552e719f26778dbe7740dbf3c1d52d4065bd62dd62d3446b773502b0",
+        "sha256_in_prefix": "d5312510552e719f26778dbe7740dbf3c1d52d4065bd62dd62d3446b773502b0",
+        "size_in_bytes": 2130
+      },
+      {
+        "_path": "site-packages/json5/host.py",
+        "path_type": "hardlink",
+        "sha256": "7db8d7b739235e1d111025e0529dc8314e3695589b14488ca03066eb1c60b034",
+        "sha256_in_prefix": "7db8d7b739235e1d111025e0529dc8314e3695589b14488ca03066eb1c60b034",
+        "size_in_bytes": 1635
+      },
+      {
+        "_path": "site-packages/json5/lib.py",
+        "path_type": "hardlink",
+        "sha256": "dd7b3a47147dff31cd275c9e6ecb6dbd9b7d8dc6781d1fcbe3be8b9ac5a06537",
+        "sha256_in_prefix": "dd7b3a47147dff31cd275c9e6ecb6dbd9b7d8dc6781d1fcbe3be8b9ac5a06537",
+        "size_in_bytes": 17848
+      },
+      {
+        "_path": "site-packages/json5/parser.py",
+        "path_type": "hardlink",
+        "sha256": "edb17ba768681fec1a9591fa5fa527171b815bf6b4754d905d715c06249fc678",
+        "sha256_in_prefix": "edb17ba768681fec1a9591fa5fa527171b815bf6b4754d905d715c06249fc678",
+        "size_in_bytes": 29427
+      },
+      {
+        "_path": "site-packages/json5/tool.py",
+        "path_type": "hardlink",
+        "sha256": "13b795359550e2513e2f63f3aca1d3741b9b54b23ac8d3a4ba75f2ca80843ab2",
+        "sha256_in_prefix": "13b795359550e2513e2f63f3aca1d3741b9b54b23ac8d3a4ba75f2ca80843ab2",
+        "size_in_bytes": 3690
+      },
+      {
+        "_path": "site-packages/json5/version.py",
+        "path_type": "hardlink",
+        "sha256": "6f8ae2e79061b74f35a610766fbae30b594e993cf86cc4c08ed0a3952fd02f7e",
+        "sha256_in_prefix": "6f8ae2e79061b74f35a610766fbae30b594e993cf86cc4c08ed0a3952fd02f7e",
+        "size_in_bytes": 614
+      },
+      {
+        "_path": "Lib/site-packages/json5/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/json5/__pycache__/__main__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/json5/__pycache__/arg_parser.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/json5/__pycache__/host.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/json5/__pycache__/lib.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/json5/__pycache__/parser.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/json5/__pycache__/tool.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/json5/__pycache__/version.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Scripts/pyjson5-script.py",
+        "path_type": "windows_python_entry_point_script"
+      },
+      {
+        "_path": "Scripts/pyjson5.exe",
+        "path_type": "windows_python_entry_point_exe"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "595b96c7e20703125ff4865ee55ba282357b57438a609dd7660610318127ca2e",
+  "size": 21787,
+  "subdir": "noarch",
+  "timestamp": 1624432813739,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/json5-0.9.6-pyhd3eb1b0_0.conda",
+  "version": "0.9.6"
+}

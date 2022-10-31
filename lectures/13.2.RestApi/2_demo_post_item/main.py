@@ -13,8 +13,7 @@ def get_index():
 
 @app.get("/posts")
 async def get_posts():
-    return {"posts": POSTS}
-
+	return {"posts": POSTS}
 
 @app.get("/posts/mine")
 def get_post_mine():

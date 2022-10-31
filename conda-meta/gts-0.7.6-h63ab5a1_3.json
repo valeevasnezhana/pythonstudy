@@ -1,0 +1,72 @@
+{
+  "build": "h63ab5a1_3",
+  "build_number": 3,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "glib >=2.69.1,<3.0a0",
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012,<15.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\valee\\anaconda3\\pkgs\\gts-0.7.6-h63ab5a1_3",
+  "features": "",
+  "files": [
+    "Library/bin/gts.dll",
+    "Library/include/gts.h",
+    "Library/include/gtsconfig.h",
+    "Library/lib/gts.lib",
+    ".nonadmin"
+  ],
+  "fn": "gts-0.7.6-h63ab5a1_3.conda",
+  "legacy_bz2_md5": "1977f142008d95ebe7428ce271dae50b",
+  "license": "LGPL-2.0-or-later",
+  "license_family": "LGPL",
+  "link": {
+    "source": "C:\\Users\\valee\\anaconda3\\pkgs\\gts-0.7.6-h63ab5a1_3",
+    "type": 1
+  },
+  "md5": "5bb4555e2304e37f59dcfbe9d148eaa2",
+  "name": "gts",
+  "package_tarball_full_path": "C:\\Users\\valee\\anaconda3\\pkgs\\gts-0.7.6-h63ab5a1_3.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Library/bin/gts.dll",
+        "path_type": "hardlink",
+        "sha256": "1f4629af7a2464a5f17b258c0dbeffe8edbc72d1318aa7a9d27583df1f2fea66",
+        "sha256_in_prefix": "1f4629af7a2464a5f17b258c0dbeffe8edbc72d1318aa7a9d27583df1f2fea66",
+        "size_in_bytes": 350720
+      },
+      {
+        "_path": "Library/include/gts.h",
+        "path_type": "hardlink",
+        "sha256": "f55999734b4700797dbd0b6f983434970d07bf562468f5d09c8476aa413324d0",
+        "sha256_in_prefix": "f55999734b4700797dbd0b6f983434970d07bf562468f5d09c8476aa413324d0",
+        "size_in_bytes": 83365
+      },
+      {
+        "_path": "Library/include/gtsconfig.h",
+        "path_type": "hardlink",
+        "sha256": "6f1286dd115ec05c45d919c97fe5a87abb9fb0f8e3e69518f5a8b6f728567ef4",
+        "sha256_in_prefix": "6f1286dd115ec05c45d919c97fe5a87abb9fb0f8e3e69518f5a8b6f728567ef4",
+        "size_in_bytes": 807
+      },
+      {
+        "_path": "Library/lib/gts.lib",
+        "path_type": "hardlink",
+        "sha256": "fd9697c2175813066e9ffe2e37d0210476227088493f4c61bbc19db2dc7aeb28",
+        "sha256_in_prefix": "fd9697c2175813066e9ffe2e37d0210476227088493f4c61bbc19db2dc7aeb28",
+        "size_in_bytes": 97558
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "dd3f158d51467f10852f188cff5339db79652e53a46f8dfde38ccc1fe6afb216",
+  "size": 185158,
+  "subdir": "win-64",
+  "timestamp": 1648050478435,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/gts-0.7.6-h63ab5a1_3.conda",
+  "version": "0.7.6"
+}

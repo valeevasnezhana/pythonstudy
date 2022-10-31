@@ -1,0 +1,63 @@
+{
+  "build": "h2bbff1b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012,<15.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\valee\\anaconda3\\pkgs\\getopt-win32-0.1-h2bbff1b_0",
+  "features": "",
+  "files": [
+    "Library/bin/getopt.dll",
+    "Library/include/getopt.h",
+    "Library/lib/getopt.lib",
+    ".nonadmin"
+  ],
+  "fn": "getopt-win32-0.1-h2bbff1b_0.conda",
+  "legacy_bz2_md5": "4c43f78556f404f8d1e485d693f3f8bd",
+  "license": "LGPL-3.0-only",
+  "license_family": "GPL",
+  "link": {
+    "source": "C:\\Users\\valee\\anaconda3\\pkgs\\getopt-win32-0.1-h2bbff1b_0",
+    "type": 1
+  },
+  "md5": "a04b6d308d564786ebc7f7f5745fe637",
+  "name": "getopt-win32",
+  "package_tarball_full_path": "C:\\Users\\valee\\anaconda3\\pkgs\\getopt-win32-0.1-h2bbff1b_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Library/bin/getopt.dll",
+        "path_type": "hardlink",
+        "sha256": "d213a9fadb5912732821dcd82f74489eea655dafd03a598edca7cab0e40c87f8",
+        "sha256_in_prefix": "d213a9fadb5912732821dcd82f74489eea655dafd03a598edca7cab0e40c87f8",
+        "size_in_bytes": 19456
+      },
+      {
+        "_path": "Library/include/getopt.h",
+        "path_type": "hardlink",
+        "sha256": "2b5a18319b9977b8c782cf1e9fcd73769428d7f81ac197b591806588a2c76b19",
+        "sha256_in_prefix": "2b5a18319b9977b8c782cf1e9fcd73769428d7f81ac197b591806588a2c76b19",
+        "size_in_bytes": 5004
+      },
+      {
+        "_path": "Library/lib/getopt.lib",
+        "path_type": "hardlink",
+        "sha256": "18f601b8430e559c4b2818c2b96b7b5ae92ae1c00771541f28028a5aadb7b326",
+        "sha256_in_prefix": "18f601b8430e559c4b2818c2b96b7b5ae92ae1c00771541f28028a5aadb7b326",
+        "size_in_bytes": 3346
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "a2d5e2dd8c0e3e7d2e4e140e3c2d2f228691ab92a0abb0c7a721aa16bed32635",
+  "size": 18955,
+  "subdir": "win-64",
+  "timestamp": 1655992135311,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/getopt-win32-0.1-h2bbff1b_0.conda",
+  "version": "0.1"
+}
