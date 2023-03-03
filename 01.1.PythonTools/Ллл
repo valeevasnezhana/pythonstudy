@@ -1,0 +1,9 @@
+int decode_single_hex_into_value(int input_hex_char) {
+ if (input_hex_char >= 'A' && input_hex_char <= 'F') {
+ return (input_hex_char - 'A') + 10;
+ } else if (input_hex_char >= 'a' && input_hex_char <= 'f') {
+ return (input_hex_char - 'a') + 10;
+ } else {
+ return input_hex_char - '0';
+ }
+}
