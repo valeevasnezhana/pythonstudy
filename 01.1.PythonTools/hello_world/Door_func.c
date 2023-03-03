@@ -2,44 +2,109 @@
 #include <stdio.h>
 
 int main(int argc, char* argv[]) {
+    double epsilon = 1e-10;
+
     double begin_x = -M_PI;
     double end_x = M_PI;
     double step_x = (end_x - begin_x) / 41;
-    double epsilon = 1e-10;
-    int iteration = 0;
-    for (double current_x = begin_x; current_x <= (end_x + epsilon); current_x += step_x) {
-        double chosen_x;
-        if (iteration == 41) {
-            chosen_x = end_x;
-        } else {
-            chosen_x = current_x;
+
+
+    // First: VA function
+    {
+        double begin_y = 0.092000 * 0.9;
+        double end_y = 0.994163 * 1.1;
+        double step_y = (end_y - begin_y) / 21;
+
+        int iteration = 0;
+        for (double current_y = end_y; current_y > (begin_y + epsilon); current_y -= step_y) {
+            for (double current_x = begin_x; current_x <= (end_x + epsilon); current_x += step_x) {
+                double chosen_x;
+                if (iteration == 41) {
+                    chosen_x = end_x;
+                } else {
+                    chosen_x = current_x;
+                }
+
+                double y_from_function = 1 / (1 + pow(chosen_x, 2));
+
+                double next_y = current_y - step_y;
+                if (y_from_function >= next_y && y_from_function <= current_y) {
+                    printf("*");
+                } else {
+                    printf(" ");
+                }
+            }
+            printf("\n");
+
+            iteration++;
         }
+    }
 
-        printf("%.7lf", chosen_x);
-        printf(" | ");
+    // Second: LB function
+    {
+        double begin_y = 0.0761782 * 0.9;
+        double end_y = 0.4996003 * 1.1;
+        double step_y = (end_y - begin_y) / 21;
 
-        double va_value = 1 / (1 + pow(chosen_x, 2));
-        printf("%.7lf", va_value);
-        printf(" | ");
+        int iteration = 0;
+        for (double current_y = end_y; current_y > (begin_y + epsilon); current_y -= step_y) {
+            for (double current_x = begin_x; current_x <= (end_x + epsilon); current_x += step_x) {
+                double chosen_x;
+                if (iteration == 41) {
+                    chosen_x = end_x;
+                } else {
+                    chosen_x = current_x;
+                }
 
-        double lb_left_value = sqrt(1 + 4 * pow(chosen_x, 2));
-        double lb_value_under_sqr = lb_left_value - pow(chosen_x, 2) - 1;
-        if (lb_value_under_sqr > 0) {
-            double lb_value = sqrt(lb_value_under_sqr);
-            printf("%.7lf", lb_value);
-        } else {
-            printf("-");
+                double lb_left_value = sqrt(1 + 4 * pow(chosen_x, 2));
+                double lb_value_under_sqr = lb_left_value - pow(chosen_x, 2) - 1;
+                if (lb_value_under_sqr > 0) {
+                    double y_from_function =  sqrt(lb_value_under_sqr);
+                    double next_y = current_y - step_y;
+                    if (y_from_function >= next_y && y_from_function <= current_y) {
+                        printf("*");
+                    } else {
+                        printf(" ");
+                    }
+                } else {
+                    printf(" ");
+                }
+
+            }
+            printf("\n");
+
+            iteration++;
         }
-        printf(" | ");
+    }
 
-        if (chosen_x != 0) {
-            double hyperbola_value = 1 / (pow(chosen_x, 2));
-            printf("%.7lf", hyperbola_value);
-        } else {
-            printf("-");
+    // Third: LB function
+    {
+        double begin_y = 0.101321 * 0.9;
+        double end_y = 170.320910 * 1.1;
+        double step_y = (end_y - begin_y) / 21;
+
+        int iteration = 0;
+        for (double current_y = end_y; current_y > (begin_y + epsilon); current_y -= step_y) {
+            for (double current_x = begin_x; current_x <= (end_x + epsilon); current_x += step_x) {
+                double chosen_x;
+                if (iteration == 41) {
+                    chosen_x = end_x;
+                } else {
+                    chosen_x = current_x;
+                }
+
+                double hyperbola_value = 1 / (pow(chosen_x, 2));
+                double y_from_function =  hyperbola_value;
+                double next_y = current_y - step_y;
+                if (y_from_function >= next_y && y_from_function <= current_y) {
+                    printf("*");
+                } else {
+                    printf(" ");
+                }
+            }
+            printf("\n");
+
+            iteration++;
         }
-        printf("\n");
-
-        iteration++;
     }
 }
