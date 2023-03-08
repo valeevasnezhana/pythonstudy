@@ -1,0 +1,159 @@
+#include <stdio.h>
+
+#define NMAX 10
+
+int input(int* a);
+void output(int* a);
+void copy_data(int* input_a, int* output_a, int size);
+void heap_sort(int* a);
+void merge_sort(int* a);
+void merge_sort_internal(int* a, int start_index_inclusive, int end_index_exclusive);
+void merge_two_sub_arrays(int* a, int start_index_inclusive, int middle_index, int end_index_exclusive);
+
+int main() {
+    int data[NMAX];
+    if (input(data) == 0) {
+        int data_for_second_sort[NMAX];
+        copy_data(data, data_for_second_sort, NMAX);
+
+        heap_sort(data);
+        output(data);
+
+        merge_sort(data_for_second_sort);
+        output(data_for_second_sort);
+    } else {
+        printf("n/a");
+    }
+    return 0;
+}
+
+int input(int* a) {
+    for (int* p = a; p - a < NMAX; p++) {
+        if (scanf("%d", p) != 1) {
+            return 1;
+        }
+    }
+    if (getchar() != 10) {
+        return 1;
+    }
+    return 0;
+}
+
+void output(int* a) {
+    for (int* p = a; p - a < NMAX; p++) {
+        printf("%d", *p);
+        if ((p - a) < NMAX - 1) {
+            printf(" ");
+        } else {
+            printf("\n");
+        }
+    }
+}
+
+void copy_data(int* input_a, int* output_a, int size) {
+    for (int i = 0; i < size; i++) {
+        output_a[i] = input_a[i];
+    }
+}
+
+void merge_sort(int* a) {
+    merge_sort_internal(a, 0, NMAX);
+}
+
+void merge_sort_internal(int* a, int start_index_inclusive, int end_index_exclusive) {
+    if (start_index_inclusive < (end_index_exclusive - 1)) {
+        int middle_index = (end_index_exclusive + start_index_inclusive) / 2;
+        merge_sort_internal(a, start_index_inclusive, middle_index);
+        merge_sort_internal(a, middle_index, end_index_exclusive);
+        merge_two_sub_arrays(a, start_index_inclusive, middle_index, end_index_exclusive);
+    }
+}
+
+void merge_two_sub_arrays(int* a, int start_index_inclusive, int middle_index, int end_index_exclusive) {
+    int output_index = 0;
+    int left_index = start_index_inclusive;
+    int right_index = middle_index;
+
+    int output_data[NMAX];
+    while (left_index < middle_index && right_index < end_index_exclusive) {
+        if (a[left_index] < a[right_index]) {
+            output_data[output_index] = a[left_index];
+            left_index++;
+            output_index++;
+        } else {
+            output_data[output_index] = a[right_index];
+            right_index++;
+            output_index++;
+        }
+    }
+    while (left_index < middle_index) {
+        output_data[output_index] = a[left_index];
+        left_index++;
+        output_index++;
+    }
+    while (right_index < end_index_exclusive) {
+        output_data[output_index] = a[right_index];
+        right_index++;
+        output_index++;
+    }
+
+    for (int i = start_index_inclusive; i < end_index_exclusive; i++) {
+        a[i] = output_data[i - start_index_inclusive];
+    }
+}
+
+void heap_sort(int* a) {
+    int heap[NMAX];
+    //add all elements of array "a" to min heap
+    for (int k = 0; k < NMAX; k++) {
+        heap[k] = a[k];
+        int i = k;
+        while (((i - 1) / 2 >= 0) && (heap[i] < heap[(i - 1) / 2])) {
+            int tmp = heap[(i - 1) / 2];
+            heap[(i - 1) / 2] = heap[i];
+            heap[i] = tmp;
+            i = (i - 1) / 2;
+        }
+    }
+
+//    remove roots from heap to array [a]
+    for (int k = 0; k < NMAX; k++) {
+        a[k] = heap[0];
+        heap[0] = heap[NMAX - k - 1];
+        int heap_last_index_non_inclusive = NMAX - k - 1;
+        int current_index = 0;
+        while (current_index < heap_last_index_non_inclusive) {
+            int left_child_index = current_index * 2 + 1;
+            int right_child_index = current_index * 2 + 2;
+            if (left_child_index >= heap_last_index_non_inclusive &&
+                right_child_index >= heap_last_index_non_inclusive) {
+                break;
+            }
+
+            int chosen_child_index;
+            if (left_child_index < heap_last_index_non_inclusive &&
+                right_child_index >= heap_last_index_non_inclusive) {
+                chosen_child_index = left_child_index;
+            } else if (left_child_index > heap_last_index_non_inclusive &&
+                       right_child_index < heap_last_index_non_inclusive) {
+                chosen_child_index = right_child_index;
+            } else {
+                if (heap[left_child_index] < heap[right_child_index]) {
+                    chosen_child_index = left_child_index;
+                } else {
+                    chosen_child_index = right_child_index;
+                }
+            }
+
+            if (heap[chosen_child_index] < heap[current_index]) {
+                int tmp = heap[current_index];
+                heap[current_index] = heap[chosen_child_index];
+                heap[chosen_child_index] = tmp;
+                current_index = chosen_child_index;
+            } else {
+                break;
+            }
+
+        }
+    }
+}
