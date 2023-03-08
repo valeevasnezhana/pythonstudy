@@ -1,0 +1,26 @@
+int input(int* buff, int* len) {
+    int current_index = 0;
+    int incorrect_input = 0;
+    char input_char = getchar();
+    char prev_input = ' ';
+    while ((input_char != '\n') && (incorrect_input == 0)) {
+        if (!(((input_char == ' ') || ((input_char >= '0') && (input_char <= '9'))) &&
+              (current_index < LEN))) {
+            incorrect_input = 1;
+        }
+        if ((input_char != ' ') && (incorrect_input == 0)) {
+            if (prev_input != ' ') {
+                incorrect_input = 1;
+            } else {
+                buff[current_index] = input_char - '0';
+                current_index++;
+            }
+        }
+        prev_input = input_char;
+        input_char = getchar();
+    }
+    if (incorrect_input == 0) {
+        *len = current_index;
+    }
+    return incorrect_input;
+}
