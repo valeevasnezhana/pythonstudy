@@ -1,61 +1,54 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-long long get_whole_of_division(long long nominator, long long divisor) {
-    long long whole = 0;
-    long long current_value = nominator;
-    while (current_value >= divisor) {
-        whole = whole + 1;
-        current_value = current_value - divisor;
-    }
-    return whole;
+int input(int*** matrix, int* row_amount, int* col_amount);
+void output(int** matrix, int n, int m);
+
+int main() {
+    int** matrix;
+    int row_amount, col_amount;
+    if ()
+    return 0;
 }
 
-long long create_largest_divisor(long long input_value) {
-    if (input_value < 0) {
-        return -1;
-    }
-    // тут надо решить что надо возвращать для 0
-    if (input_value == 0) {
-        return -1;
-    }
-    if (input_value == 1) {
+
+
+int input(int*** matrix, int* row_amount, int* col_amount) {
+    int amount_scanned = scanf("%d%d", row_amount, col_amount);
+    if ((amount_scanned != 2) || (*row_amount < 1) || (*col_amount) < 1) {
         return 1;
     }
+    *matrix = malloc((*row_amount) * (*col_amount) * sizeof(int) + (*row_amount) * sizeof(int*));
+    int* ptr = (int*)((*matrix) + (*row_amount));
+    for (int row_index = 0; row_index < *row_amount; row_index++) {
+        (*matrix)[row_index] = ptr + (*col_amount) * row_index;
+    }
 
-    long long iteration = 0;
-    long long current_value = input_value;
-    long long current_divisor = 2;
-
-    long long largest_successful_divisor = -1;
-
-    while (current_value > 1) {
-//        printf("Iter: %d. Value: %d, divisor: %d\n", iteration, current_value, current_divisor);
-        long long whole = get_whole_of_division(current_value, current_divisor);
-        long long remainder = current_value - current_divisor * whole;
-//        printf("Whole: %d. remainder: %d\n", whole, remainder);
-        if (remainder == 0) {
-            largest_successful_divisor = current_divisor;
-            current_value = whole;
-        } else {
-//            printf("%d is not divided by %d\n", current_value, current_divisor);
-            current_divisor++;
+    for (int row_index = 0; row_index < *row_amount; row_index++) {
+        for (int col_index = 0; col_index < *col_amount; col_index++) {
+            int input_value;
+            int amount_scanned = scanf("%d", &input_value);
+            if (amount_scanned != 1) {
+                free(*matrix);
+                return 1;
+            }
+            (*matrix)[row_index][col_index] = input_value;
         }
-        iteration++;
     }
-    return largest_successful_divisor;
+    return 0;
 }
 
-void print_largest_divisor(long long input_value) {
-    long long largest_divisor = create_largest_divisor(input_value);
-    if (largest_divisor > 0) {
-        printf("%lld\n", largest_divisor);
-    } else {
-        printf("n/a\n");
+void output(int** matrix, int row_amount, int col_amount) {
+    for (int row_index = 0; row_index < row_amount; row_index++) {
+        for (int col_index = 0; col_index < col_amount; col_index++) {
+            int current_value = matrix[row_index][col_index];
+            printf("%d", current_value);
+            if (col_index < (col_amount - 1)) {
+                printf(" ");
+            }
+        }
+        if (row_index < (row_amount - 1)) {
+            printf("\n");
+        }
     }
-}
-
-int main(int argc, char* argv[]) {
-    long long input_value;
-    scanf("%lld", &input_value);
-    print_largest_divisor(input_value);
 }
