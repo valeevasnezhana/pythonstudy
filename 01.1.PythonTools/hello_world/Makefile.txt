@@ -1,32 +1,56 @@
-all: build
+CC =gcc
+CFLAGS = -Wall -Werror -Wextra -c
+SOURCES = main_executable_module.c sort.c ../yet_another_decision_module/decision.c ../data_module/data_process.c ../data_libs/data_io.c
+STAT_C = ../data_libs/data_stat.c 
+STAT_O = ../data_libs/data_stat.o
+STAT_O1 = data_stat.o
+STAT_SO = data_stat.so
+STAT_A = data_stat.a
 
-build: data_io.o data_stat.o data_process.o main_executable_module.o
-	gcc data_io.o data_stat.o data_process.o main_executable_module.o -o ../../build/main_executable_module
+PROCESS_C = ../data_module/data_process.c
+PROCESS_SO = data_process.so
+PROCESS_O = data_process.o
+OBJECTS = $(SOURCES:.c=.o)
+EXECUTABLE = main
+QUEST3 = ../../build/Quest_3
+QUEST5 = ../../build/Quest_5
+QUEST6 = ../../build/Quest_6
 
-build_with_static: data_stat.a data_io.o data_process.o main_executable_module.o
-	gcc data_io.o data_process.o main_executable_module.o -L ../../build -l data_stat -o ../../build/main_executable_module
+all: $(OBJECTS) $(STAT_O)
+	$(CC) $(OBJECTS) $(STAT_O) -o $(EXECUTABLE)
+	
+$(EXECUTABLE): $(OBJECTS) $(STAT_O)
+	$(CC) $(OBJECTS) $(STAT_O) -o $(EXECUTABLE)
 
-build_with_dynamic: data_io.o data_stat.o data_process.so main_executable_module.o
-	gcc data_io.o data_stat.o main_executable_module.o -L ../../build -l data_process -o ../../build/main_executable_module
+$(QUEST3): $(OBJECTS) $(STAT_O)
+	$(CC) $(OBJECTS) $(STAT_O) -o $(QUEST3)
 
-main_executable_module.o: main_executable_module.c
-	gcc -c main_executable_module.c
+$(QUEST5): $(STAT_A) $(OBJECTS)
+	$(CC) $(OBJECTS) $(STAT_A) -o $(QUEST5)
 
-data_process.so: data_process.o
-	gcc data_process.o -shared -o ../../build/libdata_process.so
+$(QUEST6): data_process.so $(OBJECTS)
+	$(CC) $(OBJECTS) $(STAT_A) -o $(QUEST6)
 
-data_process.o: ../data_module/data_process.c data_stat.o
-	gcc -c ../data_module/data_process.c -o data_process.o
+build_with_static: $(STAT_A) $(OBJECTS)
+	$(CC) $(OBJECTS) $(STAT_A) -o $(EXECUTABLE)
 
-data_io.o: ../data_libs/data_io.c
-	gcc -c ../data_libs/data_io.c -o data_io.o
+build_with_dynamic: data_process.so $(OBJECTS)
+	rm $(PROCESS_C) $(STAT_C)
+	$(CC) $(OBJECTS) $(PROCESS_SO) -o $(EXECUTABLE)
 
-data_stat.a: data_stat.o
-	ar rcs ../../build/libdata_stat.a data_stat.o
 
-data_stat.o: ../data_libs/data_stat.c
-	gcc -c ../data_libs/data_stat.c -o data_stat.o
+$(STAT_A): $(STAT_O)
+	ar r data_stat.a $(STAT_O)
 
+data_process.so:
+	$(CC) $(CFLAGS) -c -fPIC $(PROCESS_C) $(STAT_C)
+	$(CC) -shared -o $(PROCESS_SO) $(PROCESS_O) $(STAT_O1)
+
+rebuild: all
+
+.o: .c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -rf *.o ../../build/*
+	-rm $(OBJECTS)
+	-rm $(EXECUTABLE)
