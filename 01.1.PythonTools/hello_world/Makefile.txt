@@ -1,0 +1,32 @@
+all: build
+
+build: data_io.o data_stat.o data_process.o main_executable_module.o
+	gcc data_io.o data_stat.o data_process.o main_executable_module.o -o ../../build/main_executable_module
+
+build_with_static: data_stat.a data_io.o data_process.o main_executable_module.o
+	gcc data_io.o data_process.o main_executable_module.o -L ../../build -l data_stat -o ../../build/main_executable_module
+
+build_with_dynamic: data_io.o data_stat.o data_process.so main_executable_module.o
+	gcc data_io.o data_stat.o main_executable_module.o -L ../../build -l data_process -o ../../build/main_executable_module
+
+main_executable_module.o: main_executable_module.c
+	gcc -c main_executable_module.c
+
+data_process.so: data_process.o
+	gcc data_process.o -shared -o ../../build/libdata_process.so
+
+data_process.o: ../data_module/data_process.c data_stat.o
+	gcc -c ../data_module/data_process.c -o data_process.o
+
+data_io.o: ../data_libs/data_io.c
+	gcc -c ../data_libs/data_io.c -o data_io.o
+
+data_stat.a: data_stat.o
+	ar rcs ../../build/libdata_stat.a data_stat.o
+
+data_stat.o: ../data_libs/data_stat.c
+	gcc -c ../data_libs/data_stat.c -o data_stat.o
+
+
+clean:
+	rm -rf *.o ../../build/*
