@@ -48,9 +48,8 @@ void bstree_apply_infix(t_btree *root, void (*applyf) (int)) {
             }
         }
 
-        applyf(current_node->item);
-
         if (prev == current_node->left || prev == current_node->parent){
+            applyf(current_node->item);
             if(current_node->right != NULL) {
                 prev = current_node;
                 current_node = current_node->right;
@@ -67,9 +66,8 @@ void bstree_apply_prefix(t_btree *root, void (*applyf) (int)) {
     t_btree* prev = NULL;
     t_btree* current_node = root;
     while (current_node != NULL){
-        applyf(current_node->item);
-
         if (prev == current_node->parent){
+            applyf(current_node->item);
             if(current_node->left != NULL) {
                 prev = current_node;
                 current_node = current_node->left;
