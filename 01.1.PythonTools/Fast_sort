@@ -157,3 +157,14 @@ void heap_sort(int* a) {
         }
     }
 }
+
+
+free(root_node->right->left->left);
+ free(root_node->right->left);
+ free(root_node->right);
+ free(root_node->left->right->right->left);
+ free(root_node->left->right->right);
+ free(root_node->left->right);
+ free(root_node->left->left);
+ free(root_node->left);
+ free(root_node);
