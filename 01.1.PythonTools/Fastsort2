@@ -1,31 +1,41 @@
-all: door_struct list_test stack_test
+gruntmet@ga-b3 src % leaks -atExit -- ./../build/test_computation 
+2*x 1
+2.000000
+Process:         test_computation [80921]
+Path:            /Volumes/VOLUME/*/test_computation
+Load Address:    0x100159000
+Identifier:      test_computation
+Version:         ???
+Code Type:       X86-64
+Platform:        macOS
+Parent Process:  leaks [80920]
 
-door_struct: dmanager_module.o
-	gcc dmanager_module.o -o ../Build/Quest_1
+Date/Time:       2023-03-19 20:58:28.490 +0300
+Launch Time:     2023-03-19 20:58:21.608 +0300
+OS Version:      macOS 11.6.6 (20G624)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 13.2.1 (13C100)
 
-list_test: list.o list_test.o
-	gcc list.o list_test.o -o ../Build/Quest_2
+Physical footprint:         352K
+Physical footprint (peak):  352K
+----
 
-stack_test: stack.o stack_test.o
-	gcc stack.o stack_test.o -o ../Build/Quest_2
+leaks Report Version: 4.0
+Process 80921: 184 nodes malloced for 19 KB
+Process 80921: 10 leaks for 2224 total leaked bytes.
 
-rebuild: clean door_struct list_test stack_test
+    10 (2.17K) << TOTAL >>
+      1 (2.00K) ROOT LEAK: 0x7fe6af008200 [2048]
 
-dmanager_module.o:
-	gcc -Wall -Werror -Wextra -c dmanager_module.c
+      4 (96 bytes) ROOT LEAK: 0x7fe6ae5042c0 [48]
+         1 (16 bytes) 0x7fe6ae504290 [16]  length: 1  "2"
+         1 (16 bytes) 0x7fe6ae5042a0 [16]  length: 1  "*"
+         1 (16 bytes) 0x7fe6ae5042b0 [16]  length: 1  "x"
 
-list.o:
-	gcc -Wall -Werror -Wextra -c dmanager_module.c
+      2 (32 bytes) ROOT LEAK: 0x7fe6ae504320 [16]
+         1 (16 bytes) 0x7fe6ae504310 [16]
 
-list_test.o:
-	gcc -Wall -Werror -Wextra -c dmanager_module.c
-
-stack.o:
-	gcc -Wall -Werror -Wextra -c dmanager_module.c
-
-stack_test.o:
-	gcc -Wall -Werror -Wextra -c dmanager_module.c
-
-clean:
-	-rm ../Build/Quest_1 ../Build/Quest_2 ../Build/Quest_3
-	-rm stack_test.o stack.o list_test.o list.o dmanager_module.o
+      1 (16 bytes) ROOT LEAK: 0x7fe6ae5042f0 [16]
+      1 (16 bytes) ROOT LEAK: 0x7fe6ae504300 [16]
+      1 (16 bytes) ROOT LEAK: 0x7fe6ae504330 [16]
