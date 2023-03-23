@@ -1,0 +1,17 @@
+modules.c:102:9: style: Local variable 'has_error' shadows outer variable [shadowVariable]
+    int has_error = read_module_record_from_file_at_index(
+        ^
+modules.c:100:7: note: Shadowed declaration
+  int has_error = 0;
+      ^
+modules.c:102:9: note: Shadow variable
+    int has_error = read_module_record_from_file_at_index(
+        ^
+4/6 files checked 58% done
+Checking modules_db.c ...
+modules_db.c:218:7: style: The scope of the variable 'module_id' can be reduced. [variableScope]
+  int module_id;
+      ^
+modules_db.c:333:7: style: The scope of the variable 'error_amount' can be reduced. [variableScope]
+  int error_amount = 0;
+      ^
