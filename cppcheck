@@ -1,0 +1,110 @@
+combined.c:6:51: style: The scope of the variable 'last_status' can be reduced. [variableScope]
+    int error_amount = 0, must_update_status = 0, last_status = -1;
+                                                  ^
+combined.c:6:46: style: Variable 'must_update_status' is assigned a value that is never used. [unreadVariable]
+    int error_amount = 0, must_update_status = 0, last_status = -1;
+                                             ^
+combined.c:6:63: style: Variable 'last_status' is assigned a value that is never used. [unreadVariable]
+    int error_amount = 0, must_update_status = 0, last_status = -1;
+                                                              ^
+1/6 files checked 6% done
+Checking events.c ...
+events.c:134:23: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+    received_values = scanf("%s", record->status_change_date);
+                      ^
+events.c:139:23: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+    received_values = scanf("%s", record->status_change_time);
+                      ^
+events.c:148:9: style: The scope of the variable 'append_has_error' can be reduced. [variableScope]
+    int append_has_error = 0;
+        ^
+events.c:166:9: style: The scope of the variable 'has_io_error' can be reduced. [variableScope]
+    int has_io_error = 0;
+        ^
+events.c:93:13: style: Local variable 'has_error' shadows outer variable [shadowVariable]
+        int has_error = read_event_record_from_file_at_index(input_file_pointer, record_index, &record);
+            ^
+events.c:91:9: note: Shadowed declaration
+    int has_error = 0;
+        ^
+events.c:93:13: note: Shadow variable
+        int has_error = read_event_record_from_file_at_index(input_file_pointer, record_index, &record);
+            ^
+events.c:148:26: style: Variable 'append_has_error' is assigned a value that is never used. [unreadVariable]
+    int append_has_error = 0;
+                         ^
+events.c:166:22: style: Variable 'has_io_error' is assigned a value that is never used. [unreadVariable]
+    int has_io_error = 0;
+                     ^
+2/6 files checked 30% done
+Checking levels.c ...
+levels.c:137:9: style: The scope of the variable 'append_has_error' can be reduced. [variableScope]
+    int append_has_error = 0;
+        ^
+levels.c:155:9: style: The scope of the variable 'has_io_error' can be reduced. [variableScope]
+    int has_io_error = 0;
+        ^
+levels.c:94:13: style: Local variable 'has_error' shadows outer variable [shadowVariable]
+        int has_error = read_level_record_from_file_at_index(input_file_pointer, record_index, &record);
+            ^
+levels.c:92:9: note: Shadowed declaration
+    int has_error = 0;
+        ^
+levels.c:94:13: note: Shadow variable
+        int has_error = read_level_record_from_file_at_index(input_file_pointer, record_index, &record);
+            ^
+levels.c:137:26: style: Variable 'append_has_error' is assigned a value that is never used. [unreadVariable]
+    int append_has_error = 0;
+                         ^
+levels.c:155:22: style: Variable 'has_io_error' is assigned a value that is never used. [unreadVariable]
+    int has_io_error = 0;
+                     ^
+3/6 files checked 48% done
+Checking modules.c ...
+modules.c:125:23: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+    received_values = scanf("%s", record->name);
+                      ^
+modules.c:149:9: style: The scope of the variable 'append_has_error' can be reduced. [variableScope]
+    int append_has_error = 0;
+        ^
+modules.c:167:9: style: The scope of the variable 'has_io_error' can be reduced. [variableScope]
+    int has_io_error = 0;
+        ^
+modules.c:94:13: style: Local variable 'has_error' shadows outer variable [shadowVariable]
+        int has_error = read_module_record_from_file_at_index(input_file_pointer, record_index, &record);
+            ^
+modules.c:92:9: note: Shadowed declaration
+    int has_error = 0;
+        ^
+modules.c:94:13: note: Shadow variable
+        int has_error = read_module_record_from_file_at_index(input_file_pointer, record_index, &record);
+            ^
+modules.c:149:26: style: Variable 'append_has_error' is assigned a value that is never used. [unreadVariable]
+    int append_has_error = 0;
+                         ^
+modules.c:167:22: style: Variable 'has_io_error' is assigned a value that is never used. [unreadVariable]
+    int has_io_error = 0;
+                     ^
+4/6 files checked 68% done
+Checking modules_db.c ...
+modules_db.c:103:28: style: Condition 'input_file_pointer!=NULL' is always true [knownConditionTrueFalse]
+    if (input_file_pointer != NULL) {
+                           ^
+modules_db.c:156:28: style: Condition 'input_file_pointer!=NULL' is always true [knownConditionTrueFalse]
+    if (input_file_pointer != NULL) {
+                           ^
+modules_db.c:191:28: style: Condition 'input_file_pointer!=NULL' is always true [knownConditionTrueFalse]
+    if (input_file_pointer != NULL) {
+                           ^
+modules_db.c:222:28: style: Condition 'input_file_pointer!=NULL' is always true [knownConditionTrueFalse]
+    if (input_file_pointer != NULL) {
+                           ^
+modules_db.c:147:9: error: Uninitialized variable: update_status [uninitvar]
+    if (update_status == UPDATE_SUCCESS) {
+        ^
+modules_db.c:184:9: error: Uninitialized variable: delete_status [uninitvar]
+    if (delete_status == DELETE_SUCCESS) {
+        ^
+modules_db.c:203:35: style: Variable 'delete_status' is assigned a value that is never used. [unreadVariable]
+    t_delete_status delete_status = 0;
+                                  ^
